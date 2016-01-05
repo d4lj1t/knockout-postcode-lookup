@@ -1,0 +1,82 @@
+/**
+ * Bootstrap Overide
+ * jquery-validation
+ */
+.form-control{
+    &:focus, &:hover{
+        .border(@w:1px, @type:solid, @color:black);
+        -webkit-box-shadow:none;
+        box-shadow: none;
+    }
+    &.error{
+        .border(@w:1px, @type:solid, @color:@color-red-sale);
+        &:focus, &:hover{
+            .border(@w:1px, @type:solid, @color:@color-red-sale);
+        }
+    }
+}
+label.error{
+    color:@color-red-sale;
+    font-style: normal;
+    font-weight: normal;
+    .pad-top();
+}
+/**
+ * Jquery Validation End
+ */
+
+
+
+/**
+ * General
+ */
+ 
+ legend {
+ 	border: 0;
+ }
+ 
+.form {
+    input[type="text"], input[type="password"], input[type="tel"], input[type="url"], input[type="email"], input[type="number"], select {
+        height: 44px;
+        background: #fff;
+        .pad();
+    }
+
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    outline: none;
+
+    &.thin-marg-right {
+        .thin-marg-right();
+    }
+}
+.select {
+    height: 44px;
+    min-width: 65px;
+    background: #fff;
+
+}
+span.check-box {
+    border: 1px solid #adadad;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    display: inline-block;
+    position: relative;
+    top: 1px;
+}
+.checked span.check-box {
+    background: @color-hof-pink;
+    border-color: @color-hof-pink;
+}
+
+.form-control::-webkit-input-placeholder {color: @input-border;}
+.form-control:-moz-placeholder {color: @input-border;} /* Firefox 18- */
+.form-control::-moz-placeholder {color: @input-border;} /* Firefox 19+ */
+.form-control:-ms-input-placeholder {color: @input-border;}

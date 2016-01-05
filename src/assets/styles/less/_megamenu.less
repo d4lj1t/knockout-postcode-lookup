@@ -1,0 +1,76 @@
+// Megamenu
+// 
+// Markup: ../../../../include/_responsive-nav.html 
+//
+// Styleguide Megamenu
+.responsive-nav {
+
+    .level-2 {
+        display: none;
+        clear: both;
+        left: 0;
+        top: 100%;
+    }
+
+    .level-3 {
+        display: none;
+        position: absolute;
+        top: @helper-standard;
+        bottom: @helper-standard;
+        left: 220px;
+
+        // Overwrite bootstap's padding
+        .col-md-7 {
+            padding: 0;
+        }
+        .col-md-5 {
+            padding-left: 0;
+        }
+        @media (max-width: @screen-sm-max) {
+            .col-md-7, .col-md-5 {
+                padding-right: 0;
+            }
+        }
+    }
+
+    .structure {
+        > li > a {
+            &:after {
+                position: absolute;
+                content: "";
+                left: 182px;
+                top: 50%;
+                margin-top: -6px;
+                .icon-chevron-right();
+                .icon-chevron-right-gray();
+            }
+        }
+
+        > li > a {
+            display: block;
+            height: 50px;
+            line-height: 30px;
+            border-bottom: 1px #e8e8e8 solid;
+            border-top: 1px #FFF solid;
+            position: relative;
+            .pad();
+            &:hover & .no-touch {
+                text-decoration: underline;
+                &:after {
+                    .icon-chevron-right-black();
+                }
+            }
+        }
+        > li.hover + li {
+            a {
+                border-top-color: transparent;
+            }
+        }
+    }
+
+    .icon-close {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+}

@@ -1,0 +1,724 @@
+@@include("_header-signed-in.html", {"classes_body" : "pagetype-checkout js-pagetype-jquery-validate js-pagetype-edit-payments", "classes_header" : "signed-in"})
+<main role="main" class="container main-container clearfix">
+    <a name="skiptocontent" id="skiptocontent"></a>
+
+    <div class="row clearfix marg-bottom">
+        @@include("_crumbtrail.html")
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <header><h1 class="border-bottom thick-marg-bottom">Edit Payment Method</h1></header>
+            <div class="row">
+                <div class="col-md-4 edit-card-container">
+                    <section class="clearfix no-pad">
+                        <section>
+                            <div href="#" target="_blank" class="visa-card larger icon-positioning" title="My Orders">Visa
+                                Card</div>
+                        </section>
+                        <section class="thick-marg-bottom">
+                            <p>M Jordan</p>
+                            <p>**** ***** **** 6969</p>
+                            <p>Expiry Date: 02/2015</p>
+                        </section>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <section class="thick-marg-bottom">
+                                    <div class="row">
+                                        <div class="col-md-6 thick-marg-bottom">
+                                            <button class="btn btn-info btn-block js-edit-btn active" type="button"
+                                                    id="edit-payment-1"
+                                                    name="edit_payment_1" title="edit payment">
+                                                Edit
+                                            </button>
+                                        </div>
+                                        <div class="col-md-6 thick-marg-bottom">
+                                            <button class="btn btn-default btn-block" type="button" id="delete-card-1"
+                                                    name="delete_card_1" title="Delete Password">
+                                                Delete
+                                            </button>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="clearfix no-pad hidden js-hidden-content">
+                        <form class="js-form" action="#" method="post">
+                            <section>
+                                <div href="#" target="_blank" class="visa-card larger icon-positioning" title="My Orders">Visa
+                                    Card</div>
+                            </section>
+                            <section class="thick-marg-bottom">
+                                <section class="thick-marg-bottom">
+                                    <label for="edit-card-name-1"><h4>Card Holder <span class="color-red">*</span></h4>
+                                    </label>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <input required id="edit-card-name-1" class="form-control" type="text" name="edit_card_name_1" minlength="1" placeholder="Edit Card Name" value="M Jordan"/>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="thick-marg-bottom">
+                                    <label for="edit-card-number-1"><h4>Card Number <span class="color-red">*</span></h4>
+                                    </label>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <input id="edit-card-number-1" class="form-control" type="text" disabled name="edit_card_number_1" minlength="16" value="**** **** **** 6969"/>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <label><h4>Expiry Date <span class="color-red">*</span></h4>
+                                    </label>
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-6 col-xs-6">
+                                            <select required id="expiry-month-1" class="form-control" name="expiry_month_1">
+                                                <option label="Month" value="-1" disabled="disabled">Month</option>
+                                                <option label="01" value="1">01</option>
+                                                <option label="02" value="2" selected="selected">02</option>
+                                                <option label="03" value="3">03</option>
+                                                <option label="04" value="4">04</option>
+                                                <option label="05" value="5">05</option>
+                                                <option label="06" value="6">06</option>
+                                                <option label="07" value="7">07</option>
+                                                <option label="08" value="8">08</option>
+                                                <option label="09" value="9">09</option>
+                                                <option label="10" value="10">10</option>
+                                                <option label="11" value="11">11</option>
+                                                <option label="12" value="12">12</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-6">
+                                            <select id="expiry-year-1" class="form-control" name="expiry_year_1">
+                                                <option label="Year" value="-1" disabled="disabled">Year</option>
+                                                <option label="01" value="1">01</option>
+                                                <option label="02" value="2" selected="selected">02</option>
+                                                <option label="03" value="3">03</option>
+                                                <option label="04" value="4">04</option>
+                                                <option label="05" value="5">05</option>
+                                                <option label="06" value="6">06</option>
+                                                <option label="07" value="7">07</option>
+                                                <option label="08" value="8">08</option>
+                                                <option label="09" value="9">09</option>
+                                                <option label="10" value="10">10</option>
+                                                <option label="11" value="11">11</option>
+                                                <option label="12" value="12">12</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <section class="thick-marg-bottom">
+                                        <div class="row">
+                                            <div class="col-md-6 thick-marg-bottom">
+                                                <button class="btn btn-info btn-block js-update-btn" type="submit"
+                                                        id="update-payment-info-1"
+                                                        name="update_payment_info_1" title="update-payment-info">
+                                                    Update
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+                <div class="col-md-4 edit-card-container">
+                    <section class="clearfix no-pad">
+                        <section>
+                            <div href="#" target="_blank" class="master-card larger icon-positioning" title="My Orders">Master
+                                Card</div>
+                        </section>
+                        <section class="thick-marg-bottom">
+                            <p>M Jordan</p>
+                            <p>**** ***** **** 6969</p>
+                            <p>Expiry Date: 02/2015</p>
+                        </section>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <section class="thick-marg-bottom">
+                                    <div class="row">
+                                        <div class="col-md-6 thick-marg-bottom">
+                                            <button class="btn btn-info btn-block js-edit-btn active" type="button"
+                                                    id="edit-payment-2"
+                                                    name="edit_payment_2" title="edit payment">
+                                                Edit
+                                            </button>
+                                        </div>
+                                        <div class="col-md-6 thick-marg-bottom">
+                                            <button class="btn btn-default btn-block" type="button" id="delete-card-2"
+                                                    name="delete_card_2" title="Delete Card">
+                                                Delete
+                                            </button>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="clearfix no-pad hidden js-hidden-content">
+                        <form class="js-form" action="#" method="post">
+                            <section>
+                                <div href="#" target="_blank" class="master-card larger icon-positioning" title="My Orders">Visa
+                                    Card</div>
+                            </section>
+                            <section class="thick-marg-bottom">
+                                <section class="thick-marg-bottom">
+                                    <label for="edit-card-name-2"><h4>Card Holder <span class="color-red">*</span></h4>
+                                    </label>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <input required id="edit-card-name-2" class="form-control" type="text" name="edit_card_name_2" minlength="1" placeholder="Edit Card Name" value="M Jordan"/>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="thick-marg-bottom">
+                                    <label for="edit-card-number-2"><h4>Card Number <span class="color-red">*</span></h4>
+                                    </label>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <input id="edit-card-number-2" class="form-control" type="text" disabled name="edit_card_number_2" minlength="16" placeholder="Card Number" value="**** **** **** 6969"/>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <label><h4>Expiry Date <span class="color-red">*</span></h4>
+                                    </label>
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-6 col-xs-6">
+                                            <select required id="expiry-month-2" class="form-control" name="expiry_month_2">
+                                                <option label="Month" value="-1" disabled="disabled">Month</option>
+                                                <option label="01" value="1">01</option>
+                                                <option label="02" value="2" selected="selected">02</option>
+                                                <option label="03" value="3">03</option>
+                                                <option label="04" value="4">04</option>
+                                                <option label="05" value="5">05</option>
+                                                <option label="06" value="6">06</option>
+                                                <option label="07" value="7">07</option>
+                                                <option label="08" value="8">08</option>
+                                                <option label="09" value="9">09</option>
+                                                <option label="10" value="10">10</option>
+                                                <option label="11" value="11">11</option>
+                                                <option label="12" value="12">12</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-6">
+                                            <select id="expiry-year-2" class="form-control" name="expiry_year_2">
+                                                <option label="Year" value="-1" disabled="disabled">Year</option>
+                                                <option label="01" value="1">01</option>
+                                                <option label="02" value="2" selected="selected">02</option>
+                                                <option label="03" value="3">03</option>
+                                                <option label="04" value="4">04</option>
+                                                <option label="05" value="5">05</option>
+                                                <option label="06" value="6">06</option>
+                                                <option label="07" value="7">07</option>
+                                                <option label="08" value="8">08</option>
+                                                <option label="09" value="9">09</option>
+                                                <option label="10" value="10">10</option>
+                                                <option label="11" value="11">11</option>
+                                                <option label="12" value="12">12</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <section class="thick-marg-bottom">
+                                        <div class="row">
+                                            <div class="col-md-6 thick-marg-bottom">
+                                                <button class="btn btn-info btn-block js-update-btn" type="submit"
+                                                        id="update-payment-info-2"
+                                                        name="update_payment_info_2" title="update-payment-info">
+                                                    Update
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+                <div class="col-md-4 edit-card-container">
+                    <section class="clearfix no-pad">
+                        <section>
+                            <div href="#" target="_blank" class="maestro-card larger icon-positioning" title="My Orders">Master
+                                Card</div>
+                        </section>
+                        <section class="thick-marg-bottom">
+                            <p>M Jordan</p>
+                            <p>**** ***** **** 6969</p>
+                            <p>Expiry Date: 02/2015</p>
+                        </section>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <section class="thick-marg-bottom">
+                                    <div class="row">
+                                        <div class="col-md-6 thick-marg-bottom">
+                                            <button class="btn btn-info btn-block js-edit-btn active" type="button"
+                                                    id="edit-payment-3"
+                                                    name="edit_payment_3" title="edit payment">
+                                                Edit
+                                            </button>
+                                        </div>
+                                        <div class="col-md-6 thick-marg-bottom">
+                                            <button class="btn btn-default btn-block" type="button" id="delete-card-3"
+                                                    name="delete_card_3" title="Delete Card">
+                                                Delete
+                                            </button>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="clearfix no-pad hidden js-hidden-content">
+                        <form class="js-form" action="#" method="post">
+                            <section>
+                                <div href="#" target="_blank" class="maestro-card larger icon-positioning" title="My Orders">Visa
+                                    Card</div>
+                            </section>
+                            <section class="thick-marg-bottom">
+                                <section class="thick-marg-bottom">
+                                    <label for="edit-card-name-3"><h4>Card Holder <span class="color-red">*</span></h4>
+                                    </label>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <input required id="edit-card-name-3" class="form-control" type="text" name="edit_card_name_3" minlength="1" placeholder="Edit Card Name" value="M Jordan"/>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="thick-marg-bottom">
+                                    <label for="edit-card-number-3"><h4>Card Number <span class="color-red">*</span></h4>
+                                    </label>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <input id="edit-card-number-3" class="form-control" type="text" disabled name="edit_card_number_3" minlength="16" placeholder="Card Number" value="**** **** **** 6969"/>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <label><h4>Expiry Date <span class="color-red">*</span></h4>
+                                    </label>
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-6 col-xs-6">
+                                            <select required id="expiry-month-3" class="form-control" name="expiry_month_3">
+                                                <option label="Month" value="-1" disabled="disabled">Month</option>
+                                                <option label="01" value="1">01</option>
+                                                <option label="02" value="2" selected="selected">02</option>
+                                                <option label="03" value="3">03</option>
+                                                <option label="04" value="4">04</option>
+                                                <option label="05" value="5">05</option>
+                                                <option label="06" value="6">06</option>
+                                                <option label="07" value="7">07</option>
+                                                <option label="08" value="8">08</option>
+                                                <option label="09" value="9">09</option>
+                                                <option label="10" value="10">10</option>
+                                                <option label="11" value="11">11</option>
+                                                <option label="12" value="12">12</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-6">
+                                            <select id="expiry-year-3" class="form-control" name="expiry_year_3">
+                                                <option label="Year" value="-1" disabled="disabled">Year</option>
+                                                <option label="01" value="1">01</option>
+                                                <option label="02" value="2" selected="selected">02</option>
+                                                <option label="03" value="3">03</option>
+                                                <option label="04" value="4">04</option>
+                                                <option label="05" value="5">05</option>
+                                                <option label="06" value="6">06</option>
+                                                <option label="07" value="7">07</option>
+                                                <option label="08" value="8">08</option>
+                                                <option label="09" value="9">09</option>
+                                                <option label="10" value="10">10</option>
+                                                <option label="11" value="11">11</option>
+                                                <option label="12" value="12">12</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <section class="thick-marg-bottom">
+                                        <div class="row">
+                                            <div class="col-md-6 thick-marg-bottom">
+                                                <button class="btn btn-info btn-block js-update-btn" type="submit" id="update-payment-info-3" name="update_payment_info" title="update-payment-info">
+                                                    Update
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 edit-card-container">
+                    <section class="clearfix no-pad">
+                        <section>
+                            <div href="#" target="_blank" class="american-exp-card larger icon-positioning" title="My Orders">Visa
+                                Card</div>
+                        </section>
+                        <section class="thick-marg-bottom">
+                            <p>M Jordan</p>
+                            <p>**** ***** **** 6969</p>
+                            <p>Expiry Date: 02/2015</p>
+                        </section>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <section class="thick-marg-bottom">
+                                    <div class="row">
+                                        <div class="col-md-6 thick-marg-bottom">
+                                            <button class="btn btn-info btn-block js-edit-btn active" type="button"
+                                                    id="edit-payment-4"
+                                                    name="edit_payment_4" title="edit payment">
+                                                Edit
+                                            </button>
+                                        </div>
+                                        <div class="col-md-6 thick-marg-bottom">
+                                            <button class="btn btn-default btn-block" type="button" id="update-password-4"
+                                                    name="update_password_4" title="Update Password">
+                                                Delete
+                                            </button>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="clearfix no-pad hidden js-hidden-content">
+                        <form class="js-form" action="#" method="post">
+                            <section>
+                                <div href="#" target="_blank" class="american-exp-card larger icon-positioning" title="My Orders">Visa
+                                    Card</div>
+                            </section>
+                            <section class="thick-marg-bottom">
+                                <section class="thick-marg-bottom">
+                                    <label for="edit-card-name-4"><h4>Card Holder <span class="color-red">*</span></h4>
+                                    </label>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <input required id="edit-card-name-4" class="form-control" type="text" name="edit_card_name_4" minlength="1" placeholder="Edit Card Name" value="M Jordan"/>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="thick-marg-bottom">
+                                    <label for="edit-card-number-4"><h4>Card Number <span class="color-red">*</span></h4>
+                                    </label>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <input id="edit-card-number-4" class="form-control" type="text" disabled name="edit_card_number_4" minlength="16" placeholder="Card Number" value="**** **** **** 6969"/>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <label><h4>Expiry Date <span class="color-red">*</span></h4>
+                                    </label>
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-6 col-xs-6">
+                                            <select required id="expiry-month-4" class="form-control" name="expiry_month_4">
+                                                <option label="Month" value="-1" disabled="disabled">Month</option>
+                                                <option label="01" value="1">01</option>
+                                                <option label="02" value="2" selected="selected">02</option>
+                                                <option label="03" value="3">03</option>
+                                                <option label="04" value="4">04</option>
+                                                <option label="05" value="5">05</option>
+                                                <option label="06" value="6">06</option>
+                                                <option label="07" value="7">07</option>
+                                                <option label="08" value="8">08</option>
+                                                <option label="09" value="9">09</option>
+                                                <option label="10" value="10">10</option>
+                                                <option label="11" value="11">11</option>
+                                                <option label="12" value="12">12</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-6">
+                                            <select id="expiry-year-4" class="form-control" name="expiry_month_4">
+                                                <option label="Year" value="-1" disabled="disabled">Year</option>
+                                                <option label="01" value="1">01</option>
+                                                <option label="02" value="2" selected="selected">02</option>
+                                                <option label="03" value="3">03</option>
+                                                <option label="04" value="4">04</option>
+                                                <option label="05" value="5">05</option>
+                                                <option label="06" value="6">06</option>
+                                                <option label="07" value="7">07</option>
+                                                <option label="08" value="8">08</option>
+                                                <option label="09" value="9">09</option>
+                                                <option label="10" value="10">10</option>
+                                                <option label="11" value="11">11</option>
+                                                <option label="12" value="12">12</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <section class="thick-marg-bottom">
+                                        <div class="row">
+                                            <div class="col-md-6 thick-marg-bottom">
+                                                <button class="btn btn-info btn-block js-update-btn" type="submit"
+                                                        id="update-payment-info-4"
+                                                        name="update_payment_info_4" title="update-payment-info">
+                                                    Update
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+                <div class="col-md-4 edit-card-container">
+                    <section class="clearfix no-pad">
+                        <section>
+                            <div href="#" target="_blank" class="diners-club-card larger icon-positioning" title="My Orders">Master
+                                Card</div>
+                        </section>
+                        <section class="thick-marg-bottom">
+                            <p>M Jordan</p>
+                            <p>**** ***** **** 6969</p>
+                            <p>Expiry Date: 02/2015</p>
+                        </section>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <section class="thick-marg-bottom">
+                                    <div class="row">
+                                        <div class="col-md-6 thick-marg-bottom">
+                                            <button class="btn btn-info btn-block js-edit-btn active" type="button"
+                                                    id="edit-payment-5"
+                                                    name="edit_payment_5" title="edit payment">
+                                                Edit
+                                            </button>
+                                        </div>
+                                        <div class="col-md-6 thick-marg-bottom">
+                                            <button class="btn btn-default btn-block" type="button" id="delete-card-5"
+                                                    name="delete_card_5" title="Delete Card">
+                                                Delete
+                                            </button>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="clearfix no-pad hidden js-hidden-content">
+                        <form class="js-form" action="#" method="post">
+                            <section>
+                                <div href="#" target="_blank" class="diners-club-card larger icon-positioning" title="My Orders">Visa
+                                    Card</div>
+                            </section>
+                            <section class="thick-marg-bottom">
+                                <section class="thick-marg-bottom">
+                                    <label for="edit-card-name-5"><h4>Card Holder <span class="color-red">*</span></h4>
+                                    </label>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <input required id="edit-card-name-5" class="form-control" type="text" name="edit_card_name_5" minlength="1" placeholder="Edit Card Name" value="M Jordan"/>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="thick-marg-bottom">
+                                    <label for="edit-card-number-5"><h4>Card Number <span class="color-red">*</span></h4>
+                                    </label>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <input id="edit-card-number-5" class="form-control" type="text" disabled name="edit_card_number_5" minlength="16" placeholder="Card Number" value="**** **** **** 6969"/>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <label><h4>Expiry Date <span class="color-red">*</span></h4>
+                                    </label>
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-6 col-xs-6">
+                                            <select required id="expiry-month-5" class="form-control" name="expiry_month_5">
+                                                <option label="Month" value="-1" disabled="disabled">Month</option>
+                                                <option label="01" value="1">01</option>
+                                                <option label="02" value="2" selected="selected">02</option>
+                                                <option label="03" value="3">03</option>
+                                                <option label="04" value="4">04</option>
+                                                <option label="05" value="5">05</option>
+                                                <option label="06" value="6">06</option>
+                                                <option label="07" value="7">07</option>
+                                                <option label="08" value="8">08</option>
+                                                <option label="09" value="9">09</option>
+                                                <option label="10" value="10">10</option>
+                                                <option label="11" value="11">11</option>
+                                                <option label="12" value="12">12</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-6">
+                                            <select id="expiry-year-5" class="form-control" name="expiry_year_5 ">
+                                                <option label="Year" value="-1" disabled="disabled">Year</option>
+                                                <option label="01" value="1">01</option>
+                                                <option label="02" value="2" selected="selected">02</option>
+                                                <option label="03" value="3">03</option>
+                                                <option label="04" value="4">04</option>
+                                                <option label="05" value="5">05</option>
+                                                <option label="06" value="6">06</option>
+                                                <option label="07" value="7">07</option>
+                                                <option label="08" value="8">08</option>
+                                                <option label="09" value="9">09</option>
+                                                <option label="10" value="10">10</option>
+                                                <option label="11" value="11">11</option>
+                                                <option label="12" value="12">12</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <section class="thick-marg-bottom">
+                                        <div class="row">
+                                            <div class="col-md-6 thick-marg-bottom">
+                                                <button class="btn btn-info btn-block js-update-btn" type="submit"
+                                                        id="update-payment-info-5"
+                                                        name="update_payment_info_5" title="update-payment-info">
+                                                    Update
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+                <div class="col-md-4 edit-card-container">
+                    <section class="clearfix no-pad">
+                        <section>
+                            <div href="#" target="_blank" class="hof-card-2 larger icon-positioning" title="My Orders">Master
+                                Card</div>
+                        </section>
+                        <section class="thick-marg-bottom">
+                            <p>M Jordan</p>
+                            <p>**** ***** **** 6969</p>
+                            <p>Expiry Date: 02/2015</p>
+                        </section>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <section class="thick-marg-bottom">
+                                    <div class="row">
+                                        <div class="col-md-6 thick-marg-bottom">
+                                            <button class="btn btn-info btn-block js-edit-btn active" type="button" id="edit-payment-6" name="edit_payment_6" title="edit payment">
+                                                Edit
+                                            </button>
+                                        </div>
+                                        <div class="col-md-6 thick-marg-bottom">
+                                            <button class="btn btn-default btn-block" type="button" id="delete-card-6" name="delete_card_6" title="Delete Card">
+                                                Delete
+                                            </button>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="clearfix no-pad hidden js-hidden-content">
+                        <form class="js-form" action="#" method="post">
+                            <section>
+                                <div href="#" target="_blank" class="hof-card-2 larger icon-positioning" title="My Orders">Visa
+                                    Card</div>
+                            </section>
+                            <section class="thick-marg-bottom">
+                                <section class="thick-marg-bottom">
+                                    <label for="edit-card-name-6"><h4>Card Holder <span class="color-red">*</span></h4>
+                                    </label>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <input required id="edit-card-name-6" class="form-control" type="text" name="edit_card_name_6" minlength="1" placeholder="Edit Card Name" value="M Jordan"/>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="thick-marg-bottom">
+                                    <label for="edit-card-number-6"><h4>Card Number <span class="color-red">*</span></h4>
+                                    </label>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <input id="edit-card-number-6" class="form-control" type="text" disabled name="edit_card_number_6" minlength="16" placeholder="Card Number" value="**** **** **** 6969"/>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <label><h4>Expiry Date <span class="color-red">*</span></h4>
+                                    </label>
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-6 col-xs-6">
+                                            <select required id="expiry-month-6" class="form-control" name="expiry_month_6">
+                                                <option label="Month" value="-1" disabled="disabled">Month</option>
+                                                <option label="01" value="1">01</option>
+                                                <option label="02" value="2" selected="selected">02</option>
+                                                <option label="03" value="3">03</option>
+                                                <option label="04" value="4">04</option>
+                                                <option label="05" value="5">05</option>
+                                                <option label="06" value="6">06</option>
+                                                <option label="07" value="7">07</option>
+                                                <option label="08" value="8">08</option>
+                                                <option label="09" value="9">09</option>
+                                                <option label="10" value="10">10</option>
+                                                <option label="11" value="11">11</option>
+                                                <option label="12" value="12">12</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-6">
+                                            <select id="expiry-year-6" class="form-control" name="expiry_year_6 ">
+                                                <option label="Year" value="-1" disabled="disabled">Year</option>
+                                                <option label="01" value="1">01</option>
+                                                <option label="02" value="2" selected="selected">02</option>
+                                                <option label="03" value="3">03</option>
+                                                <option label="04" value="4">04</option>
+                                                <option label="05" value="5">05</option>
+                                                <option label="06" value="6">06</option>
+                                                <option label="07" value="7">07</option>
+                                                <option label="08" value="8">08</option>
+                                                <option label="09" value="9">09</option>
+                                                <option label="10" value="10">10</option>
+                                                <option label="11" value="11">11</option>
+                                                <option label="12" value="12">12</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <section class="thick-marg-bottom">
+                                        <div class="row">
+                                            <div class="col-md-6 thick-marg-bottom">
+                                                <button class="btn btn-info btn-block js-update-btn" type="submit" id="update-payment-info-6" name="update_payment_info" title="update-payment-info">
+                                                    Update
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+
+            </div>
+            <div class="row">
+                <section class="col-md-4">
+                    <section class="thick-marg-bottom">
+                        <a href="#" class="btn btn-default btn-return btn-block btn-lg">Back To My Account</a>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+@@include("_footer-secure.html")

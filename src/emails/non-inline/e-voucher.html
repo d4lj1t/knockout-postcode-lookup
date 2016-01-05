@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv=Content-Type>
+    <meta content="initial-scale=1.0" name=viewport>
+    <!-- So that mobile webkit will display zoomed in -->
+    <meta content="telephone=no" name=format-detection>
+    <!-- disable auto telephone linking in iOS -->
+    <title>TESTED - eVoucher</title>
+    <link rel="shortcut icon" href="../assets/images/favicon.ico">
+
+    @@include("_css.html")
+
+    <style data-ignore=ignore>
+        @media screen and (max-width: 599px) {
+            table[class="force-row"], table[class="container"], .force-row, .container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            td[class*="container-padding"], .container-padding {
+                padding-left: 10px !important;
+                padding-right: 10px !important
+            }
+
+        }
+        @media screen and (max-width: 400px) {
+            .header-text {
+                float: left;
+                padding-left: 10px;
+                text-align: left !important;
+                width: auto !important;
+            }
+            .header-logo {
+                float: left;
+            }
+
+        }
+    </style>
+</head>
+<!-- 100% background wrapper (grey background) -->
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td align="center" valign="top" width="100%"> <!-- 600px container (white background)) -->
+            <table border="0" cellpadding="0" cellspacing="0" width="600" class="container">
+                <!-- Header -->
+                @@include("_header.html")
+                <!-- Header END -->
+                <!-- Main Content -->
+                <tr class="background-white">
+                    <td align=left class="container-padding content pad-side pad-top background-white"> <!-- example: two columns (simple) -->
+                        <!-- Left Content -->
+                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="580" class="force-row">
+                            <tr>
+                                <td>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td valign="top" class="col font-lg text-align-left pad-bottom line-height-lg"><strong>Dear John Smith</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="col font-sm text-align-left thick-pad-bottom line-height-sm"><strong>Order Number:</strong> 13524361</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="col font-sm text-align-left thick-pad-bottom line-height-sm">We're refunding the part of your order which was paid for using a voucher.</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="col font-sm text-align-left thick-pad-bottom line-height-sm">Feel free to <a href="#">contact us</a> if you have any questions.</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="col font-md line-height-md text-align-left border-bottom"><strong>eVoucher code</strong></td>
+                                            <td class="border-bottom">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" valign="top" class="col text-align-left font-sm line-height-sm thin-pad-top">It can be spent on the House Of Fraser <a href="#">website</a> and <a href="#">app</a>.</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" valign="top" class="col text-align-left font-sm line-height-sm pad-top-bottom">Unfortunately it cannot be used to pay at a till in-store.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+
+                                                <table border="0" cellspacing="0" cellpadding="0" width="213" style="width:159.75pt;">
+                                                    <tr>
+                                                        <td valign="top">
+                                                            <img border="0" width="213" height="44" id="e-voucher-top" class="display-block pad-top" src="http://hof-uxtest.cloudapp.net/src/master/emails/assets/images/evoucher-top.png">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" class="background-pink text-align-center pad-top font-lg line-height-lg">
+                                                            <strong>&pound;30.70</strong>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" class="background-pink text-align-center pad-top no-marg display-block">
+                                                            eVoucher Code:
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" class="background-pink text-align-center pad-top font-sm line-height-sm no-pad">
+                                                            <span class="color-white">iSNTPFVkvu</span> at the checkout.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top">
+                                                            <img border="0" width="213" height="18" id="e-voucher-bottom" class="display-block" src="http://hof-uxtest.cloudapp.net/src/master/emails/assets/images/evoucher-bottom.png">
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="col font-sm text-align-left thick-pad-top-bottom line-height-sm"><strong>Date Issued:</strong> 16 september 2014</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="col font-sm text-align-left thick-pad-bottom line-height-sm">This eVoucher expires 24 months after the date is was issued. You'll lose any remaining balance when it expires. This eVoucher expires on 16 September 2016.</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--/600px container -->
+                    </td>
+                <tr>
+                    <td colspan="2" valign="top" class="col container-padding font-sm pad-side  background-white line-height-sm text-align-left"> Yours sincerely</td>
+                </tr>
+                <tr>
+                    <td colspan="2" valign="top" class="col container-padding font-sm line-height-sm background-white text-align-left pad-left pad-right thick-pad-bottom"> The House of fraser Team</td>
+                </tr>
+                <!-- Main Content END -->
+                <!-- Footer -->
+                @@include("_footer.html")
+                <!-- Footer END -->
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+<!--/100% background wrapper-->
+</html>

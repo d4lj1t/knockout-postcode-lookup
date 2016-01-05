@@ -1,0 +1,538 @@
+@icons-path : '../../images/icons/';
+
+.icon-center(@y, @x) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -@y 0 0 -@x;
+}
+.icon-hamburger {
+    background: data-uri('@{icons-path}hamburger.svg') no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-indent: -9999px;
+    &.icon-center {
+        .icon-center(10px, 10px)
+    }
+}
+.icon-hamburger-default {
+    background-position: 0 0;
+}
+.has-icon.hover .icon-hamburger-default {
+    background-position: 0 -20px;
+}
+.icon-account {
+    .icon-account();
+}
+.icon-account() {
+    background: data-uri('@{icons-path}profile.svg') no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-indent: -9999px;
+    background-size: cover;
+    &.icon-center {
+        .icon-center(10px, 10px)
+    }
+}
+.icon-account-white {
+    .icon-account-white();
+}
+.icon-account-white() {
+    background-position: 0 0;
+}
+.icon-account-black,
+.hover .icon-account-hover-black,
+.hover .has-icon .icon-account-white {
+    background-position: 0 -20px;
+}
+.icon-account-pink { //
+    .icon-account-pink();
+}
+.icon-account-pink() {
+    background-position: 0 -40px;
+}
+.icon-account-default {
+    .icon-account();
+    .icon-account-white();
+    .icon-center();
+}
+.icon-bag {
+    background: data-uri('@{icons-path}bag.svg') no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-indent: -99999px;
+    background-size: cover;
+    &.icon-center {
+        .icon-center(10px, 10px)
+    }
+}
+@icon-bag-height : 20px;
+.icon-bag-default {
+    background-position: 0 0;
+}
+.icon-bag-black {
+    background-position: 0 -@icon-bag-height;
+}
+.icon-bag-pink {
+    background-position: 0 -2 * @icon-bag-height;
+}
+.icon-bag-gray {
+    background-position: 0 -3 * @icon-bag-height;
+}
+.has-icon.hover .icon-bag-default {
+    background-position: 0 -20px;
+}
+
+
+.icon-bag-zero {
+    background: data-uri('@{icons-path}bag-with-zero.svg') no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-indent: -99999px;
+    background-size: cover;
+    &.icon-center {
+        .icon-center(10px, 10px)
+    }
+}
+@icon-bag-height : 20px;
+.icon-bag-zero-default {
+    background-position: 0 0;
+}
+.icon-bag-zero-black {
+    background-position: 0 -@icon-bag-height;
+}
+.icon-bag-zero-pink {
+    background-position: 0 -2 * @icon-bag-height;
+}
+.icon-bag-zero-gray {
+    background-position: 0 -3 * @icon-bag-height;
+}
+.has-icon.hover .icon-bag-zero-default {
+    background-position: 0 -20px;
+}
+
+
+.icon-search {
+    .icon-search();
+}
+.icon-search() {
+    background: data-uri('@{icons-path}search.svg') no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-indent: -9999px;
+    overflow: hidden; 
+    &.icon-center {
+        .icon-center(10px, 10px)
+    }
+}
+.icon-search-white {
+    .icon-search-white();
+}
+.icon-search-white() {
+    background-position: 0 -40px;
+}
+.icon-search-default {
+    .icon-search();
+    .icon-search-white();
+    .icon-center();
+}
+.icon-search-black,
+.hover .icon-search-hover-black {
+    background-position: 0 0px;
+}
+.icon-close {
+    .icon-close(@color-black)
+}
+.icon-close(@color) {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    &:before {
+        content: "×";
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 2.3rem;
+        line-height: 30px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        color: @color;
+        font-weight: normal;
+    }
+}
+
+.icon-close-circle {
+    .icon-close(@color-black);
+    background: @gray-lighter;
+    border-radius: 100%;
+}
+
+.icon-chevron-right {
+    .icon-chevron-right();
+}
+.icon-chevron-right() {
+    display: inline-block;
+    border-right: 2px solid #b3b3b3;
+    border-top: 2px solid #b3b3b3;
+    width: 9px;
+    height: 9px;
+    .rotate(45deg);
+    &.icon-center {
+        .icon-center(5px, 5px);
+    }
+}
+.icon-chevron-right-white {
+    border-color: @color-white;
+}
+.icon-chevron-right-gray {
+    border-color: @gray-light;
+}
+.icon-chevron-right-pink {
+    border-color: @color-hof-pink;
+}
+.icon-chevron-right-black {
+    border-color: @color-black;
+}
+.icon-chevron-right-pale {
+    border-color: @gray-lighter;
+}
+.icon-chevron-left {
+    .icon-chevron-left();
+}
+.icon-chevron-left() {
+    display: inline-block;
+    border-left: 2px solid #b3b3b3;
+    border-bottom: 2px solid #b3b3b3;
+    width: 9px;
+    height: 9px;
+    .rotate(45deg);
+    &.icon-center {
+        .icon-center(5px, 5px);
+    }
+}
+.icon-chevron-left-white {
+    border-color: @color-white;
+}
+.icon-chevron-left-gray {
+    border-color: @gray-light;
+}
+.icon-chevron-left-pink {
+    border-color: @color-hof-pink;
+}
+.icon-chevron-left-black {
+    border-color: @color-black;
+}
+.icon-chevron-left-pale {
+    border-color: @gray-lighter;
+}
+.icon-css-chevron(@w, @h, @border, @color, @direction) {
+    width: @w;
+    height: @h;
+    .rotate(45deg);
+    position: absolute;
+    top: 50%;
+    margin: ceil((@h/2)*-1) 0 0 0;
+}
+.icon-css-chevron(@w, @h, @border, @color, @direction) when (@direction = left) {
+    border-left: @border solid @color;
+    border-bottom: @border solid @color;
+}
+.icon-css-chevron(@w, @h, @border, @color, @direction) when (@direction = right) {
+    border-right: @border solid @color;
+    border-top: @border solid @color;
+}
+.icon-block-plus,
+.icon-block-minus {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    background: #efefef;
+    &:after {
+        font-size: 1.4rem;
+        color: @color-black;
+    }
+}
+.icon-block-plus:after {
+    content: "+";
+}
+.icon-block-minus:after {
+    content: "-";
+}
+.has-icon:hover,
+.has-icon.hover {
+
+    .icon-block-plus,
+    .icon-block-minus {
+        background: #b3b3b3;
+    }
+}
+.icon-unavailable {
+    width: 30px;
+    height: 30px;
+    background: data-uri('@{icons-path}unavailable.svg');
+}
+.icon-trash {
+    background: data-uri('@{icons-path}trash.svg');
+    background-repeat: no-repeat;
+    display: block;
+    .icon-trash-small();
+}
+@icon-trash-height : 18px;
+.icon-trash-small {
+    width: 12px;
+    height: @icon-trash-height;
+    background-size: cover;
+}
+.icon-trash-black,
+.icon-trash-hover-black:hover {
+    background-position: 0 0;
+}
+.icon-trash-pink,
+.icon-trash-hover-pink:hover {
+    background-position: 0 -1 * @icon-trash-height;
+}
+.icon-trash-white,
+.icon-trash-hover-white:hover {
+    background-position: 0 -2 * @icon-trash-height;
+}
+.icon-trash-gray,
+.icon-trash-hover-gray:hover {
+    background-position: 0 -3 * @icon-trash-height;
+}
+
+// Dummy icon
+.icon-delivery {
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &.icon-delivery-express {
+        background-image: data-uri('@{icons-path}delivery-express.svg');
+    }
+
+    &.icon-delivery-standard {
+        background-image: data-uri('@{icons-path}delivery-standard.svg');
+    }
+
+    &.icon-delivery-international {
+        background-image: data-uri('@{icons-path}delivery-international.svg');
+    }
+}
+
+/**
+ * Individual Icons
+ */
+.facebook {
+    .icon-positioning;
+    background-image: data-uri('@{icons-path}facebook.svg');
+}
+.twitter {
+    .icon-positioning;
+    background-image: data-uri('@{icons-path}twitter.svg');
+}
+.googlePlus {
+    .icon-positioning;
+    background-image: data-uri('@{icons-path}googleplus.svg');
+}
+.instagram {
+    .icon-positioning;
+    background-image: data-uri('@{icons-path}instagram.svg');
+}
+.pinterest {
+    .icon-positioning;
+    background-image: data-uri('@{icons-path}pinterest.svg');
+}
+.youTube {
+    .icon-positioning;
+    background-image: data-uri('@{icons-path}youtube.svg');
+}
+.email {
+    .icon-positioning;
+    background-image: data-uri('@{icons-path}email.svg');
+}
+.theBlog {
+    .icon-positioning;
+    background-image: data-uri('@{icons-path}theblog.svg');
+}
+.hof-card-1 {
+    background: data-uri('@{icons-path}card-hof-account.svg');
+}
+.hof-card-2 {
+    background: data-uri('@{icons-path}card-hof-recognition.svg');
+    &.larger{
+        background-size:100%;
+        height:69px;
+        width:69px;
+        &:hover{
+            background-position: 0 0;
+        }
+    }
+}
+.master-card {
+    background: data-uri('@{icons-path}card-hofmastercard.svg');
+    &.larger{
+        background-size:100%;
+        height:69px;
+        width:69px;
+        &:hover{
+            background-position: 0 0;
+        }
+
+    }
+}
+.visa-card {
+    background: data-uri('@{icons-path}card-visa.svg');
+    &.larger{
+        background-size:100%;
+        height:69px;
+        width:69px;
+        &:hover{
+            background-position: 0 0;
+        }
+    }
+}
+.maestro-card {
+    background: data-uri('@{icons-path}card-maestro.svg');
+    &.larger{
+        background-size:100%;
+        height:69px;
+        width:69px;
+        &:hover{
+            background-position: 0 0;
+        }
+
+    }
+}
+.diners-club-card {
+    background: data-uri('@{icons-path}card-diners.svg');
+    &.larger{
+        background-size:100%;
+        height:69px;
+        width:69px;
+        &:hover{
+            background-position: 0 0;
+        }
+
+    }
+}
+.american-exp-card {
+    background: data-uri('@{icons-path}card-AMEX.svg');
+    &.larger{
+        background-size:100%;
+        height:69px;
+        width:69px;
+        &:hover{
+            background-position: 0 0;
+        }
+
+    }
+}
+.paypal-card {
+    background: data-uri('@{icons-path}card-paypal.svg');
+    &.larger{
+        background-size:100%;
+        height:69px;
+        width:69px;
+        &:hover{
+            background-position: 0 0;
+        }
+
+    }
+}
+.amexSafekey {
+    width: 91px;
+    height: 31px;
+    background: data-uri('@{icons-path}safekey.svg');
+}
+.geotrust {
+    width: 106px;
+    height: 18px;
+    background: data-uri('@{icons-path}geotrust.svg');
+    top: 9px;
+}
+.mastercard {
+    width: 74px;
+    height: 27px;
+    background: data-uri('@{icons-path}mastercardsecurecode.svg');
+    top: 5px;
+}
+.visa-verify {
+    width: 61px;
+    height: 26px;
+    background: data-uri('@{icons-path}verifiedvisa.svg');
+    top: 5px;
+}
+
+.icon-my-order {
+    .icon-positioning;
+    background-image: data-uri('@{icons-path}myorder.svg');
+}
+.icon-personal-details {
+    .icon-positioning;
+    background-image: data-uri('@{icons-path}personal-details.svg');
+}
+.icon-recognition {
+    .icon-positioning;
+    background-image: data-uri('@{icons-path}recognition.svg');
+}
+.icon-payment {
+    .icon-positioning;
+    background-image: data-uri('@{icons-path}payment.svg');
+}
+/**
+ * button Icons
+ */
+.btn-return:before {
+    content: '';
+    border-left: 2px solid #333;
+    border-bottom: 2px solid #333;
+    width: 8px;
+    height: 8px;
+    .rotate(45deg);
+    position: relative;
+    display: inline-block;
+    .thin-marg-side();
+}
+//left icons with content on right
+//string icons
+.icon-positioning {
+    display: block;
+    text-indent: -9999em;
+    width: 35px;
+    height: 35px;
+    background-size: 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    &:hover {
+        background-position: 0 66%;
+    }
+}
+
+
+.infinite-scroll-btn .label .arrow {
+    display: block;
+    width: 22px;
+    height: 12px;
+    margin: 0 auto;
+    background-image: data-uri("@{icons-path}icons.svg");
+    background-position: -5px -2010px;
+}
+
+.icon-cursor-zoom {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: data-uri("@{icons-path}cursor-zoom-plus.png") no-repeat left top;
+}

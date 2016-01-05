@@ -1,0 +1,42 @@
+/*
+Fix components in styleguide
+*/
+
+// Import Bootstrap framework variables to satisfy some dependencies
+@import "../bootstrap/less/variables.less";
+
+// Import project variables to use them in order styleguide to be as close as possible to original
+@import '_variables.less';
+
+// Some helper minxins
+.clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Fix styleguide inability to handle float elements 
+.kss-modifier__example {
+	.clearfix();
+}
+
+// Megamenu component
+.responsive-nav {
+	background: @color-black;
+
+	nav {
+		float: left;
+		position: relative;
+	}
+}
+
+.flash-message {
+	.container {
+		width: 100%;
+	}
+}

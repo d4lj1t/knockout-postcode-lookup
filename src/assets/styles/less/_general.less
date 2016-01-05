@@ -1,0 +1,107 @@
+html, body {
+    line-height: 1.4rem;
+    font-family: @font-main-family;
+    font-size: @font-main-size;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    color: @color-links;
+    &:hover {
+        color: @color-links-hover;
+        text-decoration: none;
+    }
+    &.dark-link {
+	    color: @color-links-dark;
+	    &:hover {
+		    color: @color-links-hover;
+	    }
+    }
+    &.underline {
+	    text-decoration: underline;
+	    &:hover {
+		    text-decoration: underline;
+	    }
+    }
+}
+.no-touch a {
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+.touch a {
+    text-decoration: none;
+    &:active {
+        color: @color-links-hover;
+    }
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0 0 0.42857em;
+}
+.label-grey {
+    background: @gray-lighter;
+}
+.off-canvas-component .sub-level-heading {
+    padding-top: 0;
+}
+.main-container {
+    background: #FFF;
+    padding-bottom: 1em;
+    position: relative;
+}
+
+/**
+ * Menu list
+ */
+.menu-list {
+    a {
+        display: block;
+        padding: 10px 0;
+        border-top: 1px #d4cfcb solid;
+    }
+    li:first-child {
+        border-top: none;
+    }
+}
+.menu-list-bold {
+    a {
+        font-weight: bold;
+    }
+}
+
+/**
+ * Unit toggle 
+ */
+.unit-toggle {
+	background: @gray-lighter;
+	padding: 8px 10px;
+	display: inline-block;
+	.radio-inline input[type="radio"] {
+		margin-left: -18px;
+		margin-top: 2px;
+	}
+}
+
+
+@media screen and (max-width: @screen-sm) {
+    .pull-left-xs {
+        float: left !important;
+    }
+    .pull-right-xs {
+        float: right !important;
+    }
+    .text-left-xs {
+        text-align: left !important;
+    }
+    .text-right-xs {
+        text-align: right !important;
+    }
+    .pad-bottom-xs {
+        padding-bottom: @helper-standard;
+    }
+}

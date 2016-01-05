@@ -1,0 +1,47 @@
+// itinerary
+.fixed-pos {
+    position: fixed;
+    z-index: 1000;
+    top: 40px;
+    /*width: 374px !important;*/
+}
+.itinerary-fixed {
+    position: fixed;
+    top: 0;
+}
+.itinerary-snapped {
+    position: absolute;
+    right: 8px;
+    bottom: -2px;
+}
+/*scroll to top*/
+.infinite-scroll-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 100;
+    width: 45px;
+    height: 70px;
+    background: #efefef;
+    opacity: .8;
+    border: 1px #CCC solid;
+    text-align: center;
+
+    &:hover {
+        opacity: 1;
+        background: #b3b3b3;
+    }
+
+    &.snapped {
+        position: absolute;
+        bottom: 70px;
+
+    }
+
+    @media (max-width: @screen-xs-max) {
+
+        display: none !important;
+
+    }
+}
+

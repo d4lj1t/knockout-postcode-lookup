@@ -1,0 +1,55 @@
+@@include("_header.html", {"classes_body" : "pagetype-my-bag js-pagetype-my-bag", "classes_header" : "signed-in secure"})
+@@include("_crumbtrail-checkout-step1.html")
+<main role="main" class="container main-container clearfix">
+    <a name="skiptocontent" id="skiptocontent"></a>
+    <section>
+        <div class="row">
+            <div class="col-md-12">
+                <!--left content-->
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="border-bottom thick-marg-top-bottom">
+                            <header><h1>My Bag...is empty</h1></header>
+                        </div>
+                        <section class="thick-marg-bottom">
+                            <a class="underline dark-link lead" href="#">Continue Shopping</a>
+                        </section>
+                    </div>
+                    <!--right-content - impulse(itinerary)-->
+                    <div class="col-md-4 clearfix">
+                        <div class="clearfix no-pad thick-marg-bottom">
+                            @@include("_mini-cart-checkout-col-empty.html", {"submit_button_text" : "Continue to Payment"})
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row">
+            <div class="col-md-8">
+                <section>
+                    <div class="row no-marg">
+                        <div class="col-md-12 border-top pad-top"></div>
+                    </div>
+
+                    <div class="row no-marg">
+                        <div class="col-md-7 hidden-xs hidden-sm">&nbsp;</div>
+                        <div class="col-md-5 no-pad">
+                            <button type="submit" class="btn btn-primary full-width marg-bottom" disabled>Secure
+                                Checkout
+                            </button>
+                            <p class="text-center">By submitting an order you agree to the House of Fraser
+                                <a
+                                        href="#">Terms & Conditions</a></p>
+                        </div>
+                    </div>
+                </section>
+                <div class="js-itinerary-snapped-trigger">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+@@include("_footer-secure.html")

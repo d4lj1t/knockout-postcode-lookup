@@ -1,0 +1,365 @@
+/**
+ * Margin & padding  Helpers
+ */
+// paddings
+.no-pad {
+    padding: 0 !important;
+}
+.pad {
+    padding: @helper-standard;
+}
+.pad-side {
+    padding: 0 @helper-standard;
+}
+.pad-left {
+    padding-left: @helper-standard;
+}
+.pad-right {
+    padding-right: @helper-standard;
+}
+.pad-top {
+    padding-top: @helper-standard;
+}
+.pad-bottom {
+    padding-bottom: @helper-standard;
+}
+.pad-top-bottom {
+    padding: @helper-standard 0;
+}
+
+.thick-pad {
+    padding: @helper-thick;
+}
+.thick-pad-side {
+    padding: 0 @helper-thick;
+}
+.thick-pad-left {
+    padding-left: @helper-thick;
+}
+.thick-pad-right {
+    padding-right: @helper-thick;
+}
+.thick-pad-top {
+    padding-top: @helper-thick;
+}
+.thick-pad-bottom {
+    padding-bottom: @helper-thick;
+}
+.thick-pad-top-bottom {
+    padding: @helper-thick 0;
+}
+
+.thin-pad {
+    padding: @helper-thin;
+}
+.thin-pad-side {
+    padding: 0 @helper-thin;
+}
+.thin-pad-left {
+    padding-left: @helper-thin;
+}
+.thin-pad-right {
+    padding-right: @helper-thin;
+}
+.thin-pad-top {
+    padding-top: @helper-thin;
+}
+.thin-pad-bottom {
+    padding-bottom: @helper-thin;
+}
+.thin-pad-top-bottom {
+    padding: @helper-thin 0;
+}
+
+.extra-thin-pad {
+    padding: @helper-extra-thin;
+}
+.extra-thin-pad-side {
+    padding: 0 @helper-extra-thin;
+}
+.extra-thin-pad-left {
+    padding-left: @helper-extra-thin;
+}
+.extra-thin-pad-right {
+    padding-right: @helper-extra-thin;
+}
+.extra-thin-pad-top {
+    padding-top: @helper-extra-thin;
+}
+.extra-thin-pad-bottom {
+    padding-bottom: @helper-extra-thin;
+}
+.extra-thin-pad-top-bottom {
+    padding: @helper-extra-thin 0;
+}
+
+.extra-thick-pad {
+    padding: @helper-extra-thick;
+}
+.extra-thick-pad-side {
+    padding: 0 @helper-extra-thick;
+}
+.extra-thick-pad-left {
+    padding-left: @helper-extra-thick;
+}
+.extra-thick-pad-right {
+    padding-right: @helper-extra-thick;
+}
+.extra-thick-pad-top {
+    padding-top: @helper-extra-thick;
+}
+.extra-thick-pad-bottom {
+    padding-bottom: @helper-extra-thick;
+}
+.extra-thick-pad-top-bottom {
+    padding: @helper-extra-thick 0;
+}
+
+//margins
+.no-marg {
+    margin: 0 !important;
+}
+.no-marg-bottom {
+    margin-bottom: 0 !important;
+}
+.no-marg-top {
+    margin-top: 0 !important;
+}
+.no-marg-left {
+    margin-left: 0 !important;
+}
+.no-marg-right {
+    margin-right: 0 !important;
+}
+.marg {
+    margin: @helper-standard;
+}
+.marg-side {
+    margin: 0 @helper-standard;
+}
+.marg-left {
+    margin-left: @helper-standard;
+}
+.marg-right {
+    margin-right: @helper-standard;
+}
+.marg-top {
+    margin-top: @helper-standard;
+}
+.marg-bottom {
+    margin-bottom: @helper-standard;
+}
+.marg-top-bottom {
+    margin: @helper-standard 0;
+}
+
+.thick-marg {
+    margin: @helper-thick;
+}
+.thick-marg-side {
+    margin: 0 @helper-thick;
+}
+.thick-marg-left {
+    margin-left: @helper-thick;
+}
+.thick-marg-right {
+    margin-right: @helper-thick;
+}
+.thick-marg-top {
+    margin-top: @helper-thick;
+}
+.thick-marg-bottom {
+    margin-bottom: @helper-thick;
+}
+.thick-marg-top-bottom {
+    margin: @helper-thick 0;
+}
+
+.thin-marg {
+    margin: @helper-thin;
+}
+.thin-marg-side {
+    margin: 0 @helper-thin;
+}
+.thin-marg-left {
+    margin-left: @helper-thin;
+}
+.thin-marg-right {
+    margin-right: @helper-thin;
+}
+.thin-marg-top {
+    margin-top: @helper-thin;
+}
+.thin-marg-bottom {
+    margin-bottom: @helper-thin;
+}
+.thin-marg-top-bottom {
+    margin: @helper-thin 0;
+}
+//helper classes
+.border-bottom {
+    border-bottom: @border;
+}
+.border-top {
+    border-top: @border;
+}
+
+.border(@color : @gray-lighter) {
+    border: 1px @color solid;
+}
+.border-top-bottom{
+    border-top: @border;
+    border-bottom: @border;
+}
+.border-side{
+    border-left: @border;
+    border-right: @border;
+}
+
+.inline{
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+.display-block {
+    display: block;
+}
+
+
+
+.btn-inline-block{
+    .btn-block();
+    display:inline-block;
+}
+
+.full-width {
+    width: 100%;
+}
+.relative {
+    position: relative;
+}
+.absolute{
+    position:absolute;
+}
+
+.text-vertical-top {
+    vertical-align: top;
+}
+.text-vertical-mid {
+    vertical-align: middle;
+}
+
+.line-height {
+    line-height: @line-height
+}
+
+.height-100{
+    min-height:100%!important;
+    height:100%;
+}
+
+.list-style-inside {
+    list-style: inside;
+}
+.list-style-disc {
+    list-style-type: disc;
+}
+
+.text-overflow {
+	.text-overflow();
+}
+
+//colors
+.color-red {
+    color: @color-red-sale;
+}
+.color-light-grey {
+    color: @gray-light;
+}
+
+.color-dark-grey{
+    color: @gray-dark
+}
+
+//backgrounds
+.background-grey {
+    background-color: @gray-lighter;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+
+.center-vertical(@offset) {
+    position: absolute;
+    left: 50%;
+    margin-left: -@offset;
+}
+
+.center-block {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    float: left;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/**
+ * Transitions
+ */
+.transition-height() {
+    transition: height @transition-time;
+}
+
+.transition-top() {
+    transition: top @transition-time;
+}
+
+.rotate {
+    -webkit-transition-duration: @transition-time-rotate;
+    -moz-transition-duration: @transition-time-rotate;
+    -o-transition-duration: @transition-time-rotate;
+    transition-duration: @transition-time-rotate;
+
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+
+    -webkit-transform:rotate(135deg)!important;
+    -moz-transform:rotate(135deg)!important;
+    -o-transform:rotate(135deg)!important;
+}
+
+/*
+ * Borders
+ */
+.border(@w, @type, @color){
+    border:@w @type @color;
+}
+
+/*
+ * Font size
+ */
+.font-size(@sizeValue : @font-main-size-value) {
+  @remValue: @sizeValue/@font-main-size-value;
+  @pxValue: (@sizeValue);
+  font-size: ~"@{pxValue}px"; 
+  font-size: ~"@{remValue}rem";
+
+}
+

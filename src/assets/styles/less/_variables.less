@@ -1,0 +1,137 @@
+/**
+ * Grid 
+ */
+@grid-gutter-width: 16px;
+@container-tablet: 100%;
+@container-desktop: ((944px + @grid-gutter-width));
+@container-large-desktop: ((1154px + @grid-gutter-width));
+
+
+/**
+ * Typography
+ */
+@font-main-family : 'Trebuchet MS', Helvetica, Arial, sans-serif;
+@font-family-sans-serif : 'Open Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+@font-family-sans-serif-condensed : 'Open Sans Condensed', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+@font-serif-family : 'Playfair Display', Baskerville, Georgia, serif;
+@font-main-size-value  : 14;
+@font-main-size : ~"@{font-main-size-value}px";
+@font-mobile-size-value : 14;
+@font-mobile-size: ~"@{font-mobile-size-value}px";
+
+@font-size-h1: floor((@font-size-base * 2));  // ~28px
+@font-size-h2: floor((@font-size-base * 1.7)); // ~24px
+@font-size-h3: ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h4: ceil((@font-size-base * 1.15)); // ~16px
+@font-size-h5: @font-size-base;
+@font-size-h6: ceil((@font-size-base * 0.85)); // ~12px
+
+
+/**
+ * Colors
+ */
+@color-hof-pink : #e10098;		//Pink
+@color-hof-bluex : #005091;		//Blue
+@color-hof-bluexsale : blue; 	//Blue
+@color-brand-sale : #009ca6;	//Teal
+@color-white : #FFF;			//White
+@color-black : #000;
+@color-red-sale : #da291c;		//Red
+@color-yellow-sale : #ffd100;	//Yellow
+
+
+@color-cm-bottom-bar: #000;		//Black
+
+@color-header-background : #202020;
+@color-links-hover : @color-hof-pink;
+@color-links: #254571;
+@color-links-secondary: @color-brand-sale;
+@color-links-dark: @text-color;
+@color-header-separator-line : #333;
+@color-nav-hat : #efefef;
+@color-nav-top-level : #254572;
+@color-flash-message-background : #fffdaf;
+
+
+
+/**
+ * Overwriting the Bootstrap
+ */
+// colors
+@gray-light: #666;
+@gray-dark: #444;
+@brand-info : #000;
+
+// text - alerts - success
+@state-success-text: @color-black;
+@alert-warning-text: @color-black;
+@alert-danger-text: @color-black;
+@alert-info-text: @color-black;
+
+
+
+ // buttons
+@btn-default-bg : #efefef;
+@btn-default-border : @btn-default-bg;
+
+@btn-primary-bg : #bad636;
+@btn-primary-bg-hover : #cee272;
+@btn-primary-color: #000;
+@btn-primary-border-color : #88a026;
+
+@header-offset-top: 3px;
+@header-logo-offset-top: 15px;
+
+@responsive-nav-width : 280px;
+@off-canvas-width : 280px;
+
+
+/**
+ * Top navigation menu
+ */
+@height-section-navs : 53px;
+@menu-level-2-width : 755px;
+@menu-level-2-column-width-hover : 755px;
+@menu-level-2-column-width : 200px;
+
+@transition-time : .3s;
+@transition-time-rotate: 0.3s;
+
+
+/**
+ * Product details page 
+ */
+@thumb-width : 90px;
+@delivery-info-heading-color : #363;
+@pdp-sidebar-width : 300px;
+
+
+/**
+ * Crumbtrail 
+ */
+@crumb-trail-xm-line-height : 40px;
+
+
+/**
+ * PLP 
+ */
+@plp-sidebar-width: 230px;
+
+
+/**
+ * general helper variables
+ */
+@line-height: 28px;
+@margin-text: .5em;
+@border: 1px solid #ccc;
+
+// Helpers: set standard padding and margin values, thick and thin
+@helper-standard: 10px;
+@helper-thick: @helper-standard*2;
+@helper-thin: @helper-standard/2;
+@helper-extra-thin: @helper-standard/3;
+@helper-extra-thick: @helper-standard*3;
+@highest-z-index : 5000; // No z-index should go higher than this one
+
+// Speed for the progress loader
+@progress-spinner-speed : 1.5s;

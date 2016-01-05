@@ -1,0 +1,107 @@
+@@include("_header-signed-in.html", {"classes_header" : "signed-in"})
+<main role="main" class="container main-container clearfix">
+    <a name="skiptocontent" id="skiptocontent"></a>
+    <div class="clearfix marg-bottom">
+        @@include("_crumbtrail.html")
+    </div>
+    <div class="alert alert-success" role="alert">
+        <strong>Email address updated.</strong>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <header><h1 class="border-bottom thick-marg-bottom">My Account</h1></header>
+            <p class="thick-marg-bottom">You are signed in as <span>Daljit Shergill.</span>
+                <a href="#" title="Sign out">Sign out?</a></p>
+            <div class="row">
+                <div class="col-md-6">
+                    <section class="thick-marg-bottom">
+                        <div class="inline-block text-vertical-top thick-marg-right">
+                            <a href="#" target="_blank" class="icon-my-order" title="My Orders">My Orders</a>
+                        </div>
+                        <div class="inline-block">
+                            <h3>My Orders</h3>
+                            <ul class="line-height">
+                                <li><a title="Orders placed in the last 6 months"
+                                       href="/Order-Track.html">Orders
+                                    placed in
+                                    the last 6 months</a></li>
+                                <li><a title="Complete order history"
+                                       href="/Order-Track-complete.html">Complete order
+                                    history</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="thick-marg-bottom">
+                        <div class="inline-block text-vertical-top thick-marg-right">
+                            <a href="#" target="_blank" class="icon-personal-details" title="Personal Details">Personal
+                                Details</a>
+                        </div>
+                        <div class="inline-block">
+                            <h3>Personal Details</h3>
+                            <ul class="line-height">
+                                <li><a title="Create Profile" href="/create-profile.html">Create my True fit Profile</a>
+                                </li>
+                                <li><a title="Update personal details" href="/customer-edit-profile.html">Update
+                                    personal
+                                    details</a></li>
+                                <li><a title="Reset Password" href="/customer-edit-profile-password.html">Reset
+                                    password</a>
+                                </li>
+                                <li><a title="Manage address book" href="/customer-manage-addresses.html">Manage address
+                                    book</a></li>
+                                <li><a title="Manage email preferences" href="/customer-edit-profile-email.html">Manage
+                                    email preferences</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md-6">
+                    <section class="thick-marg-bottom">
+                        <div class="inline-block text-vertical-top thick-marg-right">
+                            <a href="#" target="_blank" class="icon-recognition" title="Recognition">Recognition</a>
+                        </div>
+                        <div class="inline-block">
+                            <h3>Recognition</h3>
+                            <ul class="line-height">
+                                <li><a title="My recognition summary" href="/recognition-view-summary.html">My
+                                    Recognition
+                                    summary</a></li>
+                                <li><a title="My points & transactions"
+                                       href="/recognition-reward-transaction-history.html">My
+                                    points & transactions</a></li>
+                                <li><a title="Set up a points transfer" href="/recognition-link-account.html">Set up a
+                                    points transfer</a></li>
+                                <li><a title="Report a lost/stolen/damaged card" href="loyalty-link-Account.html">Report
+                                    a
+                                    lost/stolen/damaged card</a></li>
+                                <li><a href="#">Manage email preferences</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="thick-marg-bottom">
+                        <div class="inline-block text-vertical-top thick-marg-right">
+                            <a href="#" target="_blank" class="icon-payment" title="Payment">Payment</a>
+                        </div>
+                        <div class="inline-block">
+                            <h3>Payment</h3>
+                            <ul class="line-height">
+                                <li><a title="My recognition summary" href="/manage-saved-cards.html">Manage saved
+                                    cards</a>
+                                </li>
+                                <li><a title="Check eVoucher or Gift Voucher Balance"
+                                       href="/customer-gift-vouchers.html">Check
+                                    eVoucher or Gift Voucher
+                                    Balance</a></li>
+
+                                <li><a title="Check gift card balance" href="/gift-card-balance.html">Set up a points
+                                    transfer</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+@@include("_footer-secure.html")

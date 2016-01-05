@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv=Content-Type>
+    <meta content="initial-scale=1.0" name=viewport>
+    <!-- So that mobile webkit will display zoomed in -->
+    <meta content="telephone=no" name=format-detection>
+    <!-- disable auto telephone linking in iOS --> <title>TESTED-Order Dispatch</title>
+    <link rel="shortcut icon" href="../assets/images/favicon.ico">
+
+    @@include("_css.html")
+
+    <style data-ignore=ignore>
+        @media screen and (max-width: 599px) {
+            table[class="force-row"], table[class="container"], .force-row, .container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            td[class*="container-padding"], .container-padding {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+        }
+        @media screen and (max-width: 400px) {
+            .header-text {
+                float: left;
+                padding-left: 10px;
+                text-align: left !important;
+                width: auto !important;
+            }
+            .header-logo {
+                float: left;
+            }
+        }
+    </style>
+    <!-- 100% background wrapper (grey background) --> </head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td align="center" valign="top" width="100%"> <!-- 600px container (white background) -->
+            <table border="0" cellpadding="0" cellspacing="0" width="600" class="container">
+                <!-- Header -->
+                @@include("_header.html")
+                <!-- Header END -->
+                <!-- Main Content -->
+                <tr class="background-white">
+                    <td align=left class="container-padding content pad-side pad-top background-white"> <!-- example: two columns (simple) -->
+                        <!-- Left Content -->
+                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="346" class="force-row">
+                            <tr>
+                                <td>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td valign="top" class="col font-lg text-align-left pad-bottom line-height-lg"><strong>Dear John Smith</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="col font-sm text-align-left thick-pad-bottom line-height-sm">Good news! Your House of Fraser order is on its way. Now your order has been dispatched, you will receive a series of emails to update you on its status.</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="col font-md line-height-md text-align-left border-bottom"><strong>Delivery Address</strong></td>
+                                            <td class="border-bottom">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="col text-align-left font-sm line-height-sm thin-pad-bottom thin-pad-top">Mr John Smith</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="col text-align-left font-sm line-height-sm thin-pad-bottom">House Of Fraser</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="col text-align-left font-sm line-height-sm">27 Baker Street</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="col text-align-left font-sm line-height-sm">London</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="col text-align-left font-sm line-height-sm">W1U 8AH</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="col text-align-left font-sm line-height-sm thick-pad-bottom">UK</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="col font-md line-height-md text-align-left border-bottom"><strong>Delivery Method</strong></td>
+                                            <td class="border-bottom">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="col text-align-left font-sm line-height-sm thin-pad-top">Next Day - Monday 17th Dec 2012</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="col font-md line-height-md text-align-left border-bottom thick-pad-top"><strong>Items Ordered</strong></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td width="40%" valign="top" class="col text-align-left font-sm line-height-sm thin-pad-bottom thin-pad-top"><strong>Description</strong></td>
+                                            <td width="60%" valign="top" class="col text-align-left font-sm line-height-sm thin-pad-bottom thin-pad-top">Bose Triport In-Ear Headphones</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="40%" valign="top" class="col text-align-left font-sm line-height-sm thin-pad-bottom"><strong>Product Code</strong></td>
+                                            <td width="60%" valign="top" class="col text-align-left font-sm line-height-sm thin-pad-bottom">117486828</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="40%" valign="top" class="col text-align-left font-sm line-height-sm thin-pad-bottom"><strong>Quantity</strong></td>
+                                            <td width="60%" valign="top" class="col text-align-left font-sm line-height-sm thin-pad-bottom">3</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="40%" valign="top" class="col text-align-left font-sm line-height-sm thick-pad-bottom"><strong>Value</strong></td>
+                                            <td width="60%" valign="top" class="col text-align-left font-sm line-height-sm thick-pad-bottom">£239.97</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td width="40%" valign="top" class="col text-align-left font-sm line-height-sm thin-pad-bottom"><strong>Description</strong></td>
+                                            <td width="60%" valign="top" class="col text-align-left font-sm line-height-sm thin-pad-bottom">Bose Triport In-Ear Headphones</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="40%" valign="top" class="col text-align-left font-sm line-height-sm thin-pad-bottom"><strong>Product Code</strong></td>
+                                            <td width="60%" valign="top" class="col text-align-left font-sm line-height-sm thin-pad-bottom">117486828</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="40%" valign="top" class="col text-align-left font-sm line-height-sm thin-pad-bottom"><strong>Quantity</strong></td>
+                                            <td width="60%" valign="top" class="col text-align-left font-sm line-height-sm thin-pad-bottom">3</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="40%" valign="top" class="col text-align-left font-sm line-height-sm pad-bottom"><strong>Value</strong></td>
+                                            <td width="60%" valign="top" class="col text-align-left font-sm line-height-sm pad-bottom">£239.97</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" valign="top" class="col font-md line-height-md text-align-left border-bottom thick-pad-top"><strong>Delivery Updates</strong></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td valign="top" class="col text-align-left font-sm line-height-sm thin-pad-bottom thin-pad-top"><strong>Tracking info</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="col text-align-left font-sm line-height-sm pad-bottom">This email will follow shortly and contains information on how to track your parcel.</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="col text-align-left font-sm line-height-sm thin-pad-bottom"><strong>Out for delivery</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="col text-align-left font-sm line-height-sm pad-bottom">This email is sent on the day your parcel goes out for delivery and will arrive that day or the next depending on your chosen delivery method.</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="60%" valign="top" class="col text-align-left font-sm line-height-sm thick-pad-bottom">If you have selected Next Day delivery you will get one further email and a text message to let you know the hour time slot you can expect to recieve your order.</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- Right Content -->
+                        <table width="224" align="right" class="itinerary force-row">
+                            @@include("_itinerary.html")
+                        </table>
+                        <!-- Right Content END -->
+                        <!--/600px container --> </td>
+                </tr>
+                <tr>
+                    <td colspan="2" valign="top" class="col container-padding pad-side background-white font-sm line-height-sm text-align-left pad-bottom">If we have any trouble delivering your parcel, you will be contacted by email.</td>
+                </tr>
+                <tr>
+                    <td colspan="2" valign="top" class="col container-padding font-sm pad-side  background-white line-height-sm text-align-left pad-bottom">Thanks again for shopping online with House of Fraser.</td>
+                </tr>
+                <tr>
+                    <td colspan="2" valign="top" class="col container-padding font-sm pad-side  background-white line-height-sm text-align-left pad-bottom">Yours Sincerely.</td>
+                </tr>
+                <!-- Footer -->
+                @@include("_footer.html")
+                <!-- Footer END -->
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+<!--/100% background wrapper-->
+</html>

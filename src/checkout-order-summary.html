@@ -1,0 +1,360 @@
+@@include("_header-signed-in.html", {"classes_body" : "pagetype-checkout js-pagetype-jquery-validate", "classes_header" : "signed-in secure"})
+@@include("_crumbtrail-checkout-step4.html")
+<main role="main" class="container main-container pagetype-checkout--order-summary">
+    <a name="skiptocontent" id="skiptocontent"></a>
+    <div class="row">
+        <div class="col-md-12 js-itinerary-parent">
+            <form class="js-form">
+                <section>
+                    <!--left content-->
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="border-bottom thick-marg-top-bottom">
+                                <header><h1>Order Summary</h1></header>
+                            </div>
+
+                            <fieldset class="thick-marg-bottom thick-pad-bottom border-bottom">
+                                <legend>Delivery address</legend>
+                                <p class="thick-marg-bottom">
+                                    Mr.
+                                    X
+                                    X<br>
+                                    1, Newbarn Farm Cottage, Cornwells Bank<br>
+                                    Lewes<br>
+                                    North Chailey<br>
+                                    East Sussex<br>
+                                    BN8 4RL<br>
+                                    United Kingdom
+                                </p>
+
+                                <a class="btn btn-info" href="#" title="Change your delivery address details">Change
+                                    details</a>
+
+                                <div class="marg-top">
+                                    <label class="no-marg">
+                                        <input type="checkbox" name="del_save_address" id="del-save-address" value="true" checked disabled>
+                                        <span class="text-muted small">This is my preferred collection or delivery location</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+
+                            <fieldset class="thick-marg-bottom border-bottom">
+                                <legend>Billing & Payment Details</legend>
+                                <div class="row">
+                                    <div class="col-sm-6 thick-marg-bottom">
+                                        <section class="clearfix thick-marg-bottom">
+                                            <section class="pull-left thick-marg-right">
+                                                <a href="#" target="_blank" class="visa_card larger icon-positioning" title="My Orders">Visa Card</a>
+                                            </section>
+                                            <section class="thick-marg-bottom">
+                                                <h5><strong>Visa – £104.99</strong></h5>
+                                                <p>
+                                                    **** ***** **** 6969<br/>
+                                                    Expiry Date: 02/2015
+                                                </p>
+                                            </section>
+                                        </section>
+
+
+                                        <a class="btn btn-info thin-marg-bottom thick-marg-top" href="#">Change payment
+                                            details</a>
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <p class="small text-muted">Redeem Gift Cards, Vouchers or Recognition
+                                                    Rewards or pay with a different card</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="marg-top">
+                                            <label class="no-marg">
+                                                <input type="checkbox" name="payment_save" id="payment-save" value="true" checked disabled>
+                                                <span class="text-muted small">These are my preferred payment details</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-sm-6 thick-marg-bottom">
+                                        <h5><strong>Billing Address</strong></h5>
+                                        <p>
+                                            Mr.
+                                            X
+                                            X<br>
+                                            1, Newbarn Farm Cottage, Cornwells Bank<br>
+                                            Lewes<br>
+                                            North Chailey<br>
+                                            East Sussex<br>
+                                            BN8 4RL<br>
+                                            United Kingdom
+                                        </p>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+
+                            <fieldset>
+                                <legend>Your Order</legend>
+
+                                <div class="clearfix marg-bottom">
+                                    <img class="pull-left marg-right"
+                                         src="https://a248.e.akamai.net/f/248/9086/10h/origin-g2.scene7.com/is/image/HOF/I_194163299_00_20140422?wid=75&amp;hei=100&amp;qlt=80&amp;ResMode=bicub&amp;op_sharpen=1"
+                                         alt="Lace Sleeve Cuff Dress" height="100" width="75">
+
+                                    <p>
+                                        <a href="#">Eliza J - Lace Sleeve Cuff Dress</a><br/>
+                                        <small>
+                                            <span class="color-light-grey">Colour - Navy, Size - 18</span><br/>
+										<span class="prod-pricedetails">
+											<span class="prod-price-now">Now £150.00</span><br/>
+											<span class="prod-price-was">Was £300.00</span>
+										</span>
+                                        </small>
+                                    </p>
+                                </div>
+
+
+                                <div class="clearfix marg-bottom">
+                                    <img class="pull-left marg-right"
+                                         src="https://a248.e.akamai.net/f/248/9086/10h/origin-g2.scene7.com/is/image/HOF/R_158980027_51_20111122?wid=75&amp;hei=100&amp;qlt=80&amp;ResMode=bicub&amp;op_sharpen=1"
+                                         alt="Lace Sleeve Cuff Dress" height="100" width="75">
+
+                                    <p>
+                                        <a href="#">Eliza J - Lace Sleeve Cuff Dress</a><br/>
+                                        <small>
+                                            <span class="color-light-grey">Colour - Navy, Size - 18</span><br/>
+										<span class="prod-pricedetails">
+											<span class="prod-price-now">Now £150.00</span><br/>
+											<span class="prod-price-was">Was £300.00</span>
+										</span>
+                                        </small>
+                                    </p>
+                                </div>
+
+
+                                <section class="thick-marg-bottom">
+                                    <p>Select a delivery option for these items <span class="color-red">*</span></p>
+                                    <ul class="list-group list-group__radio-list zebra no-marg">
+                                        <li class="list-group-item no-pad active">
+                                            <label class="display-block pad">
+                                                <table width="100%">
+                                                    <tr>
+                                                        <td width="25">
+                                                            <input type="radio" value="del_pre9am" name="del_option" checked>
+                                                        </td>
+                                                        <td>
+                                                            <p class="list-group__radio-list--title no-marg">Pre 9am
+                                                                Delivery</p>
+                                                            <p class="thin-marg-bottom">Order by 7pm for delivery before
+                                                                9am
+                                                                from Thursday 27 November</p>
+                                                            <select id="del_pre9am_datepicker"
+                                                                    name="del_pre9am_datepicker">
+                                                                <option value="">Select a date</option>
+                                                                <option value="27/11/2014">Thursday 27 November</option>
+                                                                <option value="28/11/2014">Friday 28 November</option>
+                                                                <option value="29/11/2014">Saturday 29 November</option>
+                                                                <option value="01/12/2014">Monday 01 December</option>
+                                                                <option value="02/12/2014">Tuesday 02 December</option>
+                                                                <option value="03/12/2014">Wednesday 03 December
+                                                                </option>
+                                                                <option value="04/12/2014">Thursday 04 December</option>
+                                                                <option value="05/12/2014">Friday 05 December</option>
+                                                                <option value="06/12/2014">Saturday 06 December</option>
+                                                                <option value="08/12/2014">Monday 08 December</option>
+                                                                <option value="09/12/2014">Tuesday 09 December</option>
+                                                                <option value="10/12/2014">Wednesday 10 December
+                                                                </option>
+                                                            </select>
+                                                        </td>
+                                                        <td width="50">
+                                                            <span>£8.00</span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </label>
+                                        </li>
+                                        <li class="list-group-item no-pad">
+                                            <label class="display-block pad">
+                                                <table width="100%">
+                                                    <tr>
+                                                        <td width="25">
+                                                            <input type="radio" value="del_standard" name="del_option">
+                                                        </td>
+                                                        <td>
+                                                            <p class="list-group__radio-list--title no-marg">Standard
+                                                                Delivery (3 - 5 working days)</p>
+                                                            <p class="thin-marg-bottom">Delivered in 3 - 5 working days,
+                                                                8am
+                                                                - 8pm (FREE on all orders of £50 or more) between
+                                                                Tuesday 2
+                                                                & Thursday 4 December</p>
+                                                        </td>
+                                                        <td width="50">
+                                                            <span>£3.00</span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </label>
+                                        </li>
+                                        <li class="list-group-item no-pad">
+                                            <label class="display-block pad">
+                                                <table width="100%">
+                                                    <tr>
+                                                        <td width="25">
+                                                            <input type="radio" value="del_nextday" name="del_option">
+                                                        </td>
+                                                        <td>
+                                                            <p class="list-group__radio-list--title no-marg">Next Day
+                                                                delivery</p>
+                                                            <p class="thin-marg-bottom">Order by 7pm for delivery 8am -
+                                                                8pm
+                                                                Friday 28 November</p>
+                                                        </td>
+                                                        <td width="50">
+                                                            <span>£6.00</span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </label>
+                                        </li>
+                                        <li class="list-group-item no-pad">
+                                            <label class="display-block pad">
+                                                <table width="100%">
+                                                    <tr>
+                                                        <td width="25">
+                                                            <input type="radio" value="del_nominated" name="del_option">
+                                                        </td>
+                                                        <td>
+                                                            <p class="list-group__radio-list--title no-marg">Nominated
+                                                                Day
+                                                                Delivery</p>
+                                                            <p class="thin-marg-bottom">Order by 7pm for delivery 8am -
+                                                                8pm
+                                                                from Saturday 29 November</p>
+                                                            <select id="del_nominated_datepicker"
+                                                                    name="del_nominated_datepicker">
+                                                                <option value="">Select a date</option>
+                                                                <option value="27/11/2014">Thursday 27 November</option>
+                                                                <option value="28/11/2014">Friday 28 November</option>
+                                                                <option value="29/11/2014">Saturday 29 November</option>
+                                                                <option value="01/12/2014">Monday 01 December</option>
+                                                                <option value="02/12/2014">Tuesday 02 December</option>
+                                                                <option value="03/12/2014">Wednesday 03 December
+                                                                </option>
+                                                                <option value="04/12/2014">Thursday 04 December</option>
+                                                                <option value="05/12/2014">Friday 05 December</option>
+                                                                <option value="06/12/2014">Saturday 06 December</option>
+                                                                <option value="08/12/2014">Monday 08 December</option>
+                                                                <option value="09/12/2014">Tuesday 09 December</option>
+                                                                <option value="10/12/2014">Wednesday 10 December
+                                                                </option>
+                                                            </select>
+                                                        </td>
+                                                        <td width="50">
+                                                            <span>£6.00</span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </label>
+                                        </li>
+                                        <li class="list-group-item no-pad">
+                                            <label class="display-block pad">
+                                                <table width="100%">
+                                                    <tr>
+                                                        <td width="25">
+                                                            <input type="radio" value="del_evening" name="del_option">
+                                                        </td>
+                                                        <td>
+                                                            <p class="list-group__radio-list--title no-marg">Next
+                                                                Evening
+                                                                Delivery</p>
+                                                            <p class="thin-marg-bottom">Order by midnight for delivery
+                                                                6pm -
+                                                                10pm (Mon-Sun) from Friday 28 November</p>
+                                                            <select id="del_evening_datepicker" name="del_evening_datepicker">
+                                                                <option value="">Select a date</option>
+                                                                <option value="27/11/2014">Thursday 27 November</option>
+                                                                <option value="28/11/2014">Friday 28 November</option>
+                                                                <option value="29/11/2014">Saturday 29 November</option>
+                                                                <option value="01/12/2014">Monday 01 December</option>
+                                                                <option value="02/12/2014">Tuesday 02 December</option>
+                                                                <option value="03/12/2014">Wednesday 03 December
+                                                                </option>
+                                                                <option value="04/12/2014">Thursday 04 December</option>
+                                                                <option value="05/12/2014">Friday 05 December</option>
+                                                                <option value="06/12/2014">Saturday 06 December</option>
+                                                                <option value="08/12/2014">Monday 08 December</option>
+                                                                <option value="09/12/2014">Tuesday 09 December</option>
+                                                                <option value="10/12/2014">Wednesday 10 December
+                                                                </option>
+                                                            </select>
+                                                        </td>
+                                                        <td width="50">
+                                                            <span>£6.00</span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </section>
+
+
+                                <section>
+                                    <h4>Enter your gift message</h4>
+                                    <p>Please use only alpha numeric characters plus these punctuation marks (' " , ? @
+                                        ! .
+                                        )<br/><span class="text-muted">If you enter a gift message below, we won't show the price on your receipt.</span>
+                                    </p>
+                                    <div class="form-group">
+                                        <textarea id="js-gift-text-area" class="form-control js-gift-text-area thin-marg-bottom" rows="3" maxlength="240" placeholder='For example, "I saw this and thought of you!"'></textarea>
+                                        <p class="text-muted small"><span id="js-gift-text-area-feedback">240</span>
+                                            characters remaining</p>
+                                    </div>
+                                </section>
+                            </fieldset>
+                        </div>
+
+
+                        <!--right-content - impulse(itinerary)-->
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    @@include("_mini-cart-checkout-col.html", {"submit_button_text" : "Complete Order"})
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <section>
+                                <div class="row no-marg">
+                                    <div class="col-md-12 border-top pad-top"></div>
+                                </div>
+
+                                <div class="row no-marg">
+                                    <div class="col-md-7 hidden-xs hidden-sm">&nbsp;</div>
+                                    <div class="col-md-5 no-pad">
+                                        <button type="submit" class="btn btn-primary full-width marg-bottom">Secure
+                                            Checkout
+                                        </button>
+                                        <p class="text-center">By submitting an order you agree to the House of Fraser
+                                            <a href="#">Terms & Conditions</a></p>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="js-itinerary-snapped-trigger">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </form>
+        </div>
+    </div>
+</main>
+
+@@include("_footer-secure.html")

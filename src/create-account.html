@@ -1,0 +1,136 @@
+@@include("_header.html", {"classes_body" : "pagetype-my-account js-pagetype-jquery-validate"})
+<main role="main" class="container main-container clearfix">
+    <a name="skiptocontent" id="skiptocontent"></a>
+
+    <div class="row clearfix marg-bottom">
+        @@include("_crumbtrail.html")
+    </div>
+    <form class="js-form" action="#" method="post">
+        <div class="row">
+            <div class="col-md-12">
+                <header><h1 class="border-bottom thick-marg-bottom">Create An Account</h1></header>
+                <p class="thick-marg-bottom"><span class="color-red">*</span> Indicates a required field</p>
+                <div class="col-md-12 no-pad">
+                    <section class="thick-marg-bottom clearfix no-pad">
+                        <section class="thick-marg-bottom">
+                            <label for="customer-title"><h4>Title <span class="color-red">*</span></h4></label>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <select required id="customer-title" class="form-control">
+                                        <option label="Please select" value="" selected="selected">Please select
+                                        </option>
+                                        <option label="Mr" value="Mr.">Mr</option>
+                                        <option label="Miss" value="Miss">Miss</option>
+                                        <option label="Mrs" value="Mrs.">Mrs</option>
+                                        <option label="Ms" value="Ms.">Ms</option>
+                                        <option label="Dr" value="Dr.">Dr</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="thick-marg-bottom">
+                            <section class="thick-marg-bottom">
+                                <label for="first-name"><h4>First Name <span class="color-red">*</span></h4></label>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input required id="first-name" class="form-control" type="text" name="customer_first_name" minlength="1" placeholder="First Name"/>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="thick-marg-bottom">
+                                <label for="last-name"><h4>Last Name <span class="color-red">*</span></h4></label>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input required id="last-name" class="form-control" type="text" name="customer_last_name" minlength="1" placeholder="Last Name"/>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="thick-marg-bottom">
+                                <label for="email-address"><h4>Your Email Address <span class="color-red">*</span></h4>
+                                </label>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input required id="email-address" class="form-control" type="email" name="email_address" minlength="0" placeholder="Email Address"/>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="thick-marg-bottom">
+                                <label for="email-address-confirm"><h4>Confirm Email Address <span
+                                        class="color-red">*</span></h4></label>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input required id="email-address-confirm" class="form-control" type="email" name="email_address_confirm" minlength="0" placeholder="Confirm Email Address"/>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="thick-marg-bottom">
+                                <label for="contact-number"><h4>Contact Number <span class="color-red">*</span></h4>
+                                </label>
+                                <p>Please include an area code but no spaces</p>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input required id="contact-number" class="form-control" type="tel" name="phone_number" minlength="10" placeholder="Contact Number"/>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="thick-marg-bottom">
+                                <label for="mobile-number"><h4>Mobile Number</h4>
+                                </label>
+                                <p>Please supply a mobile number to receive text updates regarding your order</p>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input id="mobile-number" class="form-control" type="tel" name="mobile_number" minlength="10" placeholder="Mobile Number"/>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="checkbox pad-bottom">
+                                <label>
+                                    <input type="checkbox" value="true" name="receive_promotions">
+                                    I would like to receive future offers and promotions from House of Fraser.
+                                </label>
+                                <a class="underline" href="#">Privacy Policy</a>
+                            </section>
+                            <section class="thick-marg-bottom">
+                                <label for="password"><h4>Password<span class="color-red">*</span></h4>
+                                </label>
+
+                                <p>Password must be at least 5 characters</p>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input required id="password" class="form-control" type="password" name="password" minlength="5" placeholder="Password"/>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="thick-marg-bottom">
+                                <label for="password-confirm"><h4>Confirm Password <span
+                                        class="color-red">*</span>
+                                </h4></label>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input required id="password-confirm" class="form-control" type="password" name="password_confirm" minlength="5" placeholder="Confirm Password"/>
+                                    </div>
+                                </div>
+                            </section>
+
+                        </section>
+                    </section>
+                </div>
+                <div class="row">
+                    <section class="col-md-4">
+                        <section class="thick-marg-bottom">
+                            <button class="btn btn-info btn-block btn-lg" type="submit">Create An Account</button>
+                        </section>
+                        <section class="thick-marg-bottom">
+                            <a href="#" class="btn btn-default btn-block btn-lg btn-return">Back</a>
+                        </section>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </form>
+</main>
+
+@@include("_footer-secure.html")

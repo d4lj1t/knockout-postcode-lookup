@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #efefef;
+
+}
+
+table {
+  border-spacing: 0;
+}
+table td {
+  border-collapse: collapse;
+  vertical-align: top;
+  font-family:Helvetica, Arial, sans-serif;
+}
+.ExternalClass {
+  width: 100%;
+}
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}
+.ReadMsgBody {
+  width: 100%;
+  background-color: #ebebeb;
+}
+table {
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+img {
+  -ms-interpolation-mode: bicubic;
+}
+.yshortcuts a {
+  border-bottom: none !important;
+}
+
+.ios-footer a {
+  color: #aaaaaa !important;
+  text-decoration: underline;
+}
+
+a{
+  text-decoration:none;
+  color:#E51D9B;
+  outline: 0;
+  border:0;
+}
+img{
+  outline:0;
+  border:0;
+}
+
+
+.container{
+  width:600px;
+  max-width:600px
+}
+
+.header{
+  background-color:#000;
+}

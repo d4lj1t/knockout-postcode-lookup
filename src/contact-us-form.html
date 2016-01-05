@@ -1,0 +1,260 @@
+@@include("_header.html", {"classes_body" : "pagetype-content-left-col js-pagetype-jquery-validate js-pagetype-contact-us"})
+<div class="container">
+    <div class="row clearfix marg-bottom">
+        @@include("_crumbtrail.html")
+    </div>
+</div>
+
+<main role="main" class="container main-container clearfix">
+    <a name="skiptocontent" id="skiptocontent"></a>
+
+    <form class="js-form" action="#" method="post">
+        <div class="row">
+            <div class="col-md-9">
+                <header><h1>Contact Us</h1></header>
+                <p>Have a look at our <a
+                        href="#">comprehensive help section</a>, get in touch using the form below or call us on 0345
+                    602 1073.</p>
+                <h2>Your Query</h2>
+                <p>Please use this form to provide us with as much information as possible so that we can answer your
+                    query and resolve any issues you might have, quickly and effectively.</p>
+                <p class="thick-marg-bottom"><span class="color-red">*</span> Indicates a required field</p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <section class="thick-marg-bottom clearfix no-pad">
+                            <section class="thick-marg-bottom">
+                                <label for="customer-title"><h4>Title <span class="color-red">*</span></h4></label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <select required id="customer-title" class="form-control">
+                                            <option label="Please select" value="" selected="selected">Please select
+                                            </option>
+                                            <option label="Mr" value="Mr.">Mr</option>
+                                            <option label="Miss" value="Miss">Miss</option>
+                                            <option label="Mrs" value="Mrs.">Mrs</option>
+                                            <option label="Ms" value="Ms.">Ms</option>
+                                            <option label="Dr" value="Dr.">Dr</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="thick-marg-bottom">
+                                <section class="thick-marg-bottom">
+                                    <label for="first-name"><h4>First Name <span class="color-red">*</span></h4></label>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input required id="first-name" class="form-control" type="text" name="customer_first_name" minlength="1" placeholder="First Name"/>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="thick-marg-bottom">
+                                    <label for="last-name"><h4>Last Name <span class="color-red">*</span></h4></label>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input required id="last-name" class="form-control" type="text" name="customer_last_name" minlength="1" placeholder="Last Name"/>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="thick-marg-bottom">
+                                    <label for="email-address"><h4>Your Email Address <span class="color-red">*</span>
+                                    </h4>
+                                    </label>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input required id="email-address" class="form-control" type="email" name="email_address" minlength="0" placeholder="Email Address"/>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="thick-marg-bottom">
+                                    <label for="phone-number"><h4>Phone Number <span class="color-red">*</span></h4>
+                                    </label>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input required id="phone-number" class="form-control" type="tel" name="phone_number" minlength="10" placeholder="Phone Number"/>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="thick-marg-bottom">
+                                    <label for="enquiry-nature"><h4>Nature of your enquiry <span
+                                            class="color-red">*</span></h4></label>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <select required id="enquiry-nature" class="form-control">
+                                                <option value="">Please select an option...</option>
+                                                <optgroup label="Contact">
+                                                    <option value="Contact : I want someone to call me back">I want
+                                                        someone to call me back
+                                                    </option>
+                                                </optgroup>
+                                                <optgroup label="Order">
+                                                    <option value="Place a new order : I need assistance placing an order">
+                                                        I need assistance placing an order
+                                                    </option>
+                                                    <option class="js-required"
+                                                            value="Place a new order : Can I amend an existing order"
+                                                            data-js-order-no-required>Can I amend an existing order?
+                                                    </option>
+                                                    <option class="js-optional-order-no"
+                                                            value="Place a new order : Other order  assistance"
+                                                            >Other order assistance
+                                                    </option>
+                                                </optgroup>
+                                                <optgroup label="Delivery">
+                                                    <option class="js-required"
+                                                            value="Delivery : When is my parcel coming?">When is my
+                                                        parcel coming?
+                                                    </option>
+                                                    <option class="js-required" value="Delivery : My delivery is late">
+                                                        My delivery is late
+                                                    </option>
+                                                    <option class="js-required"
+                                                            value="Delivery : Some item are missing or haven't been delivered">
+                                                        Some item are missing or haven't been delivered
+                                                    </option>
+                                                    <option class="js-required"
+                                                            value="Delivery : The product arrived damaged/faulty">The
+                                                        product arrived damaged/faulty
+                                                    </option>
+                                                    <option class="js-optional-order-no"
+                                                            value="Delivery : I received the wrong item">I received the
+                                                        wrong item
+                                                    </option>
+                                                    <option class="js-optional-order-no"
+                                                            value="Delivery : The product arrived damaged/faulty">Other
+                                                        delivery enquiry
+                                                    </option>
+                                                </optgroup>
+                                                <optgroup label="Product Enquiry">
+                                                    <option value="Product Enquiry : I have questions around a product. Please specify product">
+                                                        I have questions around a product Please specify product.
+                                                    </option>
+                                                    <option value="Product Enquiry : Do you have a certain product in stock? please specify product">
+                                                        Do you have a certain product in stock? Please specify product
+                                                    </option>
+                                                    <option value="Product Enquiry : Other product enquiry">Other
+                                                        product enquiry
+                                                    </option>
+                                                </optgroup>
+                                                <optgroup label="Refund and Returns">
+                                                    <option class="js-required"
+                                                            value="Refund and Returns : I want to return my parcel"
+                                                            class="orderRelatedQuery upload">I want to return my parcel
+                                                    </option>
+                                                    <option class="js-required"
+                                                            value="Refund and Returns : I want a refund"
+                                                            class="orderRelatedQuery upload">I want a refund
+                                                    </option>
+                                                    <option class="js-optional-order-no"
+                                                            value="Refund and Returns : Other Refund or Returns Enquiry"
+                                                            class="orderRelatedQuery upload">Other Refund or Returns
+                                                        Enquiry
+                                                    </option>
+                                                </optgroup>
+                                                <optgroup label="Payment and Billing">
+                                                    <option class="js-required"
+                                                            value="Payment and Billing : I have been charged the wrong amount"
+                                                            class="orderRelatedQuery">I have been charged the wrong
+                                                        amount
+                                                    </option>
+                                                    <option class="js-optional-order-no"
+                                                            value="Payment and Billing : My gift card / evoucher is not working">
+                                                        My eVoucher is not working
+                                                    </option>
+                                                    <option class="js-optional-order-no"
+                                                            value="Payment and Billing :Other payment enquiry">Other
+                                                        payment enquiry
+                                                    </option>
+                                                </optgroup>
+                                                <optgroup label="Website Feedback">
+                                                    <option value="Website Feedback : There's a problem on the website">
+                                                        There's a problem on the website
+                                                    </option>
+                                                </optgroup>
+                                                <optgroup label="Complaints">
+                                                    <option class="js-optional-order-no"
+                                                            value="Complaints : I have complaint about your delivery service"
+                                                            class="upload">I have complaint about your delivery service
+                                                    </option>
+                                                    <option value="Complaints : I have a complaint about your online customer service"
+                                                            class="upload"> I have a complaint about your online
+                                                        customer service
+                                                    </option>
+                                                    <option value="Complaints : I have another complaint"
+                                                            class="upload"> I have another complaint
+                                                    </option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="thick-marg-bottom js-order-no-wrapper hidden">
+                                    <label for="order-number"><h4>Please enter an 8 digit order number <span
+                                            class="color-red js-order-no-star">*</span></h4>
+                                    </label>
+                                    <div class="row marg-bottom">
+                                        <div class="col-md-6">
+                                            <input required id="order-number" class="form-control js-order-no" type="number" name="order_number" minlength="10" placeholder="e.g. 10234567"/>
+                                        </div>
+                                    </div>
+                                    <p>You can find your order number on your order confirmation email, your delivery
+                                        note or by viewing you <a href="#">order history in My Account</a></p>
+                                </section>
+                                <section class="thick-marg-bottom">
+                                    <label for="contact-us-message"><h4>Message <span class="color-red">*</span></h4>
+                                    </label>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <textarea required id="contact-us-message" class="form-control" rows="3" maxlength="240" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                        </section>
+                    </div>
+                </div>
+                <div class="row">
+                    <section class="col-md-6">
+                        <section class="thick-marg-bottom">
+                            <button class="btn btn-info btn-block btn-lg" type="submit" id="send-form">Send</button>
+                        </section>
+                    </section>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h3 class="thick-marg-bottom"><strong>OTHER WAYS TO CONTACT US</strong></h3>
+                <section class="thick-marg-bottom">
+                    <h4>CALL US</h4>
+                    <p class="thick-marg-bottom">Phone: 0345 602 1073</p>
+                    <p><strong>Monday to Friday, 7am - 10pm <br> Saturday & Sunday, 9am -
+                        10pm</strong></p>
+                </section>
+                <section class="thick-marg-bottom">
+                    <h4>BE SOCIAL</h4>
+                    <p><a href="http://www.twitter.com/houseoffraser">Twitter</a><br><a
+                            href="http://www.facebook.com/houseoffraser">Facebook</a></p>
+                </section>
+                <section class="thick-marg-bottom">
+                    <h4>WRITE TO US </h4>
+                    <p><strong>If you would prefer to write to us,</strong> please address your letter to:</p>
+                    <p class="h6"><img style="float:right; padding-left:10px;" alt="House of Fraser since 1849"
+                                                         src="http://maps.googleapis.com/maps/api/staticmap?center=55.856890,-4.249362&amp;zoom=15&amp;size=100x86&amp;maptype=roadmap&amp;markers=color:red%7Clabel:H%7C55.856890,-4.249362&amp;sensor=false">
+                        House of Fraser Customer Services<br>
+                        Granite House, <br>
+                        31 Stockwell Street, <br>
+                        Glasgow <br>
+                        G1 4RZ<br>
+                        United Kingdom
+                    </p>
+                </section>
+                <section>
+                    <h4>OUR COMPANY DETAILS</h4>
+                    <p><strong>Company Number:</strong> SC010677 <br> <strong>VAT number:</strong> 259976879</p>
+                </section>
+
+
+            </div>
+        </div>
+    </form>
+</main>
+
+@@include("_footer.html")

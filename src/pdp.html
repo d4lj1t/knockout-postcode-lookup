@@ -1,0 +1,488 @@
+@@include("_header.html", {"classes_body" : "js-pagetype-pdp"})
+
+<main class="container product-details product-details-standard" id="product-single" role="main" itemscope itemtype="http://schema.org/Product">
+	<a name="skiptocontent" id="skiptocontent"></a>
+
+	<div class="row">
+		@@include("_crumbtrail.html")
+	</div>
+
+	<div class="row pad-bottom-xs">
+
+		<div class="col-xs-9">
+			<header>
+				<h1 class="product-title" itemprop="name">
+					<span class="brand" itemprop="brand">Diesel</span>
+					<span class="name">Larkee 8XR Straight Fit Jeans</span>
+				</h1>
+			</header>
+			<span class="sku hidden" itemprop="productID" content="1577646">1577646</span>
+			<div class="rating visible-xs visible-sm" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+				<meta itemprop="ratingValue" content="3.5" />
+				<meta itemprop ="bestRating" content="5" />
+				<meta itemprop="reviewCount" content="10" />
+				<img src="assets/images/content/rating.png" alt="">
+				<a href="#">(10) Write a review</a>
+			</div>
+		</div>
+
+		<div class="col-xs-3">
+			<div class="brand-logo">
+				<a href="#" title="Image of brand logo"><img src="assets/images/content/pdp-brand-logo.jpg" alt="Brand name"></a>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12 pdp-container">
+
+			<div class="carousel product-images-carousel">
+				<ul>
+					<li class="item"><img src="http://houseoffraser.scene7.com/is/image/HOF/I_124527708_00_20140507?size=450,600" data-thumb="http://houseoffraser.scene7.com/is/image/HOF/I_124527708_00_20140507?size=150,200" data-large="http://houseoffraser.scene7.com/is/image/HOF/I_124527708_00_20140507" alt="Prod name" itemprop="image"></li>
+					<li class="item"><img src="http://houseoffraser.scene7.com/is/image/HOF/I_124527708_01_20140507?size=450,600" data-thumb="http://houseoffraser.scene7.com/is/image/HOF/I_124527708_01_20140507?size=150,200" data-large="http://houseoffraser.scene7.com/is/image/HOF/I_124527708_01_20140507" alt="Prod name"></li>
+					<li class="item"><img src="http://houseoffraser.scene7.com/is/image/HOF/I_124527708_02_20140507?size=450,600" data-thumb="http://houseoffraser.scene7.com/is/image/HOF/I_124527708_02_20140507?size=150,200" data-large="http://houseoffraser.scene7.com/is/image/HOF/I_124527708_02_20140507" alt="Prod name"></li>
+					<li class="item"><img src="http://houseoffraser.scene7.com/is/image/HOF/I_124527708_03_20140507?size=450,600" data-thumb="http://houseoffraser.scene7.com/is/image/HOF/I_124527708_03_20140507?size=150,200" data-large="http://houseoffraser.scene7.com/is/image/HOF/I_124527708_03_20140507" alt="Prod name"></li>
+					<li class="item video" data-thumb="http://img.youtube.com/vi/b32jUNIkwys/0.jpg">
+						<div class="item-content">
+							<video class="video-js vjs-default-skin" controls preload="none" width="450" height="300" poster="/assets/images/content/pdp-video-poster.jpg" data-setup='{}'>
+								<!-- <source src="http://houseoffraser.scene7.com/is/content/HOF/eVideo/New Folder/JSGroup_183430471_Video.webm" type='video/webm'> -->
+								<source src="http://houseoffraser.scene7.com/is/content/HOF/eVideo/New Folder/JSGroup_183430471_Video.mp4" type='video/mp4'>
+							  	<p class="vjs-no-js">
+							    	To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+							  	</p>
+							</video>
+						</div>
+					</li>
+				</ul>
+				<span class="product-images-rollover-hint visible-md visible-lg">Rollover to magnify or click to enlarge</span>
+				<span class="product-images-rollover-hint visible-xs visible-sm">Press and drag to magnify or double tap to enlarge</span>
+			</div>
+
+			<a href="#" class="product-images-carousel-control prev visible-md visible-lg"><span class="icon-chevron-left icon-chevron-left-black icon-center"></span></a>
+			<a href="#" class="product-images-carousel-control next visible-md visible-lg"><span class="icon-chevron-right icon-chevron-right-black icon-center"></span></a>
+
+			<div class="product-sidebar">
+
+				<div class="controls-container">
+					<div class="controls">
+
+						<a href="#" class="pdp-toggle-sidebar js-pdp-toggle-sidebar visible-md visible-lg has-icon"><span class="js-pdp-sidebar-toggle-text">Hide</span> <span class="icon-block-minus js-pdp-sidebar-toggle-icon"></span></a>
+
+						<div class="product-sidebar-block">
+							<div class="product-price-group" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+								<span class="prod-price"><span itemprop="priceCurrency" content="GBP">&pound;</span><span itemprop="price" content="90.00">90.00</span></span>
+							</div>
+
+							<div class="rating visible-md visible-lg">
+								<img src="assets/images/content/rating.png" alt="">
+								<a href="#">(10) Write a review</a>
+							</div>
+						</div>
+
+						<div class="product-sidebar-block">
+							<div class="swatches swatches-colours">
+
+								<div class="row">
+									<div class="label col-xs-12">Colour: <span data-bind="text: colour"></span></div>
+								</div>
+
+								<!--
+								<div class="row">
+									<select data-bind="value: selected, event : {change: swatchSelect}">
+										<option value="green">Green</option>
+										<option value="red">Red</option>
+										<option value="blue">Blue</option>
+										<option value="yellow">Yellow</option>
+										<option value="black">Black</option>
+									</select>
+								</div>
+							-->
+
+								<script src="/assets/scripts/app/modules/swatches-toggle.js"></script>
+
+								<div class="row no-marg-bottom">
+									<div class="col-xs-12">
+										<div id="swatches-container-colours" class="swatches-container" data-swatches-type="colours">
+											<a href="#" data-value="red" data-variation="colour" class="swatch unavailable" data-bind="click: swatchClick, event: {mouseover: setTempSelected, mouseout: removeTempSelected}">
+												<span class="swatch-colour swatch-colour-red"></span>
+											</a>
+											<a href="#" data-value="green" data-variation="colour" class="swatch" data-bind="click: swatchClick, event: {mouseover: setTempSelected, mouseout: removeTempSelected}">
+												<span class="swatch-colour swatch-colour-green"></span>
+											</a>
+											<a href="#" data-value="blue" data-variation="colour" class="swatch" data-bind="click: swatchClick, event: {mouseover: setTempSelected, mouseout: removeTempSelected}">
+												<span class="swatch-colour swatch-colour-blue"></span>
+											</a>
+											<a href="#" data-value="yellow" data-variation="colour" class="swatch" data-bind="click: swatchClick, event: {mouseover: setTempSelected, mouseout: removeTempSelected}">
+												<span class="swatch-colour swatch-colour-yellow"></span>
+											</a>
+											<a href="#" data-value="black" data-variation="colour" class="swatch unavailable" data-bind="click: swatchClick, event: {mouseover: setTempSelected, mouseout: removeTempSelected}">
+												<span class="swatch-colour swatch-colour-black"></span>
+											</a>
+										</div>
+
+										<a href="#" class="js-swatches-toggle-btn has-icon" id="js-swatches-toggle-btn-colours"><span class="js-text">Showing {0} of {1} colours</span><span class="icon-block-plus"></span></a>
+									</div>
+									<script>
+									(function() {
+										var toggle = new SwatchesToggle('swatches-container-colours');
+									})();
+									</script>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="product-sidebar-block">
+							<div class="swatches swatches-size">
+
+								<div class="row">
+									<div class="label col-xs-12">Selected size: <span data-bind="text: size"></span></div>
+								</div>
+
+								<a href="#" class="size-guide js-show-size-guide">Size guide</a>
+
+								<div class="row">
+
+									<div class="col-xs-12">
+
+										<div id="swatches-container-sizes" class="swatches-container" data-swatches-type="sizes">
+											<a href="#" data-value="28S" data-variation="size" data-bind="click: swatchClick" class="swatch unavailable">28S</a>
+											<a href="#" data-value="28R" data-variation="size" data-bind="click: swatchClick" class="swatch">28R</a>
+											<a href="#" data-value="30S" data-variation="size" data-bind="click: swatchClick" class="swatch">30S</a>
+											<a href="#" data-value="30R" data-variation="size" data-bind="click: swatchClick" class="swatch">30R</a>
+											<a href="#" data-value="Family Guy" data-variation="size" data-bind="click: swatchClick" class="swatch unavailable">Family Guy</a>
+											<a href="#" data-value="28L" data-variation="size" data-bind="click: swatchClick" class="swatch unavailable">28L</a>
+											<a href="#" data-value="31S" data-variation="size" data-bind="click: swatchClick" class="swatch">31S</a>
+											<a href="#" data-value="28S" data-variation="size" data-bind="click: swatchClick" class="swatch unavailable">28S</a>
+											<a href="#" data-value="28R" data-variation="size" data-bind="click: swatchClick" class="swatch">28R</a>
+											<a href="#" data-value="30S" data-variation="size" data-bind="click: swatchClick" class="swatch">30S</a>
+											<a href="#" data-value="30R" data-variation="size" data-bind="click: swatchClick" class="swatch">30R</a>
+											<a href="#" data-value="28L" data-variation="size" data-bind="click: swatchClick" class="swatch unavailable">28L</a>
+											<a href="#" data-value="31S" data-variation="size" data-bind="click: swatchClick" class="swatch">31S</a>
+											<a href="#" data-value="28S" data-variation="size" data-bind="click: swatchClick" class="swatch unavailable">28S</a>
+											<a href="#" data-value="28R" data-variation="size" data-bind="click: swatchClick" class="swatch">28R</a>
+											<a href="#" data-value="30S" data-variation="size" data-bind="click: swatchClick" class="swatch">30S</a>
+											<a href="#" data-value="30R" data-variation="size" data-bind="click: swatchClick" class="swatch">30R</a>
+											<a href="#" data-value="28L" data-variation="size" data-bind="click: swatchClick" class="swatch unavailable">28L</a>
+											<a href="#" data-value="31S" data-variation="size" data-bind="click: swatchClick" class="swatch">31S</a>
+											<a href="#" data-value="28S" data-variation="size" data-bind="click: swatchClick" class="swatch unavailable">28S</a>
+											<a href="#" data-value="28R" data-variation="size" data-bind="click: swatchClick" class="swatch">28R</a>
+											<a href="#" data-value="30S" data-variation="size" data-bind="click: swatchClick" class="swatch">30S</a>
+											<a href="#" data-value="30R" data-variation="size" data-bind="click: swatchClick" class="swatch">30R</a>
+											<a href="#" data-value="28L" data-variation="size" data-bind="click: swatchClick" class="swatch unavailable">28L</a>
+											<a href="#" data-value="31S" data-variation="size" data-bind="click: swatchClick" class="swatch">31S</a>
+											<a href="#" data-value="28S" data-variation="size" data-bind="click: swatchClick" class="swatch unavailable">28S</a>
+											<a href="#" data-value="28R" data-variation="size" data-bind="click: swatchClick" class="swatch">28R</a>
+											<a href="#" data-value="30S" data-variation="size" data-bind="click: swatchClick" class="swatch">30S</a>
+											<a href="#" data-value="30R" data-variation="size" data-bind="click: swatchClick" class="swatch">30R</a>
+											<a href="#" data-value="28L" data-variation="size" data-bind="click: swatchClick" class="swatch unavailable">28L</a>
+											<a href="#" data-value="31S" data-variation="size" data-bind="click: swatchClick" class="swatch">31S</a>
+											<a href="#" data-value="28S" data-variation="size" data-bind="click: swatchClick" class="swatch unavailable">28S</a>
+											<a href="#" data-value="28R" data-variation="size" data-bind="click: swatchClick" class="swatch">28R</a>
+											<a href="#" data-value="30S" data-variation="size" data-bind="click: swatchClick" class="swatch">30S</a>
+											<a href="#" data-value="30R" data-variation="size" data-bind="click: swatchClick" class="swatch">30R</a>
+											<a href="#" data-value="28L" data-variation="size" data-bind="click: swatchClick" class="swatch unavailable">28L</a>
+											<a href="#" data-value="31S" data-variation="size" data-bind="click: swatchClick" class="swatch">31S</a>
+											<a href="#" data-value="Opeth" data-variation="size" data-bind="click: swatchClick" class="swatch">Opeth</a>
+										</div>
+
+										<a href="#" class="js-swatches-toggle-btn has-icon" id="js-swatches-toggle-btn-sizes"><span class="js-text">Showing {0} of {1} sizes</span><span class="icon-block-plus"></span></a>
+									</div>
+									<script>
+									(function() {
+										var toggle = new SwatchesToggle('swatches-container-sizes');
+									})();
+									</script>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="product-sidebar-block">
+
+							<div class="product-quantity">
+								<span class="label">Select quantity</span>
+								<select>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+
+							<div class="product-selected-variants">
+								<span data-bind="if: colour">
+									<span class="label">Colour:</span>
+									<span class="value" data-bind="text: colour"></span>, 
+								</span>
+								<span data-bind="if: size">
+									<span class="label">Size:</span>
+									<span class="value" data-bind="text: size"></span>, 
+								</span>
+								<span class="label">Price:</span>
+								<span class="value" data-bind="currency: price, symbol: '&pound;'"></span>
+							</div>
+
+							<button type="submit" class="btn btn-primary full-width btn-add-to-bag marg-bottom" disabled="disabled" aria-controls="mini-cart">Add to Bag</button>
+							<a href="#" class="btn btn-default btn-block btn-lg btn-check-store-stock marg-bottom no-marg-top">Check Store Stock</a>
+
+							<div class="product-delivery-info">
+								<ul>
+									<li>
+										<span class="icon-delivery icon-delivery-express"></span>
+										<h6>Express delivery</h6>
+										<a href="#" class="js-show-more-delivery-info-content" aria-controls="more-delivery-info-content-express">More info</a>
+										<span class="more-delivery-info-content" id="more-delivery-info-content-express" aria-hidden="true">Please see individual country for specific delivery information. Standard and express options available.</span>
+									</li>
+									<li>
+										<span class="icon-delivery icon-delivery-standard"></span>
+										<h6>FREE Australian delivery</h6>
+										<a href="#" class="js-show-more-delivery-info-content" aria-controls="more-delivery-info-content-standard">More info</a>
+										<span class="more-delivery-info-content" id="more-delivery-info-content-standard" aria-hidden="true">Please see individual country for specific delivery information. Standard and express options available.</span>
+									</li>
+									<li>
+										<span class="icon-delivery icon-delivery-international"></span>
+										<h6>International delivery</h6>
+										<a href="#" class="js-show-more-delivery-info-content" aria-controls="more-delivery-info-content-international">More info</a>
+										<span class="more-delivery-info-content" id="more-delivery-info-content-international" aria-hidden="true">Please see individual country for specific delivery information. Standard and express options available.</span>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+				<!-- /.controls-container -->
+
+				<div class="rest">
+					<div class="product-sidebar-block">
+						<div class="product-share social-links text-center no-pad clearfix">
+							<span class="label">Share with:</span>
+							<ul>
+								<li><a href="http://www.facebook.com/sharer.php?u=[URL]" target="_blank" class="facebook" title="">Facebook</a></li>
+								<li><a href="http://www.twitter.com/intent/tweet?url=[URL]&via=houseoffraser&text=I%20just%20had%20to%20share%20this%20with%20you" target="_blank" class="twitter" title="">Twitter</a></li>
+								<li><a href="http://pinterest.com/pin/create/button/?url=[URL]&media=[IMAGE]&description=Look%20what%20I%20found%20at%20House%20of%20Fraser" target="_blank" class="pinterest" title="">Pinterest</a></li>
+								<li><a href="http://plus.google.com/share?url=[URL]" target="_blank" class="googlePlus" title="">Google+</a></li>
+								<li><a href="mailto:?subject=[SUBJECT]&amp;body=[URL]" target="_blank" class="email" title="">Email</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="product-sidebar-block">
+						<div class="product-explore-more">
+							<h2>Explore More</h2>
+							<ul>
+								<li><a href="#">See all Diesel Jeans</a></li>
+								<li><a href="#">See all Jeans</a></li>
+								<li><a href="#">See all Diesel</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="product-sidebar-block visible-md visible-lg">
+						<div class="ad">
+							<img src="assets/images/content/sidebar-ad-1.gif" alt="">
+						</div>
+					</div>
+
+					<div class="product-sidebar-block visible-md visible-lg">
+						<div class="ad">
+							<img src="assets/images/content/sidebar-ad-2.jpg" alt="">
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="product-data">
+				<div class="carousel-thumbs visible-md visible-lg">
+					<ul>
+						<li class="item"><img src="assets/images/content/pdp-slider-0.jpg" alt="Prod Name"></li>
+						<li class="item"><img src="assets/images/content/pdp-slider-1.jpg" alt="Prod Name"></li>
+						<li class="item"><img src="assets/images/content/pdp-slider-2.jpg" alt="Prod Name"></li>
+						<li class="item"><img src="assets/images/content/pdp-slider-3.jpg" alt="Prod Name"></li>
+						<li class="item video"><img src="http://img.youtube.com/vi/b32jUNIkwys/0.jpg" alt="Video of Prod poster"></li>
+					</ul>
+					<span class="skateboard"></span>
+					<div class="textboard">Image <span class="index">1</span> of <span class="outof">5</span></div>
+				</div>
+
+				<div class="tabs tabs-uptomd-parallel thick-marg-top-bottom" role="tabpanel" data-tabs-behavior="off-canvas">
+					<ul class="nav-tabs clearfix">
+						<li role="presentation" class="active">
+							<a href="#description" id="description-tab" role="tab" aria-controls="description" aria-expanded="true" class="js-tab">Description</a>
+							<span class="icon-chevron icon-chevron-right visible-xs visible-sm"></span>
+						</li>
+						<li role="presentation">
+							<a href="#delivery" id="delivery-tab" role="tab" aria-controls="delivery" aria-expanded="true" class="js-tab">Delivery</a>
+							<span class="icon-chevron icon-chevron-right visible-xs visible-sm"></span>
+						</li>
+						<li role="presentation">
+							<a href="#returns" id="returns-tab" role="tab" aria-controls="returns" aria-expanded="true" class="js-tab">Returns</a>
+							<span class="icon-chevron icon-chevron-right visible-xs visible-sm"></span>
+						</li>
+						<li role="presentation">
+							<a href="#reviews" id="reviews-tab" role="tab" aria-controls="reviews" aria-expanded="true" class="js-tab">Reviews</a>
+							<span class="icon-chevron icon-chevron-right visible-xs visible-sm"></span>
+						</li>
+					</ul>
+					<div class="tab-content visible-md visible-lg">
+						<div role="tabpanel" class="tab-pane active" id="description" aria-labelledby="description-tab" itemprop="description">
+							<h2>Description for Diesel Larkee 8XR Straight Fit Jeans</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ornare eros odio, quis posuere nibh vehicula non. Cras id nisl in lectus luctus cursus. Vestibulum magna ligula, efficitur pulvinar augue gravida, commodo commodo enim. Aenean sit amet orci egestas, aliquam eros in, tempor elit. Praesent faucibus viverra finibus. Vivamus neque augue, pharetra eget dignissim vel, venenatis ut arcu. Fusce euismod placerat arcu, nec ultricies mauris iaculis in. Ut at ornare velit, quis semper eros. Etiam vitae dolor in orci rutrum fringilla. Integer aliquet vitae dui egestas feugiat.</p>
+
+							<p>Ut efficitur nec leo sed iaculis. Etiam vel ex pellentesque, pulvinar diam sed, eleifend lorem. Fusce interdum neque at nibh congue, sit amet auctor turpis luctus. Phasellus sit amet laoreet elit. Curabitur ac dapibus massa, laoreet maximus massa. Fusce dignissim, quam quis congue accumsan, dolor tellus porta urna, ut ultricies est nibh dignissim purus. Ut dapibus venenatis sem ut bibendum. Sed feugiat magna id arcu commodo ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam augue tortor, vulputate sed commodo a, facilisis vel leo.</p>
+
+							<p>Sed faucibus erat vitae vulputate pulvinar. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque sit amet imperdiet dolor, eu maximus libero. Quisque pulvinar bibendum lectus in ullamcorper. Integer ac elementum nisi, ac pulvinar ex. Mauris sed risus ut mauris euismod bibendum sit amet ac mi. Nunc mi enim, lacinia at enim dignissim, eleifend fringilla dui. Vivamus nec congue ipsum. Nulla facilisi. Vivamus dapibus arcu odio, nec viverra lectus consequat sit amet. Sed blandit augue odio, ut bibendum lectus consectetur at. Ut consectetur est quis sapien laoreet, et iaculis felis sodales. Suspendisse dignissim laoreet leo, sit amet ullamcorper magna euismod a.</p>
+
+							<p>Curabitur convallis augue non risus pharetra egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec bibendum magna quis lectus viverra, sit amet faucibus massa pretium. Nunc eu massa ac libero feugiat consequat. Fusce malesuada magna eget elementum pretium. Fusce rutrum ligula nec magna placerat, nec luctus lorem lacinia. Cras maximus tellus eget tempus imperdiet. Aliquam erat volutpat. In pretium convallis tempor. Vivamus at feugiat nulla. Quisque vitae tortor ac ligula luctus luctus. Nullam mollis purus id urna vulputate aliquam. In non tincidunt orci. Morbi laoreet libero viverra, laoreet velit a, molestie enim. Nullam quis elit ante.</p>
+
+							<p>Aliquam tortor nisl, iaculis eget aliquam nec, congue quis risus. Ut ultricies augue nec ornare luctus. Aliquam in vehicula est, eu iaculis eros. Aliquam quis lorem sed orci scelerisque consectetur eget eu purus. Pellentesque quis nisi iaculis, tristique lorem id, porta risus. Aliquam nisl massa, scelerisque eget accumsan sit amet, ultrices vel nisl. Sed pellentesque sit amet dolor et dignissim.</p>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="delivery" aria-labelledby="delivery-tab">
+							<h2>Delivery</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ornare eros odio, quis posuere nibh vehicula non. Cras id nisl in lectus luctus cursus. Vestibulum magna ligula, efficitur pulvinar augue gravida, commodo commodo enim. Aenean sit amet orci egestas, aliquam eros in, tempor elit. Praesent faucibus viverra finibus. Vivamus neque augue, pharetra eget dignissim vel, venenatis ut arcu. Fusce euismod placerat arcu, nec ultricies mauris iaculis in. Ut at ornare velit, quis semper eros. Etiam vitae dolor in orci rutrum fringilla. Integer aliquet vitae dui egestas feugiat.</p>
+
+							<p>Ut efficitur nec leo sed iaculis. Etiam vel ex pellentesque, pulvinar diam sed, eleifend lorem. Fusce interdum neque at nibh congue, sit amet auctor turpis luctus. Phasellus sit amet laoreet elit. Curabitur ac dapibus massa, laoreet maximus massa. Fusce dignissim, quam quis congue accumsan, dolor tellus porta urna, ut ultricies est nibh dignissim purus. Ut dapibus venenatis sem ut bibendum. Sed feugiat magna id arcu commodo ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam augue tortor, vulputate sed commodo a, facilisis vel leo.</p>
+
+							<p>Sed faucibus erat vitae vulputate pulvinar. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque sit amet imperdiet dolor, eu maximus libero. Quisque pulvinar bibendum lectus in ullamcorper. Integer ac elementum nisi, ac pulvinar ex. Mauris sed risus ut mauris euismod bibendum sit amet ac mi. Nunc mi enim, lacinia at enim dignissim, eleifend fringilla dui. Vivamus nec congue ipsum. Nulla facilisi. Vivamus dapibus arcu odio, nec viverra lectus consequat sit amet. Sed blandit augue odio, ut bibendum lectus consectetur at. Ut consectetur est quis sapien laoreet, et iaculis felis sodales. Suspendisse dignissim laoreet leo, sit amet ullamcorper magna euismod a.</p>
+
+							<p>Curabitur convallis augue non risus pharetra egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec bibendum magna quis lectus viverra, sit amet faucibus massa pretium. Nunc eu massa ac libero feugiat consequat. Fusce malesuada magna eget elementum pretium. Fusce rutrum ligula nec magna placerat, nec luctus lorem lacinia. Cras maximus tellus eget tempus imperdiet. Aliquam erat volutpat. In pretium convallis tempor. Vivamus at feugiat nulla. Quisque vitae tortor ac ligula luctus luctus. Nullam mollis purus id urna vulputate aliquam. In non tincidunt orci. Morbi laoreet libero viverra, laoreet velit a, molestie enim. Nullam quis elit ante.</p>
+
+							<p>Aliquam tortor nisl, iaculis eget aliquam nec, congue quis risus. Ut ultricies augue nec ornare luctus. Aliquam in vehicula est, eu iaculis eros. Aliquam quis lorem sed orci scelerisque consectetur eget eu purus. Pellentesque quis nisi iaculis, tristique lorem id, porta risus. Aliquam nisl massa, scelerisque eget accumsan sit amet, ultrices vel nisl. Sed pellentesque sit amet dolor et dignissim.</p>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="returns" aria-labelledby="returns-tab">
+							<h2>Returns</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ornare eros odio, quis posuere nibh vehicula non. Cras id nisl in lectus luctus cursus. Vestibulum magna ligula, efficitur pulvinar augue gravida, commodo commodo enim. Aenean sit amet orci egestas, aliquam eros in, tempor elit. Praesent faucibus viverra finibus. Vivamus neque augue, pharetra eget dignissim vel, venenatis ut arcu. Fusce euismod placerat arcu, nec ultricies mauris iaculis in. Ut at ornare velit, quis semper eros. Etiam vitae dolor in orci rutrum fringilla. Integer aliquet vitae dui egestas feugiat.</p>
+
+							<p>Ut efficitur nec leo sed iaculis. Etiam vel ex pellentesque, pulvinar diam sed, eleifend lorem. Fusce interdum neque at nibh congue, sit amet auctor turpis luctus. Phasellus sit amet laoreet elit. Curabitur ac dapibus massa, laoreet maximus massa. Fusce dignissim, quam quis congue accumsan, dolor tellus porta urna, ut ultricies est nibh dignissim purus. Ut dapibus venenatis sem ut bibendum. Sed feugiat magna id arcu commodo ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam augue tortor, vulputate sed commodo a, facilisis vel leo.</p>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="reviews" aria-labelledby="reviews-tab">
+							<h2>Reviews</h2>
+							<div class="review" itemprop="review" itemscope itemtype="http://schema.org/Review">
+								<div class="h3"><span itemprop="name">Love this product</span> - by <span itemprop="author">Ellie</span></div>
+								<p>
+									December 12, 2014
+									<meta itemprop="datePublished" content="2014-12-01">
+								</p>
+								<div itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+									<meta itemprop="worstRating" content="1">
+									<p><span itemprop="ratingValue">1</span>/<span itemprop="bestRating">5</span> stars</p>
+								</div>
+								<p itemprop="description">The lamp burned out and now I have to replace it.</p>
+							</div>								
+							<div class="review" itemprop="review" itemscope itemtype="http://schema.org/Review">
+								<div class="h3"><span itemprop="name">Love this product</span> - by <span itemprop="author">Ellie</span></div>
+								<p>
+									December 12, 2014
+									<meta itemprop="datePublished" content="2014-12-01">
+								</p>
+								<div itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+									<meta itemprop="worstRating" content="1">
+									<p><span itemprop="ratingValue">1</span>/<span itemprop="bestRating">5</span> stars</p>
+								</div>
+								<p itemprop="description">The lamp burned out and now I have to replace it.</p>
+							</div>								
+							<div class="review" itemprop="review" itemscope itemtype="http://schema.org/Review">
+								<div class="h3"><span itemprop="name">Love this product</span> - by <span itemprop="author">Ellie</span></div>
+								<p>
+									December 12, 2014
+									<meta itemprop="datePublished" content="2014-12-01">
+								</p>
+								<div itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+									<meta itemprop="worstRating" content="1">
+									<p><span itemprop="ratingValue">1</span>/<span itemprop="bestRating">5</span> stars</p>
+								</div>
+								<p itemprop="description">The lamp burned out and now I have to replace it.</p>
+							</div>								
+						</div>
+					</div>
+				</div>
+
+				<div class="tabs tabs-uptomd-parallel tabs-behavior-accordion thick-marg-top-bottom" role="tabpanel" data-tabs-behavior="accordion">
+					<ul class="nav-tabs clearfix">
+						<li role="presentation" class="active">
+							<a href="#other-customers-also-viewed" id="ocav-tab" role="tab" aria-controls="ocav" aria-expanded="true" class="js-tab">Other customers also viewed</a>
+						</li>
+						<li role="presentation">
+							<a href="#other-customers-also-bought" id="ocab-tab" role="tab" aria-controls="ocab" aria-expanded="true" class="js-tab">Other customers also bought</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="ocav" aria-labelledby="ocav-tab">
+							<div class="carousel carousel-uptosm product-related-products-carousel product-ocav-carousel">
+								<ul>
+									<li class="item">@@include("_product-with-schema.html", {"schema_itemprop" : "itemprop=\"isRelatedTo\""})</li>
+									<li class="item">@@include("_product-with-schema.html", {"schema_itemprop" : "itemprop=\"isRelatedTo\""})</li>
+									<li class="item">@@include("_product-with-schema.html", {"schema_itemprop" : "itemprop=\"isRelatedTo\""})</li>
+									<li class="item">@@include("_product-with-schema.html", {"schema_itemprop" : "itemprop=\"isRelatedTo\""})</li>
+									<li class="item">@@include("_product-with-schema.html", {"schema_itemprop" : "itemprop=\"isRelatedTo\""})</li>
+									<li class="item">@@include("_product-with-schema.html", {"schema_itemprop" : "itemprop=\"isRelatedTo\""})</li>
+								</ul>
+								<a href="#" class="prev blank visible-md visible-lg"><span class="icon-chevron-left icon-chevron-left-black icon-center"></span></a>
+								<a href="#" class="next blank visible-md visible-lg"><span class="icon-chevron-right icon-chevron-right-black icon-center"></span></a>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="ocab" aria-labelledby="ocab-tab">
+							<div class="carousel carousel-uptosm product-related-products-carousel product-ocab-carousel">
+								<ul>
+									<li class="item">@@include("_product-with-schema.html", {"schema_itemprop" : "itemprop=\"isRelatedTo\""})</li>
+									<li class="item">@@include("_product-with-schema.html", {"schema_itemprop" : "itemprop=\"isRelatedTo\""})</li>
+									<li class="item">@@include("_product-with-schema.html", {"schema_itemprop" : "itemprop=\"isRelatedTo\""})</li>
+									<li class="item">@@include("_product-with-schema.html", {"schema_itemprop" : "itemprop=\"isRelatedTo\""})</li>
+									<li class="item">@@include("_product-with-schema.html", {"schema_itemprop" : "itemprop=\"isRelatedTo\""})</li>
+									<li class="item">@@include("_product-with-schema.html", {"schema_itemprop" : "itemprop=\"isRelatedTo\""})</li>
+								</ul>
+								<a href="#" class="prev blank visible-md visible-lg"><span class="icon-chevron-left icon-chevron-left-black icon-center"></span></a>
+								<a href="#" class="next blank visible-md visible-lg"><span class="icon-chevron-right icon-chevron-right-black icon-center"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			@@include("_rvi.html")
+		</div>
+		<!-- /.pdp-container -->
+	</div>
+	<!-- /.row -->
+
+</main>
+
+<div class="pdp-sticky-header">
+	<div class="container">
+		<div class="row">
+			<div class="col col-md-1 col-image">
+				<img src="http://houseoffraser.scene7.com/is/image/HOF/I_124527708_00_20140507?size=50,80">
+				<a class="icon icon-cursor-zoom" href="#"></a>
+			</div>
+			<div class="col col-md-6 col-product-data">
+				<div class="center-vertical">
+					<h4>Levi's 501 One Wash Straight Jeans</h4>
+					<div class="product-info">Quantity: <strong>1</strong>, Colour: <strong>Blue</strong>, Size: <strong>38in/30in</strong> - <span class="out-of-stock">Out of stock online</span><link itemprop="availability" href="http://schema.org/OutOfStock" /><!-- NOTE TO SWINDON: Please note: for 'availability', replace the 'OutOfStock' append on href=http://schema.org/OutOfStock with the appropriate variable: Discontinued, InStock, InStoreOnly, LimitedAvailability, OnlineOnly, OutOfStock, PreOrder, SoldOut  --></div>
+					<a href="#" class="product-do-change">Change size or quantity</a>
+				</div>
+			</div>
+			<div class="col col-md-2 col-product-price">
+				<div class="center-vertical">
+					<span class="price prod-price-now-thick">Now &pound;70.00</span>
+					<span class="price prod-price-was-thick">Was &pound;170.00</span>
+				</div>
+			</div>
+			<div class="col col-md-3">
+				<div class="center-vertical">
+					<button type="submit" class="btn btn-primary btn-add-to-bag full-width" disabled="disabled">Add to Bag</button>
+					<a href="#" class="thin-marg-top text-center display-block">Select size to add to bag</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="product-size-guide">
+@@include("_sizeguide.html")
+</div>
+
+@@include("_footer.html")

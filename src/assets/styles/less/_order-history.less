@@ -1,0 +1,308 @@
+/**
+ * Order history list
+ */
+.order-history-list {
+	.order-history-item {
+		position: relative;
+		&:last-child {
+			.no-marg();
+			.body {
+				border-bottom: 1px @gray-light solid;
+			}
+		}
+	}
+}
+
+.order-history {
+
+	color: @color-black;
+
+	.head, .body {
+		margin: 0;
+	}
+
+	.head {
+
+		border: 1px @gray-light solid;
+		border-bottom: none;
+
+		.col {
+			.thick-pad-side();
+			.pad-top();
+			.pad-bottom();
+			.font-size(16);
+
+			&:first-child {
+				border-right: 1px @gray-light solid;
+			}
+		}
+	}
+
+	.body {
+
+		.thick-pad-top();
+		.thick-pad-bottom();
+		border: 1px @gray-light solid;
+		border-bottom: none;
+		position: relative;
+
+		.order-info, .order-items {
+			.thick-pad-side();
+			position: static;
+		}
+
+		.order-info {
+			border-right: 1px @gray-light solid;
+		}
+
+		.row {
+			.thin-pad-top();
+			.thin-pad-bottom();
+
+			@media (max-width: @screen-sm-max) {
+				> div:not(.label) {
+					text-align: right;
+				}
+			}
+		}
+
+		@media (min-width: @screen-md) {
+			position: static;
+
+			.order-items {
+				padding-bottom: 80px;
+			}
+		}
+	}
+
+	.label {
+		font-weight: bold;
+	}
+
+	.totals {
+		position: absolute;
+		bottom: @helper-thick;
+		right: @helper-thick;
+
+		.label {
+			.pad-top();
+			.pad-bottom();
+			color: @color-black;
+			text-align: right;
+		}
+	}
+}
+
+@media screen and (max-width: @screen-sm-max) {
+	.order-history-item {
+		.marg-bottom();
+		.body {
+			border-bottom: 1px @gray-light solid;
+		}
+	}
+
+	.order-history {
+		.totals {
+			position: static;
+
+			.label {
+				text-align: left;
+			}
+
+			.btn-default {
+				width: 100%;
+			}
+		}
+	}
+	.price {
+		position: absolute;
+		top: 50%;
+		right: @helper-standard;
+		margin: -@helper-thin 0 0;
+	}
+	.order-info {
+		.col-xs-6 {
+			padding: 0;
+		}
+	}
+}
+
+/**
+ * Order history details
+ */
+.order-history-details {
+	
+	h4 {
+		.font-size(16);
+		color: @color-black;
+		font-weight: bold;
+	}
+
+	h5 {
+		.font-size();
+		color: @gray-light;
+		font-weight: bold;
+	}
+
+	.normal {
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	.gift-message {
+		h5 {
+			color: @color-black;
+		}
+	}
+
+	.order-items {
+		.thick-marg-bottom();
+		color: @color-black;
+
+		.body {
+			margin: 0;
+			.marg-bottom();
+			> [class*='col-xs'] {
+				padding: 0;
+			}
+			@media (max-width: @screen-sm-max) {
+				> [class*='col-xs'] {
+					padding: @helper-standard 0;
+				}
+			}
+			> .row {
+				margin: 0;
+			}
+			&:last-child {
+				border-bottom: 1px @gray-lighter solid;
+			}
+		}
+
+		.head {
+			.pad-top();
+			.pad-bottom();
+			border: 1px @color-black solid;
+			border-left: none;
+			border-right: none;
+			font-weight: bold;
+			margin: 0;
+			[class*='col-sm']:last-child {
+				padding-left: 0;
+			}
+		}
+		.status {
+			font-weight: bold;
+		}
+		.delivery {
+			.name {
+				font-weight: bold;
+			}
+			.description {
+				.pad-top();
+				display: block;
+				color: @gray-light;
+			}
+		}
+		.items {
+			text-align: left !important;
+			.item {
+				.marg-bottom();
+				position: relative;
+				padding: 0 0 0 95px;
+
+				img {
+					position: absolute;
+					top: 0;
+					left: @helper-standard;
+				}
+				.brand {
+					font-weight: bold;
+				}
+				.name {
+					display: block;
+				}
+				.options {
+					.pad-top();
+					.pad-bottom();
+					color: @gray-light;
+				}
+				.review {
+					font-weight: bold;
+				}
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+		.body {
+			.thick-pad-top();
+			.thick-pad-bottom();
+		}
+	}
+
+	.totals {
+		.row {
+			.pad-top();
+			.pad-bottom();
+			@media (max-width: @screen-xs-max) {
+				.no-marg();
+				[class*="col-"] {
+					.no-pad();
+				}
+			}
+			border-bottom: 1px @color-black solid;
+			&.subtotal {
+				border-bottom-color: @gray-light;
+			}
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+		.subtotal, .total {
+			color: @color-black;
+		}
+		.postage {
+			color: @gray-light;
+		}
+	}
+
+	.delivery-billing-details {
+		.thick-marg-top();
+		.thick-pad-top();
+		border-top: 1px @gray-light solid;
+
+		h5 {
+			color: @color-black;
+			font-weight: bold;
+			.marg-bottom();
+		}
+	}
+
+	.address {
+		color: @gray-light;
+	}
+}
+
+@media screen and (max-width: @screen-sm) {
+	.order-history-details {
+		.order-items-count, .order-date {
+			.marg-bottom();
+		}
+
+		.body {
+			.row {
+				border-bottom: 1px @gray-lighter solid;
+				[class*="col-xs"] {
+					padding-left: 0;
+					padding-right: 0;
+				}
+				[class*="col-xs"]:nth-child(2n) {
+					text-align: right;
+				}
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}

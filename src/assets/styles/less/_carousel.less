@@ -1,0 +1,151 @@
+.carousel {
+	
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+
+    .prev, .next {
+        width: 44px;
+        height: 60px;
+        background: #efefef;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin: -30px 0 0;
+        z-index: 600;
+        
+        &:hover {
+            opacity: .8;
+        }
+
+        &.blank {
+            background: transparent;
+        }
+
+        &.disabled {
+           .hide(); // Will add !important but it is necessary
+        }
+    }
+
+    .next {
+        left: auto;
+        right: 0;
+    }
+
+    ul {
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .item {
+        float: left;
+        position: relative;
+        &.video {
+            width: 450px;
+            height: 100%;
+            > *:first-child {
+                width: 100%;
+                height: 300px;
+                .center-block();
+            }
+            .video-js {
+                height: 100%;
+            }
+            iframe {
+                width: 100%;
+            }
+        }
+    }
+}
+
+ .product-images-carousel-control{
+    &.prev, &.next {
+        width: 44px;
+        height: 60px;
+        background: #efefef;
+        position: absolute;
+        top: 300px;
+        left: @helper-thick;
+        z-index: 600;
+        
+        &:hover {
+            opacity: .8;
+        }
+
+        &.blank {
+            background: transparent;
+        }
+
+        &.disabled {
+           .hide(); // Will add !important but it is necessary
+        }
+    }
+    &.next {
+        left: auto;
+        right: 318px;
+    }
+}
+
+.carousel-thumbs {
+    .pad-top();
+    position: relative;
+
+    ul {
+        overflow: hidden;
+    }
+
+    li {
+        width: @thumb-width;
+        float: left;
+        .marg-right();
+        cursor: pointer;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .skateboard {
+        height: 3px;
+        background: #000;
+        content: "";
+        position: absolute;
+        top: 132px;
+        left: 0;
+        width: @thumb-width;
+    }
+
+    .textboard {
+        text-align: center;
+        font-size: .9rem;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .carousel {
+        height: 320px;
+        .item {
+            height: 320px;
+            img {
+                height: 100%;
+            }
+        }
+        &.carousel-uptosm {
+            height: 100%;
+            .item {
+                height: 100px;
+                width: 75px;
+                img {
+                    height: 100px;
+                }
+            }
+            .prod {
+                width: auto; //
+            }
+            .prod-details {
+                display: none;
+            }
+        }
+    }
+}

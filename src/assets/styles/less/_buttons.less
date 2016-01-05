@@ -1,0 +1,91 @@
+/**
+ * Buttons
+ */
+//
+// General buttons
+// 
+// Markup:
+// <a href="#" class="btn {{modifier_class}}">Button</a>
+//
+// :hover - Hover state
+// :active - Active state
+// :focus - Focus state
+// .btn-primary - Primary button
+// .btn-info - Info button
+// .btn-default - Default state
+// .btn-primary-small - Primary button small
+// .btn-lg - Make a button larger
+// .btn-sm - Make a button smaller
+//
+// Styleguide components.buttons
+//
+.btn {
+	-webkit-font-smoothing: auto;
+	&:active {
+    	outline: 0;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+	&:hover {
+		color: @color-links-hover;
+	}
+	&:focus {
+		outline: 0;
+	}
+}
+
+.btn-info {
+	&:active {
+		background: @gray;
+		border-color: @gray;
+		color: white;
+	}
+}
+
+.btn-default {
+    &:hover {
+        background: @btn-default-bg;
+        border-color: @btn-default-bg;
+    }
+}
+
+.btn-primary {
+    color: @btn-primary-color;
+    border: 2px @btn-primary-border-color solid;
+    border-left: none;
+    border-top: none;
+    height: 44px;
+    .pad();
+    &:hover {
+        background: @btn-primary-bg-hover;
+        color: @btn-primary-color;
+    }
+    &[disabled] {
+        color: #b3b3b3;
+        background: #e3eeae;
+        border-color: #cfd8a8;
+        opacity: 1;
+    }
+}
+
+.btn-primary-small {
+    .btn-primary();
+    .font-size(13);
+    padding: @helper-thin @helper-standard;
+    display: block;
+    height: auto;
+    line-height: normal;
+}
+
+
+ /**
+ * Override Bootstrap button sizes
+ */
+.btn-lg {
+  // line-height: ensure even-numbered height of button next to large input
+  .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-base; @line-height-base; @border-radius-base);
+}
+.btn-sm {
+  // line-height: ensure even-numbered height of button next to large input
+  .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-base);
+}

@@ -1,0 +1,585 @@
+@@include("_header.html", {"classes_body" : "pagetype-checkout js-pagetype-jquery-validate", "classes_header" : "signed-in secure"})
+@@include("_crumbtrail-checkout-step2.html")
+<main role="main" class="container main-container pagetype-checkout--collection-or-delivery">
+    <a name="skiptocontent" id="skiptocontent"></a>
+    <div class="row">
+        <div class="col-md-12 js-itinerary-parent no-pad">
+            <form class="js-form">
+                <!--left content-->
+                <section>
+                    <div class="col-md-8">
+                        <div class="border-bottom thick-marg-top-bottom">
+                            <header><h1>Delivery</h1></header>
+                        </div>
+                        <p class="thick-marg-bottom"><span class="color-red">*</span> Indicates a required field</p>
+                        <fieldset class="thick-marg-bottom thick-pad-bottom border-bottom">
+                            <legend>Select a Delivery Destination</legend>
+                            <div class="thick-marg-bottom">
+                                <label for="delDest">Select a destination for delivery <span class="color-red">*</span></label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <select required name="delDest" id="delDest" class="form-control">
+                                            <option value="">Select delivery location</option>
+                                            <optgroup label="New destination">
+                                                <option value="uk">UK Delivery</option>
+                                                <option value="ireland">Ireland Delivery</option>
+                                                <option value="international">International Delivery</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="marg-bottom">
+                                <label for="customer-address-country">Country <span class="color-red">*</span></label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <select required class="form-control" name="customer_address_country" id="customer-address-country">
+                                            <option value="">Select from these available countries…</option>
+                                            <option value="UK">United Kingdom</option>
+                                            <option value="IE">Ireland</option>
+                                            <option value="">---------------------</option>
+                                            <option label="Albania" value="AL"> Albania</option>
+                                            <option label="American Samoa" value="AS"> American Samoa</option>
+                                            <option label="Andorra" value="AD"> Andorra</option>
+                                            <option label="Anguilla" value="AI"> Anguilla</option>
+                                            <option label="Antigua &amp; Barbuda" value="AG"> Antigua &amp;Barbuda</option>
+                                            <option label="Argentina" value="AR"> Argentina</option>
+                                            <option label="Armenia" value="AM"> Armenia</option>
+                                            <option label="Aruba" value="AW"> Aruba</option>
+                                            <option label="Australia" value="AU"> Australia</option>
+                                            <option label="Austria" value="AT"> Austria</option>
+                                            <option label="Azerbaijan" value="AZ"> Azerbaijan</option>
+                                            <option label="Bahamas" value="BS"> Bahamas</option>
+                                            <option label="Bangladesh" value="BD"> Bangladesh</option>
+                                            <option label="Barbados" value="BB"> Barbados</option>
+                                            <option label="Belarus" value="BY"> Belarus</option>
+                                            <option label="Belgium" value="BE"> Belgium</option>
+                                            <option label="Belize" value="BZ"> Belize</option>
+                                            <option label="Bermuda" value="BM"> Bermuda</option>
+                                            <option label="Bosnia and Herzegovina" value="BA"> Bosnia and Herzegovina</option>
+                                            <option label="Brazil" value="BR"> Brazil</option>
+                                            <option label="British Virgin Islands" value="VG"> British Virgin Islands</option>
+                                            <option label="Bulgaria" value="BG"> Bulgaria</option>
+                                            <option label="Canada" value="CA"> Canada</option>
+                                            <option label="Cape verde" value="CV"> Cape verde</option>
+                                            <option label="Cayman Islands" value="KY"> Cayman Islands</option>
+                                            <option label="Chile" value="CL"> Chile</option>
+                                            <option label="China" value="CN"> China</option>
+                                            <option label="Colombia" value="CO"> Colombia</option>
+                                            <option label="Cook Islands" value="CK"> Cook Islands</option>
+                                            <option label="Costa Rica" value="CR"> Costa Rica</option>
+                                            <option label="Croatia" value="HR"> Croatia</option>
+                                            <option label="Cuba" value="CU"> Cuba</option>
+                                            <option label="Cyprus" value="CY"> Cyprus</option>
+                                            <option label="Czech Republic" value="CZ"> Czech Republic</option>
+                                            <option label="Denmark" value="DK"> Denmark</option>
+                                            <option label="Dominica" value="DM"> Dominica</option>
+                                            <option label="Dominican Republic" value="DO"> Dominican Republic</option>
+                                            <option label="Ecuador" value="EC"> Ecuador</option>
+                                            <option label="El Salvador" value="SV"> El Salvador</option>
+                                            <option label="Estonia" value="EE"> Estonia</option>
+                                            <option label="F.Y.R.O.M. (Macedonia)" value="MK"> F.Y.R.O.M. (Macedonia)</option>
+                                            <option label="Fiji" value="FJ"> Fiji</option>
+                                            <option label="Finland" value="FI"> Finland</option>
+                                            <option label="France" value="FR"> France</option>
+                                            <option label="French Guiana" value="GF"> French Guiana</option>
+                                            <option label="Georgia" value="GE"> Georgia</option>
+                                            <option label="Germany" value="DE"> Germany</option>
+                                            <option label="Gibraltar" value="GI"> Gibraltar</option>
+                                            <option label="Greece" value="GR"> Greece</option>
+                                            <option label="Greenland" value="GL"> Greenland</option>
+                                            <option label="Grenada" value="GD"> Grenada</option>
+                                            <option label="Guadeloupe" value="GP"> Guadeloupe</option>
+                                            <option label="Guam" value="GU"> Guam</option>
+                                            <option label="Guatemala" value="GT"> Guatemala</option>
+                                            <option label="Guyana" value="GY"> Guyana</option>
+                                            <option label="Haiti" value="HT"> Haiti</option>
+                                            <option label="Honduras" value="HN"> Honduras</option>
+                                            <option label="Hong Kong" value="HK"> Hong Kong</option>
+                                            <option label="Hungary" value="HU"> Hungary</option>
+                                            <option label="Iceland" value="IS"> Iceland</option>
+                                            <option label="India" value="IN"> India</option>
+                                            <option label="Indonesia" value="ID"> Indonesia</option>
+                                            <option label="Ireland" value="IE"> Ireland</option>
+                                            <option label="Israel" value="IL"> Israel</option>
+                                            <option label="Italy" value="IT"> Italy</option>
+                                            <option label="Jamaica" value="JM"> Jamaica</option>
+                                            <option label="Japan" value="JP"> Japan</option>
+                                            <option label="Kazakhstan" value="KZ"> Kazakhstan</option>
+                                            <option label="Kenya" value="KE"> Kenya</option>
+                                            <option label="Kosovo" value="XK"> Kosovo</option>
+                                            <option label="Krygyzstan" value="KG"> Krygyzstan</option>
+                                            <option label="Kuwait" value="KW"> Kuwait</option>
+                                            <option label="Latvia" value="LV"> Latvia</option>
+                                            <option label="Liechtenstein" value="LI"> Liechtenstein</option>
+                                            <option label="Lithuania" value="LT"> Lithuania</option>
+                                            <option label="Luxembourg" value="LU"> Luxembourg</option>
+                                            <option label="Macau" value="MO"> Macau</option>
+                                            <option label="Malaysia" value="MY"> Malaysia</option>
+                                            <option label="Maldives" value="MV"> Maldives</option>
+                                            <option label="Malta" value="MT"> Malta</option>
+                                            <option label="Marshall Islands" value="MH"> Marshall Islands</option>
+                                            <option label="Martinique" value="MQ"> Martinique</option>
+                                            <option>Mauritius</option>
+                                            <option label="Mexico" value="MX"> Mexico</option>
+                                            <option label="Moldova" value="MD"> Moldova</option>
+                                            <option label="Monaco" value="MC"> Monaco</option>
+                                            <option label="Montenegro" value="ME"> Montenegro</option>
+                                            <option label="Montserrat" value="MS"> Montserrat</option>
+                                            <option label="Morocco" value="MA"> Morocco</option>
+                                            <option label="Nepal" value="NP"> Nepal</option>
+                                            <option label="Netherlands" value="NL"> Netherlands</option>
+                                            <option label="New Caledonia" value="NC"> New Caledonia</option>
+                                            <option label="New Zealand" value="NZ"> New Zealand</option>
+                                            <option label="Nicaragua" value="NI"> Nicaragua</option>
+                                            <option label="Norway" value="NO"> Norway</option>
+                                            <option label="Oman" value="OM"> Oman</option>
+                                            <option label="Palau" value="PW"> Palau</option>
+                                            <option label="Panama" value="PA"> Panama</option>
+                                            <option label="Paraguay" value="PY"> Paraguay</option>
+                                            <option label="Peru" value="PE"> Peru</option>
+                                            <option label="Phillipines" value="PH"> Phillipines</option>
+                                            <option label="Poland" value="PL"> Poland</option>
+                                            <option label="Portugal" value="PT"> Portugal</option>
+                                            <option label="Puerto Rico" value="PR"> Puerto Rico</option>
+                                            <option label="Qatar" value="QA"> Qatar</option>
+                                            <option label="Romania" value="RO"> Romania</option>
+                                            <option label="Russia" value="RU"> Russia</option>
+                                            <option label="Samoa" value="WS"> Samoa</option>
+                                            <option label="San Marino" value="SM"> San Marino</option>
+                                            <option label="Saudi Arabia" value="SA"> Saudi Arabia</option>
+                                            <option label="Serbia" value="RS"> Serbia</option>
+                                            <option label="Seychelles" value="SC"> Seychelles</option>
+                                            <option label="Singapore" value="SG"> Singapore</option>
+                                            <option label="Slovak Republic" value="SK"> Slovak Republic</option>
+                                            <option label="Slovenia" value="SI"> Slovenia</option>
+                                            <option label="Solomon Islands" value="SB"> Solomon Islands</option>
+                                            <option label="South Africa" value="ZA"> South Africa</option>
+                                            <option label="South Korea" value="KR"> South Korea</option>
+                                            <option label="Spain" value="ES"> Spain</option>
+                                            <option label="Sri Lanka" value="LK"> Sri Lanka</option>
+                                            <option label="St Kitts &amp; Nevis" value="KN"> St Kitts &amp; Nevis</option>
+                                            <option label="St Lucia" value="LC"> St Lucia</option>
+                                            <option label="St Vincent &amp; The Grenadines" value="VC"> St Vincent &amp; The Grenadines</option>
+                                            <option label="Suriname" value="SR"> Suriname</option>
+                                            <option label="Sweden" value="SE"> Sweden</option>
+                                            <option label="Switzerland" value="CH"> Switzerland</option>
+                                            <option label="Taiwan" value="TW"> Taiwan</option>
+                                            <option label="Thailand" value="TH"> Thailand</option>
+                                            <option label="Trinidad &amp; Tobago" value="TT"> Trinidad &amp; Tobago</option>
+                                            <option label="Turkey" value="TR"> Turkey</option>
+                                            <option label="Turks &amp; Caicos Islands" value="TC"> Turks &amp;Caicos Islands</option>
+                                            <option label="Ukraine" value="UA"> Ukraine</option>
+                                            <option label="United Arab Emirates" value="AE"> United Arab Emirates</option>
+                                            <option label="United Kingdom" value="UK"> United Kingdom</option>
+                                            <option label="United States" value="US"> United States</option>
+                                            <option label="Uruguay" value="UY"> Uruguay</option>
+                                            <option label="Uzbekistan" value="UZ"> Uzbekistan</option>
+                                            <option label="Venezuela" value="VE"> Venezuela</option>
+                                            <option label="Vietnam" value="VN"> Vietnam</option>
+                                            <option label="Virgin Islands" value="VI"> Virgin Islands</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="thick-marg-bottom">
+                            <legend>Enter Delivery Name & Address</legend>
+                            <div class="alert alert-warning js-ireland-del-warning" role="alert">
+                                <span class="sr-only">Warning:</span>
+                                <strong>NOTE: </strong>Please enter the full city/town name with the area code (if
+                                applicable) into the 'City' field. e.g. Dublin 23, Cork, Dundrum.
+                            </div>
+                            <section class="thick-marg-bottom">
+                                <label for="customer-title">Title <span class="color-red">*</span></label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <select required="" id="customer-title" class="form-control">
+                                            <option label="Please select" value="" selected="selected">Please select</option>
+                                            <option label="Mr" value="Mr.">Mr</option>
+                                            <option label="Miss" value="Miss">Miss</option>
+                                            <option label="Mrs" value="Mrs.">Mrs</option>
+                                            <option label="Ms" value="Ms.">Ms</option>
+                                            <option label="Dr" value="Dr.">Dr</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="thick-marg-bottom">
+                                <label for="first-name">First Name <span class="color-red">*</span></label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input required id="first-name" class="form-control" type="text" name="customer_first_name" placeholder="First Name">
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="thick-marg-bottom">
+                                <label for="last-name">Last Name <span class="color-red">*</span></label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input required id="last-name" class="form-control" type="text" name="customer_last_name" placeholder="Last Name">
+                                    </div>
+                                </div>
+                            </section>
+                            <hr>
+                            <section class="thick-marg-bottom">
+                                <label for="house-num">UK house number or name <span class="color-red">*</span></label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input required id="house-num" class="form-control" type="text" name="house_num" placeholder="House No.">
+                                    </div>
+                                </div>
+                            </section>
+                            <div id="js-uk-address-formfull" style="display:none">
+                                <section class="thick-marg-bottom">
+                                    <label for="address-line-1">Address Line 1 <span class="color-red">*</span></label>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input required id="address-line-1" class="form-control" type="text" name="address_line_1" placeholder="Address Line 1">
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="thick-marg-bottom">
+                                    <label for="address-line-2">Address Line 2</label>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input id="address-line-2" class="form-control" type="text" name="address_line_2" placeholder="Address Line 2">
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="thick-marg-bottom">
+                                    <label for="customer-town">Town or city <span class="color-red">*</span></label>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <input id="customer-town" class="form-control" type="text" name="customer_town" placeholder="Town or city">
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="thick-marg-bottom">
+                                    <label for="customer-county">County</label>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <input id="customer-county" class="form-control" type="text" name="customer_county" placeholder="County">
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <section class="thick-marg-bottom">
+                                <label for="postcode">UK Postcode <span class="color-red">*</span></label>
+                                <div class="row">
+                                    <div class="col-md-7 col-xs-12">
+                                        <div class="input-group">
+                                            <input required id="postcode" class="form-control" type="text" name="postcode" placeholder="Postcode">
+                                            <span class="input-group-btn">
+                                                <button type="submit" class="btn btn-info">Find Address</button>
+                                                <a href="#" class="btn btn-link js-slide-toggle" data-js-toggle="#js-uk-address-formfull">Enter manually</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="pc-lookup-results thick-marg-bottom">
+                                <ul class="list-group list-group__radio-list zebra no-marg">
+                                    <li class="list-group-item no-pad">
+                                        <label class="display-block pad">
+                                            <span class="thin-pad-right"><input type="radio" value="" name="del_address"></span>
+                                            1 Cowley Cottage , Cornwells Bank, Lewes,North Chailey, BN8 4RL
+                                        </label>
+                                    </li>
+                                    <li class="list-group-item no-pad">
+                                        <label class="display-block pad">
+                                            <span class="thin-pad-right"><input type="radio" value="" name="del_address"></span>
+                                            Cowslip Cottage , Cornwells Bank, Lewes,North Chailey, BN8 4RL
+                                        </label>
+                                    </li>
+                                    <li class="list-group-item no-pad">
+                                        <label class="display-block pad">
+                                            <span class="thin-pad-right"><input type="radio" value="" name="del_address"></span>
+                                            Newbarn Farm , Cornwells Bank, Lewes,North Chailey, BN8 4RL
+                                        </label>
+                                    </li>
+                                    <li class="list-group-item no-pad">
+                                        <label class="display-block pad">
+                                            <span class="thin-pad-right"><input type="radio" value="" name="del_address"></span>
+                                            Newbarn Farm Cottage , Cornwells Bank, Lewes,North Chailey, BN8 4RL
+                                        </label>
+                                    </li>
+                                    <li class="list-group-item no-pad">
+                                        <label class="display-block pad">
+                                            <span class="thin-pad-right"><input type="radio" value="" name="del_address"></span>
+                                            Sheepgate Fruit Farm , Cornwells Bank, Lewes,North Chailey, BN8 4RL
+                                        </label>
+                                    </li>
+                                    <li class="list-group-item no-pad">
+                                        <label class="display-block pad">
+                                            <span class="thin-pad-right"><input type="radio" value="" name="del_address"></span>
+                                            Bungalow, Sheepgate Fruit Farm , Cornwells Bank, Lewes,North Chailey, BN8
+                                            4RL
+                                        </label>
+                                    </li>
+                                    <li class="list-group-item no-pad">
+                                        <label class="display-block pad">
+                                            <span class="thin-pad-right"><input type="radio" value="" name="del_address"></span>
+                                            Peggys Cottage, Newbarn Farm , Cornwells Bank, Lewes,North Chailey, BN8 4RL
+                                        </label>
+                                    </li>
+                                    <li class="list-group-item no-pad">
+                                        <label class="display-block pad">
+                                            <span class="thin-pad-right"><input type="radio" value="" name="del_address"></span>
+                                            1 Cowley Cottage , Cornwells Bank, Lewes,North Chailey, BN8 4RL
+                                        </label>
+                                    </li>
+                                    <li class="list-group-item no-pad">
+                                        <label class="display-block pad">
+                                            <span class="thin-pad-right"><input type="radio" value="" name="del_address"></span>
+                                            Cowslip Cottage , Cornwells Bank, Lewes,North Chailey, BN8 4RL
+                                        </label>
+                                    </li>
+                                    <li class="list-group-item no-pad">
+                                        <label class="display-block pad">
+                                            <span class="thin-pad-right"><input type="radio" value="" name="del_address"></span>
+                                            Newbarn Farm , Cornwells Bank, Lewes,North Chailey, BN8 4RL
+                                        </label>
+                                    </li>
+                                    <li class="list-group-item no-pad">
+                                        <label class="display-block pad">
+                                            <span class="thin-pad-right"><input type="radio" value="" name="del_address"></span>
+                                            Newbarn Farm Cottage , Cornwells Bank, Lewes,North Chailey, BN8 4RL
+                                        </label>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="thick-marg-bottom">
+                                <label class="no-marg" for="address-nickname">Give This Address A Nickname</label>
+                                <p class="text-muted thin-marg-bottom">e.g. Home, Work, Grandma's</p>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input id="address-nickname" class="form-control" type="text" name="address_nickname" placeholder="Address Nickname">
+                                    </div>
+                                </div>
+                            </section>
+                            <hr>
+                            <section class="thick-marg-bottom">
+                                <label class="no-marg" for="mobile-number">Mobile Number <span class="color-red">*</span></label>
+                                <p class="text-muted thin-marg-bottom">We will text this number to update you on your
+                                    order</p>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input required id="mobile-number" class="form-control" type="tel" name="mobile_number" minlength="10" placeholder="Mobile Number">
+                                    </div>
+                                </div>
+                            </section>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Select a delivery option for these items</legend>
+                            <div class="clearfix marg-bottom">
+                                <img class="pull-left marg-right" src="https://a248.e.akamai.net/f/248/9086/10h/origin-g2.scene7.com/is/image/HOF/I_194163299_00_20140422?wid=75&amp;hei=100&amp;qlt=80&amp;ResMode=bicub&amp;op_sharpen=1" alt="Lace Sleeve Cuff Dress" height="100" width="75">
+                                <p>
+                                    <a href="#">Eliza J - Lace Sleeve Cuff Dress</a><br/>
+                                    <small>
+                                        <span class="color-light-grey">Colour - Navy, Size - 18</span><br/>
+<span class="prod-pricedetails">
+<span class="prod-price-now">Now £150.00</span><br/>
+<span class="prod-price-was">Was £300.00</span>
+</span>
+                                    </small>
+                                </p>
+                            </div>
+                            <div class="clearfix marg-bottom">
+                                <img class="pull-left marg-right" src="https://a248.e.akamai.net/f/248/9086/10h/origin-g2.scene7.com/is/image/HOF/R_158980027_51_20111122?wid=75&amp;hei=100&amp;qlt=80&amp;ResMode=bicub&amp;op_sharpen=1" alt="Lace Sleeve Cuff Dress" height="100" width="75">
+                                <p>
+                                    <a href="#">Eliza J - Lace Sleeve Cuff Dress</a><br/>
+                                    <small>
+                                        <span class="color-light-grey">Colour - Navy, Size - 18</span><br/>
+<span class="prod-pricedetails">
+<span class="prod-price-now">Now £150.00</span><br/>
+<span class="prod-price-was">Was £300.00</span>
+</span>
+                                    </small>
+                                </p>
+                            </div>
+                            <section>
+                                <p>Select a delivery option for these items <span class="color-red">*</span></p>
+                                <ul class="list-group list-group__radio-list zebra">
+                                    <li class="list-group-item no-pad active">
+                                        <label class="display-block pad">
+                                            <table width="100%">
+                                                <tr>
+                                                    <td width="25">
+                                                        <input type="radio" value="del_pre9am" name="del_option" checked>
+                                                    </td>
+                                                    <td>
+                                                        <p class="list-group__radio-list--title no-marg">Pre 9am
+                                                            Delivery</p>
+                                                        <p class="thin-marg-bottom pad-right">Order by 7pm for delivery before 9am
+                                                            from Thursday 27 November</p>
+                                                        <select id="del-pre9am-datepicker" name="del_pre9am_datepicker">
+                                                            <option value="">Select a date</option>
+                                                            <option value="27/11/2014">Thursday 27 November</option>
+                                                            <option value="28/11/2014">Friday 28 November</option>
+                                                            <option value="29/11/2014">Saturday 29 November</option>
+                                                            <option value="01/12/2014">Monday 01 December</option>
+                                                            <option value="02/12/2014">Tuesday 02 December</option>
+                                                            <option value="03/12/2014">Wednesday 03 December</option>
+                                                            <option value="04/12/2014">Thursday 04 December</option>
+                                                            <option value="05/12/2014">Friday 05 December</option>
+                                                            <option value="06/12/2014">Saturday 06 December</option>
+                                                            <option value="08/12/2014">Monday 08 December</option>
+                                                            <option value="09/12/2014">Tuesday 09 December</option>
+                                                            <option value="10/12/2014">Wednesday 10 December</option>
+                                                        </select>
+                                                    </td>
+                                                    <td width="50">
+                                                        <span>£8.00</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </label>
+                                    </li>
+                                    <li class="list-group-item no-pad">
+                                        <label class="display-block pad">
+                                            <table width="100%">
+                                                <tr>
+                                                    <td width="25">
+                                                        <input type="radio" value="del_standard" name="del_option">
+                                                    </td>
+                                                    <td>
+                                                        <p class="list-group__radio-list--title no-marg">Standard
+                                                            Delivery (3 - 5 working days)</p>
+                                                        <p class="thin-marg-bottom pad-right">Delivered in 3 - 5 working days, 8am
+                                                            - 8pm (FREE on all orders of £50 or more) between Tuesday 2
+                                                            & Thursday 4 December</p>
+                                                    </td>
+                                                    <td width="50">
+                                                        <span>£3.00</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </label>
+                                    </li>
+                                    <li class="list-group-item no-pad">
+                                        <label class="display-block pad">
+                                            <table width="100%">
+                                                <tr>
+                                                    <td width="25">
+                                                        <input type="radio" value="del_nextday" name="del_option">
+                                                    </td>
+                                                    <td>
+                                                        <p class="list-group__radio-list--title no-marg">Next Day
+                                                            delivery</p>
+                                                        <p class="thin-marg-bottom pad-right">Order by 7pm for delivery 8am - 8pm
+                                                            Friday 28 November</p>
+                                                    </td>
+                                                    <td width="50">
+                                                        <span>£6.00</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </label>
+                                    </li>
+                                    <li class="list-group-item no-pad">
+                                        <label class="display-block pad">
+                                            <table width="100%">
+                                                <tr>
+                                                    <td width="25">
+                                                        <input type="radio" value="del_nominated" name="del_option">
+                                                    </td>
+                                                    <td>
+                                                        <p class="list-group__radio-list--title no-marg">Nominated Day
+                                                            Delivery</p>
+                                                        <p class="thin-marg-bottom pad-right">Order by 7pm for delivery 8am - 8pm
+                                                            from Saturday 29 November</p>
+                                                        <select id="del-nominated-datepicker" name="del_nominated_datepicker">
+                                                            <option value="">Select a date</option>
+                                                            <option value="27/11/2014">Thursday 27 November</option>
+                                                            <option value="28/11/2014">Friday 28 November</option>
+                                                            <option value="29/11/2014">Saturday 29 November</option>
+                                                            <option value="01/12/2014">Monday 01 December</option>
+                                                            <option value="02/12/2014">Tuesday 02 December</option>
+                                                            <option value="03/12/2014">Wednesday 03 December</option>
+                                                            <option value="04/12/2014">Thursday 04 December</option>
+                                                            <option value="05/12/2014">Friday 05 December</option>
+                                                            <option value="06/12/2014">Saturday 06 December</option>
+                                                            <option value="08/12/2014">Monday 08 December</option>
+                                                            <option value="09/12/2014">Tuesday 09 December</option>
+                                                            <option value="10/12/2014">Wednesday 10 December</option>
+                                                        </select>
+                                                    </td>
+                                                    <td width="50">
+                                                        <span>£6.00</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </label>
+                                    </li>
+                                    <li class="list-group-item no-pad">
+                                        <label class="display-block pad">
+                                            <table width="100%">
+                                                <tr>
+                                                    <td width="25">
+                                                        <input type="radio" value="del_evening" name="del_option">
+                                                    </td>
+                                                    <td>
+                                                        <p class="list-group__radio-list--title no-marg">Next Evening
+                                                            Delivery</p>
+                                                        <p class="thin-marg-bottom pad-right">Order by midnight for delivery 6pm -
+                                                            10pm (Mon-Sun) from Friday 28 November</p>
+                                                        <select id="del-evening-datepicker" name="del_evening_datepicker">
+                                                            <option value="">Select a date</option>
+                                                            <option value="27/11/2014">Thursday 27 November</option>
+                                                            <option value="28/11/2014">Friday 28 November</option>
+                                                            <option value="29/11/2014">Saturday 29 November</option>
+                                                            <option value="01/12/2014">Monday 01 December</option>
+                                                            <option value="02/12/2014">Tuesday 02 December</option>
+                                                            <option value="03/12/2014">Wednesday 03 December</option>
+                                                            <option value="04/12/2014">Thursday 04 December</option>
+                                                            <option value="05/12/2014">Friday 05 December</option>
+                                                            <option value="06/12/2014">Saturday 06 December</option>
+                                                            <option value="08/12/2014">Monday 08 December</option>
+                                                            <option value="09/12/2014">Tuesday 09 December</option>
+                                                            <option value="10/12/2014">Wednesday 10 December</option>
+                                                        </select>
+                                                    </td>
+                                                    <td width="50">
+                                                        <span>£6.00</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </section>
+                        </fieldset>
+                    </div>
+                    <!--right-content - impulse(itinerary)-->
+                    <div class="col-md-4 clearfix border">
+                        <div class="clearfix no-pad thick-marg-bottom">
+                            @@include("_mini-cart-checkout-col.html", {"submit_button_text" : "Continue to Payment"})
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="col-md-8">
+                        <section>
+                            <div class="row no-marg">
+                                <div class="col-md-12 border-top pad-top"></div>
+                            </div>
+                            <div class="row no-marg">
+                                <div class="col-md-7 hidden-xs hidden-sm">&nbsp;</div>
+                                <div class="col-md-5 no-pad">
+                                    <button type="submit" class="btn btn-primary full-width marg-bottom">Secure
+                                        Checkout
+                                    </button>
+                                    <p class="text-center">By submitting an order you agree to the House of Fraser <a href="#">Terms & Conditions</a></p>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="js-itinerary-snapped-trigger">
+                        </div>
+                    </div>
+                </section>
+            </form>
+        </div>
+    </div>
+</main>
+@@include("_footer-secure.html")

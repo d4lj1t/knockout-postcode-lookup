@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>KSS: Living Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="http://hof-uxtest.cloudapp.net/styleguide/public/kss.css">
+  <script type="text/javascript">
+  var _script_prefix = window.location.host == "hof-uxtest.cloudapp.net" ? '' : '';
+  document.write('\x3Cscript data-main="' + _script_prefix + '/assets/scripts/main" src="' + _script_prefix + '/assets/scripts/lib/requirejs.min.js">\x3C/script>');
+  </script>
+
+  <link rel="stylesheet" href="/assets/styles/styles.min.css">
+  <link rel="stylesheet" href="/assets/styles/sg-fixtures.min.css">
+  
+</head>
+<body id="kss-node">
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">kss-node<br>Style Guide</h1>
+  </header>
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-components.html">
+          <span class="kss-nav__ref">1</span
+          ><span class="kss-nav__name">Components</span>
+        </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-components.html#kssref-components.breadcrumbs">
+                <span class="kss-nav__ref">1.1</span
+                ><span class="kss-nav__name">Breadcrumbs</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-components.html#kssref-components.buttons">
+                <span class="kss-nav__ref">1.2</span
+                ><span class="kss-nav__name">General buttons</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-components.html#kssref-components.global-messages">
+                <span class="kss-nav__ref">1.3</span
+                ><span class="kss-nav__name">Global messages</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-components.html#kssref-components.pagination">
+                <span class="kss-nav__ref">1.4</span
+                ><span class="kss-nav__name">Pagination</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-components.html#kssref-components.plpproduct">
+                <span class="kss-nav__ref">1.5</span
+                ><span class="kss-nav__name">Product module</span>
+              </a>
+            </li>
+        </ul>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-megamenu.html">
+          <span class="kss-nav__ref">2</span
+          ><span class="kss-nav__name">Megamenu</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-minicart.html">
+          <span class="kss-nav__ref">3</span
+          ><span class="kss-nav__name">Mini cart</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+
+      <div     id="kssref-components" class="kss-section kss-section--depth-1">
+
+    <div class="kss-style">
+      <h1 class="kss-title kss-title--level-1">
+        <a class="kss-title__permalink" href="#kssref-components">
+          <span class="kss-title__ref">1</span
+          >Components
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h1>
+
+
+      <div class="kss-description">
+        <p>Reusable components</p>
+
+      </div>
+    </div>
+
+
+      </div>
+      <section id="kssref-components.breadcrumbs" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-components.breadcrumbs">
+          <span class="kss-title__ref">1.1</span
+          >Breadcrumbs
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="col-sm-12">
+	<div class="crumb-trail crumb-trail--normal" id="js-crumb-trail">
+		<ul class="crumb-trail-container clearfix" id="js-crumb-trail-container" role="navigation" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<li class="crumb-item crumb-home js-crumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Homepage</span></a><meta itemprop="position" content="1" /></li>
+			<li class="crumb-item js-crumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Crumb item</span></a><meta itemprop="position" content="2" /></li>
+			<li class="crumb-item js-crumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Crumb item</span></a><meta itemprop="position" content="3" /></li>
+			<li class="crumb-item js-crumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="item"><span itemprop="name">Prod/cat name</span><meta itemprop="position" content="4" /></li>
+		</ul>
+	</div>	
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;col-sm-12&quot;&gt;
+	&lt;div class=&quot;crumb-trail crumb-trail--normal&quot; id=&quot;js-crumb-trail&quot;&gt;
+		&lt;ul class=&quot;crumb-trail-container clearfix&quot; id=&quot;js-crumb-trail-container&quot; role=&quot;navigation&quot; itemscope itemtype=&quot;http://schema.org/BreadcrumbList&quot;&gt;
+			&lt;li class=&quot;crumb-item crumb-home js-crumb-item&quot; itemprop=&quot;itemListElement&quot; itemscope itemtype=&quot;http://schema.org/ListItem&quot;&gt;&lt;a href=&quot;/&quot; itemprop=&quot;item&quot;&gt;&lt;span itemprop=&quot;name&quot;&gt;Homepage&lt;/span&gt;&lt;/a&gt;&lt;meta itemprop=&quot;position&quot; content=&quot;1&quot; /&gt;&lt;/li&gt;
+			&lt;li class=&quot;crumb-item js-crumb-item&quot; itemprop=&quot;itemListElement&quot; itemscope itemtype=&quot;http://schema.org/ListItem&quot;&gt;&lt;a href=&quot;#&quot; itemprop=&quot;item&quot;&gt;&lt;span itemprop=&quot;name&quot;&gt;Crumb item&lt;/span&gt;&lt;/a&gt;&lt;meta itemprop=&quot;position&quot; content=&quot;2&quot; /&gt;&lt;/li&gt;
+			&lt;li class=&quot;crumb-item js-crumb-item&quot; itemprop=&quot;itemListElement&quot; itemscope itemtype=&quot;http://schema.org/ListItem&quot;&gt;&lt;a href=&quot;#&quot; itemprop=&quot;item&quot;&gt;&lt;span itemprop=&quot;name&quot;&gt;Crumb item&lt;/span&gt;&lt;/a&gt;&lt;meta itemprop=&quot;position&quot; content=&quot;3&quot; /&gt;&lt;/li&gt;
+			&lt;li class=&quot;crumb-item js-crumb-item&quot; itemprop=&quot;itemListElement&quot; itemscope itemtype=&quot;http://schema.org/ListItem&quot;&gt;&lt;span itemprop=&quot;item&quot;&gt;&lt;span itemprop=&quot;name&quot;&gt;Prod/cat name&lt;/span&gt;&lt;meta itemprop=&quot;position&quot; content=&quot;4&quot; /&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;	
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-components.buttons" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-components.buttons">
+          <span class="kss-title__ref">1.2</span
+          >General buttons
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <a href="#" class="btn ">Button</a>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          :hover
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Hover state
+        </div>
+        <div class="kss-modifier__example">
+          <a href="#" class="btn pseudo-class-hover">Button</a>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          :active
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Active state
+        </div>
+        <div class="kss-modifier__example">
+          <a href="#" class="btn pseudo-class-active">Button</a>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          :focus
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Focus state
+        </div>
+        <div class="kss-modifier__example">
+          <a href="#" class="btn pseudo-class-focus">Button</a>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .btn-primary
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Primary button
+        </div>
+        <div class="kss-modifier__example">
+          <a href="#" class="btn btn-primary">Button</a>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .btn-info
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Info button
+        </div>
+        <div class="kss-modifier__example">
+          <a href="#" class="btn btn-info">Button</a>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .btn-default
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Default state
+        </div>
+        <div class="kss-modifier__example">
+          <a href="#" class="btn btn-default">Button</a>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .btn-primary-small
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Primary button small
+        </div>
+        <div class="kss-modifier__example">
+          <a href="#" class="btn btn-primary-small">Button</a>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .btn-lg
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Make a button larger
+        </div>
+        <div class="kss-modifier__example">
+          <a href="#" class="btn btn-lg">Button</a>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .btn-sm
+        </div>
+        <div class="kss-modifier__description kss-style">
+          Make a button smaller
+        </div>
+        <div class="kss-modifier__example">
+          <a href="#" class="btn btn-sm">Button</a>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;a href=&quot;#&quot; class=&quot;btn &quot;&gt;Button&lt;/a&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-components.global-messages" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-components.global-messages">
+          <span class="kss-title__ref">1.3</span
+          >Global messages
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flash-message global-message "><div class="container">Due to adverse weather in the UK, some deliveries may take longer than usual. <a href="#">Find outmore</a>. <a href="#" class="js-close icon-close"></a></div></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .centered
+        </div>
+        <div class="kss-modifier__description kss-style">
+          With text center
+        </div>
+        <div class="kss-modifier__example">
+          <div class="flash-message global-message centered"><div class="container">Due to adverse weather in the UK, some deliveries may take longer than usual. <a href="#">Find outmore</a>. <a href="#" class="js-close icon-close"></a></div></div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;flash-message global-message &quot;&gt;&lt;div class=&quot;container&quot;&gt;Due to adverse weather in the UK, some deliveries may take longer than usual. &lt;a href=&quot;#&quot;&gt;Find outmore&lt;/a&gt;. &lt;a href=&quot;#&quot; class=&quot;js-close icon-close&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-components.pagination" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-components.pagination">
+          <span class="kss-title__ref">1.4</span
+          >Pagination
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="swatches swatches-pagination"><div class="swatches-container"><a href="#" class="swatch pagination-nav-prev disabled" rel="prev"><span class="sr-only">Previous page</span></a><a href="#" class="swatch" rel="prev">1</a>
+<a href="#" class="swatch selected">2</a>
+                        <a href="#" class="swatch" rel="next">3</a>
+                           <span class="swatch elipsis">...</span>
+                           <a href="#" class="swatch">999</a>
+                           <a href="#" class="swatch pagination-nav-next" rel="next"><span class="sr-only">Next page</span></a>
+                       </div></div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;swatches swatches-pagination&quot;&gt;&lt;div class=&quot;swatches-container&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;swatch pagination-nav-prev disabled&quot; rel=&quot;prev&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Previous page&lt;/span&gt;&lt;/a&gt;&lt;a href=&quot;#&quot; class=&quot;swatch&quot; rel=&quot;prev&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;swatch selected&quot;&gt;2&lt;/a&gt;
+                        &lt;a href=&quot;#&quot; class=&quot;swatch&quot; rel=&quot;next&quot;&gt;3&lt;/a&gt;
+                           &lt;span class=&quot;swatch elipsis&quot;&gt;...&lt;/span&gt;
+                           &lt;a href=&quot;#&quot; class=&quot;swatch&quot;&gt;999&lt;/a&gt;
+                           &lt;a href=&quot;#&quot; class=&quot;swatch pagination-nav-next&quot; rel=&quot;next&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Next page&lt;/span&gt;&lt;/a&gt;
+                       &lt;/div&gt;&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-components.plpproduct" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-components.plpproduct">
+          <span class="kss-title__ref">1.5</span
+          >Product module
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <article class="prod @@classes_prod">
+	<a class="prod-image-container prod-image-hasrollover" href="#" title="View product XXX details">
+		<img class="prod-image" 
+			sizes="(max-width: 767px) calc(50vw - 16px), 220px"
+			srcset="//houseoffraser.scene7.com/is/image/HOF/R_158980027_50_20111122?size=220,293&wid=220&hei=293&qlt=80&ResMode=sharp2&op_sharpen=1 220w,
+					//houseoffraser.scene7.com/is/image/HOF/R_158980027_50_20111122?size=440,586&wid=440&hei=586&qlt=80&ResMode=sharp2&op_sharpen=1 440w,
+					//houseoffraser.scene7.com/is/image/HOF/R_158980027_50_20111122?size=660,879&wid=660&hei=879&qlt=80&ResMode=sharp2&op_sharpen=1 660w"
+			src="//houseoffraser.scene7.com/is/image/HOF/R_158980027_50_20111122?size=220,293&wid=220&hei=293&qlt=80&ResMode=sharp2&op_sharpen=1" alt="Prod name">
+
+
+		<!-- Rollover image -->
+		<img class="prod-image animation"
+			sizes="(max-width: 767px) calc(50vw - 16px), 220px"
+			srcset="//houseoffraser.scene7.com/is/image/HOF/R_158980027_51_20111122?size=220,293&wid=220&hei=293&qlt=80&ResMode=sharp2&op_sharpen=1 220w,
+					//houseoffraser.scene7.com/is/image/HOF/R_158980027_51_20111122?size=440,586&wid=440&hei=586&qlt=80&ResMode=sharp2&op_sharpen=1 440w,
+					//houseoffraser.scene7.com/is/image/HOF/R_158980027_51_20111122?size=660,879&wid=660&hei=879&qlt=80&ResMode=sharp2&op_sharpen=1 660w"
+			src="//houseoffraser.scene7.com/is/image/HOF/R_158980027_51_20111122?size=220,293&wid=220&hei=293&qlt=80&ResMode=sharp2&op_sharpen=1" alt="Prod name">
+
+	</a>
+	<div class="prod-details">
+		<div class="swatches swatches-color swatches-tiny">					
+			<ul class="swatches-container">
+				<li>
+					<a class="swatch selected" href="#"><img src="//houseoffraser.scene7.com/is/image/HOF/I_203008067_00_20141008_swatch?wid=15&hei=15" alt="Yellow"></a>
+					<a class="swatch" href="#"><img src="//houseoffraser.scene7.com/is/image/HOF/I_200677249_00_20140430_swatch?wid=15&hei=15" alt="Maroon"></a>
+					<a class="swatch" href="#"><img src="//houseoffraser.scene7.com/is/image/HOF/I_200677045_00_20140430_swatch?wid=15&hei=15" alt="Red"></a>
+					<a class="swatch" href="#"><img src="//houseoffraser.scene7.com/is/image/HOF/I_200676992_00_20140501_swatch?wid=15&hei=15" alt="Black"></a>
+					<a class="swatch" href="#"><img src="//houseoffraser.scene7.com/is/image/HOF/I_200677192_00_20140430_swatch?wid=15&hei=15" alt="Purple"></a>
+				</li>
+			</ul>
+		</div>
+		
+		
+		<!-- BV review snippet to come here -->
+		
+
+		<h2 class="prod-name"><a href="http://www.houseoffraser.co.uk/Eliza+J+3/4+sleeve+ruched+waist+dress/193588705,default,pd.html"><span class="prod-name-new">New - </span><strong>Eliza J</strong>&nbsp;3/4 sleeve ruched waist dress</a></h2>
+		<div class="prod-pricedetails">
+			<span class="prod-price-now">Now &pound;150.00</span>
+			<span class="prod-price-was">Was &pound;300.00</span>
+		</div>
+	</div>
+</article>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;article class=&quot;prod @@classes_prod&quot;&gt;
+	&lt;a class=&quot;prod-image-container prod-image-hasrollover&quot; href=&quot;#&quot; title=&quot;View product XXX details&quot;&gt;
+		&lt;img class=&quot;prod-image&quot; 
+			sizes=&quot;(max-width: 767px) calc(50vw - 16px), 220px&quot;
+			srcset=&quot;//houseoffraser.scene7.com/is/image/HOF/R_158980027_50_20111122?size=220,293&amp;wid=220&amp;hei=293&amp;qlt=80&amp;ResMode=sharp2&amp;op_sharpen=1 220w,
+					//houseoffraser.scene7.com/is/image/HOF/R_158980027_50_20111122?size=440,586&amp;wid=440&amp;hei=586&amp;qlt=80&amp;ResMode=sharp2&amp;op_sharpen=1 440w,
+					//houseoffraser.scene7.com/is/image/HOF/R_158980027_50_20111122?size=660,879&amp;wid=660&amp;hei=879&amp;qlt=80&amp;ResMode=sharp2&amp;op_sharpen=1 660w&quot;
+			src=&quot;//houseoffraser.scene7.com/is/image/HOF/R_158980027_50_20111122?size=220,293&amp;wid=220&amp;hei=293&amp;qlt=80&amp;ResMode=sharp2&amp;op_sharpen=1&quot; alt=&quot;Prod name&quot;&gt;
+
+
+		&lt;!-- Rollover image --&gt;
+		&lt;img class=&quot;prod-image animation&quot;
+			sizes=&quot;(max-width: 767px) calc(50vw - 16px), 220px&quot;
+			srcset=&quot;//houseoffraser.scene7.com/is/image/HOF/R_158980027_51_20111122?size=220,293&amp;wid=220&amp;hei=293&amp;qlt=80&amp;ResMode=sharp2&amp;op_sharpen=1 220w,
+					//houseoffraser.scene7.com/is/image/HOF/R_158980027_51_20111122?size=440,586&amp;wid=440&amp;hei=586&amp;qlt=80&amp;ResMode=sharp2&amp;op_sharpen=1 440w,
+					//houseoffraser.scene7.com/is/image/HOF/R_158980027_51_20111122?size=660,879&amp;wid=660&amp;hei=879&amp;qlt=80&amp;ResMode=sharp2&amp;op_sharpen=1 660w&quot;
+			src=&quot;//houseoffraser.scene7.com/is/image/HOF/R_158980027_51_20111122?size=220,293&amp;wid=220&amp;hei=293&amp;qlt=80&amp;ResMode=sharp2&amp;op_sharpen=1&quot; alt=&quot;Prod name&quot;&gt;
+
+	&lt;/a&gt;
+	&lt;div class=&quot;prod-details&quot;&gt;
+		&lt;div class=&quot;swatches swatches-color swatches-tiny&quot;&gt;					
+			&lt;ul class=&quot;swatches-container&quot;&gt;
+				&lt;li&gt;
+					&lt;a class=&quot;swatch selected&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;//houseoffraser.scene7.com/is/image/HOF/I_203008067_00_20141008_swatch?wid=15&amp;hei=15&quot; alt=&quot;Yellow&quot;&gt;&lt;/a&gt;
+					&lt;a class=&quot;swatch&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;//houseoffraser.scene7.com/is/image/HOF/I_200677249_00_20140430_swatch?wid=15&amp;hei=15&quot; alt=&quot;Maroon&quot;&gt;&lt;/a&gt;
+					&lt;a class=&quot;swatch&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;//houseoffraser.scene7.com/is/image/HOF/I_200677045_00_20140430_swatch?wid=15&amp;hei=15&quot; alt=&quot;Red&quot;&gt;&lt;/a&gt;
+					&lt;a class=&quot;swatch&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;//houseoffraser.scene7.com/is/image/HOF/I_200676992_00_20140501_swatch?wid=15&amp;hei=15&quot; alt=&quot;Black&quot;&gt;&lt;/a&gt;
+					&lt;a class=&quot;swatch&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;//houseoffraser.scene7.com/is/image/HOF/I_200677192_00_20140430_swatch?wid=15&amp;hei=15&quot; alt=&quot;Purple&quot;&gt;&lt;/a&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+		
+		
+		&lt;!-- BV review snippet to come here --&gt;
+		
+
+		&lt;h2 class=&quot;prod-name&quot;&gt;&lt;a href=&quot;http://www.houseoffraser.co.uk/Eliza+J+3/4+sleeve+ruched+waist+dress/193588705,default,pd.html&quot;&gt;&lt;span class=&quot;prod-name-new&quot;&gt;New - &lt;/span&gt;&lt;strong&gt;Eliza J&lt;/strong&gt;&amp;nbsp;3/4 sleeve ruched waist dress&lt;/a&gt;&lt;/h2&gt;
+		&lt;div class=&quot;prod-pricedetails&quot;&gt;
+			&lt;span class=&quot;prod-price-now&quot;&gt;Now &amp;pound;150.00&lt;/span&gt;
+			&lt;span class=&quot;prod-price-was&quot;&gt;Was &amp;pound;300.00&lt;/span&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/article&gt;</code></pre>
+      </div>
+
+      </section>
+</article>
+
+<!-- SCRIPTS -->
+<script src="http://hof-uxtest.cloudapp.net/styleguide/public/kss.js"></script>
+<script src="http://hof-uxtest.cloudapp.net/styleguide/public/prettify.js"></script>
+<script>
+  prettyPrint();
+</script>
+
+
+
+<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

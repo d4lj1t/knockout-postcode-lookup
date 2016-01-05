@@ -1,0 +1,400 @@
+@media (min-width: @screen-sm-min) {	//Small and up... i.e. tablet portrait and up
+    /**
+     * Footer
+     */
+    .footer {
+        .toggle-heading {
+            background: none;
+            padding: 0;
+            &:hover {
+                background-color: transparent;
+                color: inherit;
+                cursor: default;
+            }
+            &:after {
+                content: '';
+            }
+        }
+        .toggle-box {
+            padding: 0;
+            border: 0;
+        }
+
+        #js-footer-links-1,
+        #js-footer-links-2,
+        #js-footer-links-3 {
+            display: block !important; //Needed so footer links aren't hidden on orientation change if the user has expanded and closed on mobile
+        }
+    }
+}
+@media (min-width: @screen-md-min) {	//Medium and up... i.e. standard desktop and up
+    @import 'header/header-md.less';
+    @import 'pdp/pdp-md.less';
+
+    
+ 
+    /**
+     * Footer
+     */
+    .col-md-3.footer-links-col {
+        width: 23.33333%;
+    }
+    .col-md-3.signup-col {
+        width: 30%;
+    }
+
+    /**
+     * PLP
+     */
+    .pagination.pagn-bottom {
+        .pagination-pages {
+            text-align: right;
+        }
+    }
+    //Search results banner
+	.inpage-search-bar {
+		max-width: 400px;
+	}
+}
+
+@media (max-width: @screen-xs-max) {	//Up to small... i.e. mobile
+    /**
+     * Footer
+     */
+    .footer {
+        .toggle-box {
+            display: none;
+        }
+        .secure {
+	        margin-bottom: 10px;
+	        ul {
+		        text-align: center;
+		        > li {
+			        margin-bottom: 10px;
+		        }
+	        }
+        }
+
+    }
+    .sub-footer {
+	    margin: 0 0 10px;
+	    li {
+		    display: block;
+		    padding: 10px 0;
+		    border: 0;
+	    }
+    }
+    .payment-options {
+	    text-align: center;
+	    > li {
+		    margin-bottom: 10px;
+	    }
+    }
+    
+    
+    
+    /**
+     *  PLP
+     */
+    .plp-main {
+	    margin-left: 0;
+    }
+    .plp-prods {
+        text-align: center;
+    }
+    .prod-plp {
+        width: 49%;
+        margin-left: 0;
+        margin-right: 0;
+        height: inherit;
+    }
+    .no-touch .prod-image-hasrollover:hover > .prod-image:first-child {
+        display: block !important;
+    }
+    .prod-image-hasrollover img:last-child {
+        display: none;
+    }
+    .prod-image-container {
+        max-height: inherit;
+    }
+    .pagination.pagn-bottom {
+        .pagination-pages {
+            text-align: center;
+        }
+    }
+    .plp-banner, .tuck-under-filter {
+        padding-left: 0;
+        padding-top: 37px;
+    }
+
+    
+    /**
+	    Crumbtrail - checkout
+	*/
+	.crumb-trail--checkout {
+		display: table;
+		width: 100%;
+		.crumb-item {
+			display: table-cell;
+			float: none;
+			padding-left: 14px;
+			padding-right: 14px;
+		}
+		.crumb-item:not(.active) .crumb-item-description {
+			display: none;
+		}
+	}	
+}
+@media (max-width: @screen-xs-max) {	//Up to and including Small... i.e. up to and including Tablet portrait
+    /**
+     * PLP
+     */
+    .plp-banner-copy,
+    .plp-banner-image {
+        width: 100%;
+        text-align: left;
+        img {
+            max-width: inherit;
+        }
+    }
+}
+@media (max-width: @screen-sm-max) {	//Up to Medium... i.e. up to desktop
+    body, html {
+        font-size: @font-mobile-size;
+    }
+    // Do not allow site to have scrollbars
+    .prevent-scrolling, .prevent-scrolling body {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+    @import 'header/header-sm-max.less';
+    @import 'pdp/pdp-sm-max.less';
+
+    .main-container.fullbleed-small {
+        padding: 0;
+    }
+
+    
+	/**
+	 * Crumbtrail
+	 */
+	 .crumb-trail {margin-top: 10px;}
+
+
+    /**
+     * Footer
+     */
+    .footer {
+        font-size: 1.083333rem;
+        padding-top: 15px;
+        .mobile-app {
+            text-align: center;
+            .mobile-app-ios, .mobile-app-android {
+                display: inline-block;
+            }
+            .mobile-app-android a, .mobile-app-ios a {
+                width: 132px;
+            }
+        }
+    }
+
+    
+    
+
+    // itinerary
+    .itinerary {
+        position: inherit;
+        width: 100% !important;
+    }
+
+
+    /**
+    	Cart
+    */
+    .cart-buttons {
+	    border: 0;
+	}
+
+
+	/**
+	 * RVI
+	 */
+	.rvi-container {
+		.list-inline > li {
+			padding: 0 4px;
+		}
+	}
+
+}
+
+@media only screen and (min-width: @screen-md-min) and (max-width: @screen-md-max) {	//Small desktop only
+	/**
+	 * RVI
+	 */
+	.rvi-container {
+		.list-inline > li {
+			padding: 0 7px;
+		}
+	}
+}
+
+@media only screen and (max-width: @screen-xs) {	// Very small devices
+    /**
+     * Helpers
+     */
+	 .clear-left-xs {
+		 clear: left;
+	 }
+
+
+    /**
+     * Content Blocks
+     */
+	.cm-dbar {
+		position: relative;
+		bottom: 0!important;
+		right: 0!important;
+		&.cm-dbar-left-bottom,
+		&.cm-dbar-left-top,
+		&.cm-dbar-right-bottom,
+		&.cm-dbar-right-top,
+		&.cm-dbar-top {
+			left: 0;
+			top: 0;
+			transform: none;
+			-ms-transform: none;
+			-webkit-transform: none;
+		}
+		.promotion-title {
+        	.font-size(20);
+        	text-align: center!important;
+        	padding: 10px 0!important;
+        	white-space: normal;
+		}
+		.links {
+			text-align: center!important;
+			a {
+				.font-size(14);
+				padding: 2px 0;
+				display: inline-block;
+			}
+		}
+		.second-link {
+			color: @gray-light;
+			position: inherit;
+			.font-size(11);
+			bottom: @helper-standard;
+			
+		}	
+	}
+    
+
+    /**
+     * Header
+     */
+    .header .logo {
+        width: 150px;
+        height: 24px;
+        top: 46px;
+        margin-left: -75px;
+    }
+
+
+	/**
+	 * Crumbtrail
+	*/
+	.crumb-home {
+		padding-right: 0;
+		margin: 0;
+		background: none;
+	}
+	.crumb-trail--normal {
+		height: @crumb-trail-xm-line-height;
+		overflow: hidden;
+		position: relative;
+		-webkit-transition: all 600ms cubic-bezier(0.77,0,0.175,1);
+		-moz-transition: all 600ms cubic-bezier(0.77,0,0.175,1);
+		-ms-transition: all 600ms cubic-bezier(0.77,0,0.175,1);
+		-o-transition: all 600ms cubic-bezier(0.77,0,0.175,1);
+		transition: all 600ms cubic-bezier(0.77,0,0.175,1);
+		-webkit-transform: translateZ(0);
+		-moz-transform: translateZ(0);
+		-ms-transform: translateZ(0);
+		-o-transform: translateZ(0);
+		transform: translateZ(0);
+		.crumb-trail-container {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+		}
+		.crumb-item {
+			float: none;
+			display: block;
+			margin-right: 0;
+			padding-left: 27px;
+			line-height: @crumb-trail-xm-line-height;
+			&:not(:last-child):before {
+	        	content: ' ';
+	            .icon-css-chevron(@w:8px, @h:8px, @border:2px, @color:#b3b3b3, @direction:left);
+				margin-left: -17px;
+			}
+			&:last-child:before {
+	        	content: ' ';
+	            .icon-css-chevron(@w:8px, @h:8px, @border:2px, @color:@text-color, @direction:left);
+				margin-left: -17px;
+
+
+                -webkit-transition-duration: @transition-time-rotate;
+                -moz-transition-duration: @transition-time-rotate;
+                -o-transition-duration: @transition-time-rotate;
+                transition-duration: @transition-time-rotate;
+
+                -webkit-transition-property: -webkit-transform;
+                -moz-transition-property: -moz-transform;
+                -o-transition-property: -o-transform;
+                transition-property: transform;
+
+                -webkit-transform:rotate(45deg)!important;
+                -moz-transform:rotate(45deg)!important;
+                -o-transform:rotate(45deg)!important;
+			}
+            &.clicked:last-child:before{
+                .rotate();
+            }
+			&:not(:last-child):not(:first-child):after {
+	        	content: none;
+			}
+			&:last-child {
+				background: @gray-lighter;
+			}
+		}
+	}
+
+
+    /**
+     * Prod
+     */
+    .view-all-colours {
+        display: block;
+        clear: left;
+    }
+}
+
+@media only screen and (min-width: @screen-sm) and (max-width: @screen-sm-max) {	// Small only, i.e. tablet portrait only
+    /**
+     * Footer
+     */
+    .footer-social {
+        margin-top: 15px;
+    }
+
+}
+/*
+@media only screen and (min-width: @screen-md-min) and (max-width: @screen-lg) {
+	// itinerary
+    .itinerary {
+        width: 283.4px !important;
+    }
+
+}*/

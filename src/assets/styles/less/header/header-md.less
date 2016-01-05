@@ -1,0 +1,227 @@
+.header {
+
+    /**
+     * Secure header
+     */
+    &.secure {
+        .quick-links {
+            a {
+                font-weight: normal;
+            }
+        }
+        .left-set {
+            display: none;
+        }
+
+        #js-responsive-nav {
+            display: none;
+        }
+
+        .quick-search {
+            display: none;
+        }
+
+        .sign-in-cart-wrapper {
+            nav:nth-child(1) {
+                .menu-name:after {
+                    display: none;
+                }
+            }
+            nav:nth-child(2) {
+                display: none;
+            }
+        }
+    }
+
+    /**
+     * Signed in header
+     */
+    &.signed-in {
+        .js-open-my-account {
+            .menu-name {
+                font-weight: bold;
+                max-width: 200px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            .icon-account-white {
+                .icon-account-pink();
+            }
+        }
+    }
+}
+.quick-links {
+    top: 7px;
+}
+// Don't show buttons of the mobile navigation for desktop
+a.js-show-prev-level, .js-show-prev-level {
+    display: none;
+}
+.levels {
+    margin-left: 0 !important; // !important is really important. It has to override JavaScript value.
+}
+.menu-name {
+    float: left;
+    color: #FFF;
+    font-size: .9rem;
+    height: @height-section-navs - 2px;
+    line-height: @height-section-navs - 2px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .icon-account, .icon-bag, .icon-bag-zero {
+        margin: 0 5px 0 0;
+        vertical-align: middle;
+    }
+}
+.menu-shop-by {
+    .menu-name {
+        .icon-hamburger {
+            vertical-align: middle;
+            margin: -4px 5px 0 0;
+        }
+    }
+}
+.menu.hover {
+
+    .level-2 {
+        display: block;
+        background: @color-nav-hat;
+        padding: 10px;
+        box-shadow: 3px 3px 4px -1px rgba(0, 0, 0, .4);
+        .content {
+            background: #FFF;
+            padding: 15px;
+        }
+    }
+
+    .menu-name {
+        background-color: @color-nav-hat;
+        color: #000;
+    }
+
+}
+.menu-shop-by-department .menu-name:after,
+.sign-in-cart-wrapper nav:first-child .menu-name:after {
+    content: "";
+    width: 2px;
+    background: #333;
+    height: 39px;
+    position: absolute;
+    right: -2px;
+    top: 50%;
+    margin-top: -20px;
+}
+.section-navs {
+    height: @height-section-navs;
+}
+
+.responsive-nav {
+    float: left;
+}
+
+// Mega menu's need to have fixed width to work
+.menu-shop-by {
+    .structure {
+        > li.hover {
+            width: @menu-level-2-column-width-hover;
+        }
+    }
+    .level-2 {
+        .pad();
+        min-height: 610px;
+    }
+    .level-3 {
+        width: 545px;
+    }
+    .content {
+        .pad();
+    }
+}
+.structure {
+    a {
+        font-weight: bold;
+    }
+
+    > li {
+        width: @menu-level-2-column-width;
+    }
+
+    > li:first-child a, > li:last-child a {
+        border: none;
+    }
+
+    > li.hover {
+        > a {
+            background: #FFF;
+            border-bottom-color: #FFF;
+        }
+        .level-3 {
+            display: block;
+        }
+    }
+
+    .level-3 {
+
+        .topped {
+            border-top: 1px #e6e6e6 solid;
+            padding-top: 10px;
+        }
+
+        .red-sale {
+            color: @color-red-sale;
+        }
+
+        .brand-sale {
+            color: @color-brand-sale;
+        }
+
+        .bluex-sale {
+            color: @color-hof-bluexsale;
+        }
+
+        .pushed-nav {
+            padding: 5px 0;
+        }
+
+        .regular-nav a, .pushed-nav a {
+            font-weight: bold; //
+            line-height: 25px;
+            display: block;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .regular-nav a {
+            font-size: .9rem;
+        }
+
+        h3 {
+            .font-size(16);
+            font-weight: bold;
+            color: #000;
+        }
+    }
+}
+
+.sign-in-cart-wrapper {
+    .level-2 {
+        display: none;
+        top: 100%;
+    }
+}
+
+.cta a {
+    display: block;
+    text-align: center;
+    height: 39px;
+    line-height: 39px;
+    text-decoration: underline;
+}
+
+.quick-search-mobile {
+    display: none;
+}

@@ -1,0 +1,68 @@
+@@include("_header.html", {"classes_body" : "pagetype-checkout js-pagetype-jquery-validate", "classes_header" : "secure"})
+<main role="main" class="container main-container pagetype-checkout--signin">
+    <a name="skiptocontent" id="skiptocontent"></a>
+    <div class="row">
+        <div class="col-md-12">
+            <!--left content-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="border-bottom thick-marg-top-bottom">
+                        <header><h1>Sign in or continue <small>(as a guest)</small></h1></header>
+                    </div>
+
+                    <p class="thick-marg-bottom"><span class="color-red">*</span> Indicates a required field</p>
+
+					<form class="js-form">
+	                    <fieldset class="marg-bottom">
+		                    <legend>Email Address</legend>
+	                        <div class="thick-marg-bottom">
+		                        <label for="email-address">Your email address <span class="color-red">*</span></label>
+		                        <div class="row">
+                                    <div class="col-md-4">
+                                        <input required id="email-address" class="form-control" type="email" name="email_address" placeholder="Email address">
+                                    </div>
+		                        </div>
+	                        </div>
+	                    </fieldset>
+	                    <fieldset class="thick-marg-bottom">
+		                    <legend>Do you have a Password?</legend>
+							<div class="radio no-marg pad-bottom">
+								<label>
+									<input type="radio" name="have_password" id="have-password-no" class="js-password-radio" value="no">
+									<strong>No</strong> <span class="text-muted">(you can create an account later if you want to)</span>
+								</label>
+							</div>
+							<div class="radio">
+								<label class="marg-top">
+									<input type="radio" name="have_password" id="have-password-yes" class="js-password-radio " value="yes">
+									<strong>Yes,</strong> <span class="text-muted">my password is:</span>
+								</label>
+							</div>
+
+
+							<div class="js-password-field hide">
+		                        <label class="sr-only" for="js-login-password">Password</label>
+		                        <div class="row">
+	                                <div class="col-md-4">
+	                                    <input id="js-login-password" class="form-control" type="password" name="login_password" placeholder="Password" autocomplete="off">
+	                                </div>
+		                        </div>
+		                        <p class="marg-top-bottom"><a>Forgotten Your Password?</a></p>
+							</div>
+	                    </fieldset>
+
+
+                        <div class="row thick-marg-bottom">
+                            <div class="col-md-4">
+								<button type="submit" id="js-signin-submit" class="btn btn-primary full-width">Continue</button>
+                            </div>
+                        </div>
+					</form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+@@include("_footer-secure.html")

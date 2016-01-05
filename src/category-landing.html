@@ -1,0 +1,27 @@
+@@include("_header.html", {"classes_body" : "pagetype-hubpage"})
+
+<main role="main" class="container main-container clearfix">
+    <a name="skiptocontent" id="skiptocontent"></a>
+    <div class="row clearfix marg-bottom">
+        @@include("_crumbtrail.html")
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+		    <nav role="navigation">
+				<div class="filter-group">
+					<h1 class="h2">Women</h1>
+					@@include("_plp-filter-arrowlist-no-count.html")
+				</div>
+				<div class="filter-group">
+					@@include("_plp-filter-arrowlist-no-count.html")
+				</div>
+				<a class="hidden-xs hidden-sm" href="#" title="Shop Calvin Klein Jeans collection"><img class="img-responsive" src="assets/images/content/cms/left-nav-promo.jpg" alt="Calvin Klein Jeans" /></a>
+		    </nav>
+        </div>
+        <div class="col-md-9">
+			@@include("_homepage-content.html")			
+        </div>
+    </div>
+</main>
+
+@@include("_footer.html")

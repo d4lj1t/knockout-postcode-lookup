@@ -1,0 +1,250 @@
+/**
+ *	Banner
+ */
+.plp-banner {
+    border-bottom: 1px solid @gray-lighter;
+    margin-bottom: 10px;
+    float: left;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    img {
+        width: 100%;
+        max-width: 376px;
+    }
+}
+.closed .plp-banner {
+    padding-left: @plp-sidebar-width;
+}
+.plp-banner-copy {
+    max-width: 460px;
+    width: 50%;
+}
+.plp-banner-image {
+    width: 50%;
+    text-align: right;
+
+}
+
+//Search results banner
+.inpage-search-bar {
+	background: @gray-lighter;
+	input#inpageSearchBar {
+		width: calc(~"100% - 90px");
+	}
+	button {
+		width: 90px;
+	}
+}
+
+
+/**
+ * Main content
+ */
+.plp-main {
+    margin-left: @plp-sidebar-width;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    background: white;
+    float: left;
+}
+.closed .plp-main {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+
+/**
+ * Left nav
+ */
+.plp-sidebar {
+    float: left;
+    width: @plp-sidebar-width;
+    margin: 60px -@plp-sidebar-width 0 0;
+    transition: all 0.5s ease-in-out; 
+}
+.closed .plp-sidebar {
+	margin-left: -@plp-sidebar-width;
+	height: 0;
+}
+
+.plp-refine-heading {
+    position: absolute;
+    z-index: 10;
+}
+.filter-popular {
+    li {
+        margin-bottom: 8px;
+    }
+    a {
+        color: @color-links-hover;
+        &:hover {
+            color: @color-links-dark;
+            text-decoration: none;
+        }
+    }
+}
+.filter-group {
+    margin-bottom: @helper-thin;
+    padding: 0 @helper-standard 0 0;
+    .off-canvas-component & {
+        padding-right: 0;
+    }
+
+}
+.filter-container {
+    font-size: 12px;
+    padding: @helper-standard @helper-standard 0;
+    label {
+        font-weight: normal;
+        margin: 0;
+        display: block;
+        clear: both;
+        line-height: 18px;
+        position: relative;
+        cursor: pointer;
+        color: @gray-light;
+        &:hover a {
+            color: @color-hof-pink;
+            text-decoration: underline;
+        }
+    }
+    a {
+        color: @color-links-dark;
+        &:hover {
+            color: @color-hof-pink;
+            text-decoration: underline;
+        }
+    }
+    .filter-expand {
+        display: block;
+        line-height: 36px;
+        height: 36px;
+    }
+    .refinements {
+        overflow: hidden;
+        max-height: 180px;
+        &.expanded {
+            max-height: none;
+        }
+    }
+}
+.filter-clearall {
+    color: @color-links-dark;
+    font-size: 12px;
+}
+.applied-filter {
+    float: left;
+    font-size: 13px;
+    background: @gray-lighter;
+    line-height: 28px;
+    padding: 0 32px 0 5px;
+    margin: 0 8px 8px 0;
+    color: @color-links-dark;
+    position: relative;
+    .icon-close {
+        position: absolute;
+        top: -2px;
+        right: 0;
+    }
+    &:hover {
+        background: @color-hof-pink;
+        color: white;
+        text-decoration: none;
+        .icon-close:before {
+            color: white;
+        }
+    }
+}
+
+
+/*
+ * Pagination
+ */
+.pagination {
+    line-height: 2em;
+    float: left;
+    width: 100%;
+}
+.pagination-nowshowing {
+    padding-right: 30px;
+}
+.pagination-perpage-label {
+    padding-right: 7px;
+    font-weight: bold;
+}
+.pagination-sort {
+    text-align: right;
+}
+
+
+/**
+ * swatches sub classes
+ * Move these to _site-components.less as these are not exclusive to the PLP
+ * But need to get M to move the parent .swatches class there too first as it's currently in PDP.less
+ */
+.swatches-pagination {
+    padding: 0;
+    border: 0;
+    .swatches-container {
+        display: inline-block;
+    }
+    .swatch {
+        &.elipsis {
+            background: none;
+            min-width: inherit;
+            text-decoration: none;
+            color: black;
+            padding: 0;
+        }
+        &.pagination-nav-prev,
+        &.pagination-nav-next {
+            background: none;
+            text-decoration: none;
+            color: black;
+            padding: 0;
+        }
+        &.pagination-nav-prev:before {
+            content: '';
+            .icon-css-chevron(@w:10px, @h:10px, @border:2px, @color:@text-color, @direction:left);
+        }
+        &.pagination-nav-next:after {
+            content: '';
+            .icon-css-chevron(@w:10px, @h:10px, @border:2px, @color:@text-color, @direction:right);
+            left: 25%;
+        }
+        &.pagination-nav-next.disabled:after,
+        &.pagination-nav-prev.disabled:before {
+            border-color: @gray-lighter;
+        }
+    }
+}
+.swatches-color {
+    padding: 0 0 6px 0;
+    border: 0;
+    position: relative;
+    overflow: visible;
+}
+.swatches-color .swatch {
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    min-width: 15px;
+    margin: 0 5px 5px 0;
+    &.selected:after {
+        bottom: -4px;
+    }
+}
+
+.js-pagetype-plp .off-canvas-component {
+    
+    .scrollable {
+        position: relative;
+    }
+    .plp-sidebar {
+        .pad();
+        width: auto;
+        .no-marg();
+        float: none;
+    }
+}

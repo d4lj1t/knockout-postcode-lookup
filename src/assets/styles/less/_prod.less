@@ -1,0 +1,142 @@
+/*
+	Product module
+	i.e. Individual product on PLP, RVI, cross sell panels etc
+	Parent class based on PLP product
+*/
+
+// Product module
+//
+// Markup: ../../../include/_product.html
+// 
+// Styleguide components.plpproduct
+
+// Pagination
+//
+// Markup:
+// <div class="swatches swatches-pagination"><div class="swatches-container"><a href="#" class="swatch pagination-nav-prev disabled" rel="prev"><span class="sr-only">Previous page</span></a><a href="#" class="swatch" rel="prev">1</a>
+// <a href="#" class="swatch selected">2</a>
+//                         <a href="#" class="swatch" rel="next">3</a>
+//                            <span class="swatch elipsis">...</span>
+//                            <a href="#" class="swatch">999</a>
+//                            <a href="#" class="swatch pagination-nav-next" rel="next"><span class="sr-only">Next page</span></a>
+//                        </div></div>
+//
+// Styleguide components.pagination
+
+//Prod base classes
+.prod {    
+//	height: 420px; took out as images for products could be different heights(may need tlooking into)
+    width: 220px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 30px 17px;
+}
+
+.prod-image-container {
+    display: block;
+    max-height: 293px;
+    overflow: hidden;
+}
+.no-touch .prod-image-hasrollover:hover > .prod-image:first-child {
+    display: none;
+}
+.prod-details {
+    border-top: 1px solid @gray;
+    padding-top: 5px;
+    text-align: left;
+}
+.prod-name {
+    font-size: 1rem;
+    text-transform: capitalize;
+    .prod-name-new {
+        color: @color-hof-pink;
+    }
+}
+
+/**
+ * Prices - this is (and should be) the only reference for pricing colours
+ */
+.prod-price {
+    color: @color-black;
+}
+
+.prod-price-thick {
+    .prod-price();
+    font-weight: bold;
+}
+
+.prod-price-thin {
+    .prod-price();
+    font-weight: normal;
+}
+
+.prod-price-was {
+    color: @gray;
+}
+
+.prod-price-was-thick {
+    .prod-price-was();
+    font-weight: bold;
+}
+
+.prod-price-was-thin {
+    .prod-price-was();
+    font-weight: normal;
+}
+
+.prod-price-now {
+    color: @color-red-sale;
+    font-weight: bold;
+}
+
+.prod-price-now-thick {
+    .prod-price-now();
+}
+
+.prod-price-now-thin {
+    color: @color-red-sale;
+    font-weight: normal;
+}
+
+
+//PLP prod subclass
+.prod-plp {
+	margin: 0 13px 30px;
+}
+
+
+
+/*
+	Colour swatch selector
+*/
+.colour-selector-more {
+    display: none;
+    border: 1px solid gray;
+    padding: 9px;
+    position: absolute;
+    top: -6px;
+    background: white;
+    z-index: 1;
+    .view-all-colours-container {
+        display: block;
+        clear: left;
+    }
+}
+.view-all-colours {
+    font-size: 0.85714rem;
+    color: @color-links-dark;
+}
+
+
+/**
+ * RVI
+ */
+.rvi-container {
+	.list-inline {
+		height: 187px;
+		overflow: hidden;
+	}
+	.list-inline > li {
+		padding: 0 @helper-standard;
+	}
+}

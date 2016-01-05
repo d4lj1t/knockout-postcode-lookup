@@ -1,0 +1,190 @@
+<!doctype html>
+<!--[if lt IE 7 ]>
+<html lang="en" class="no-js ie ie6 ieFail"> <![endif]-->
+<!--[if IE 7 ]>
+<html lang="en" class="no-js ie ie7 ieFail"> <![endif]-->
+<!--[if IE 8 ]>
+<html lang="en" class="no-js ie ie8"> <![endif]-->
+<!--[if IE 9 ]>
+<html lang="en" class="no-js ie ie9"> <![endif]-->
+<!--[if !(IE)]><!-->
+<html lang="en" class="no-ie no-js"> <!--<![endif]-->
+<head>
+	@@include("_metatags.html")
+	<meta name="robots" content="index,follow" />
+    <!-- build:css assets/styles/tidy.css-->
+    <link rel="stylesheet" href="assets/styles/styles.min.css">
+    <link href='//fonts.googleapis.com/css?family=Playfair+Display:400,400italic|Open+Sans:400,800|Open+Sans+Condensed:300,700'
+          rel='stylesheet' type='text/css'>
+    <!-- /build -->
+    <script data-main="assets/scripts/main" src="assets/scripts/lib/requirejs.min.js"></script>
+</head>
+<body class="@@classes_body" itemscope itemtype="http://schema.org/WebPage">
+@@include("_gtm.html")
+<a href="#skiptocontent" class="sr-only sr-only-focusable">Skip to content</a>
+
+<div class="container-responsive">
+
+    <!--[if lte IE 8 ]>
+    <section class="global-messages marg-bottom">
+        <div class="flash-message global-message centered">
+            <div class="container">
+                Looks like you're using an unsupported version of Internet Explorer. For security reasons, and to view our site at its very best, you should upgrade your browser
+                <a href="#" class="js-close icon-close"></a>
+            </div>
+        </div>
+    </div>
+    <![endif]-->
+
+    <header role="banner" class="header @@classes_header">
+        <div class="section section-start">
+            <div class="container">
+                <nav class="quick-links left-set">
+                    <a href="#">Stores</a>
+                </nav>
+                <h1 class="logo-h1">
+	                <a href="#" class="logo" role="banner">
+	                    <img src="assets/images/HoF-logo.svg" alt="House of Fraser since 1849" class="logo-default">
+	                    <img src="assets/images/HoF-logo-basic.svg" alt="House of Fraser since 1849" class="logo-xs">
+	                </a>
+                </h1>
+                <nav class="quick-links right-set">
+                    <a href="#">0345 602 1073</a>
+                    <a href="#" rel="nofollow">Help</a>
+                </nav>
+            </div>
+        </div>
+        <div class="section section-navs">
+            <div class="container">
+
+                <div class="nav-ph nav-ph-hamburger js-open-off-site-nav">
+                    <a href="#" class="visible-sm visible-xs icon-hamburger icon-hamburger-default icon-center">Mobile
+                        menu</a>
+                </div>
+
+                <div id="js-responsive-nav">
+                    @@include("_responsive-nav.html")
+                </div>
+                <!-- /.responsive-nav -->
+
+                <div class="quick-search-mobile has-icon">
+                    <div class="nav-ph nav-ph-search js-show-search-box">
+                        <a href="#" class="visible-sm visible-xs icon-search-default icon-search-hover-black">Search</a>
+                    </div>
+                    <div class="form">
+                        <div class="form-group">
+                            <input type="search" class="form-control" placeholder="Enter your Search term here ..."
+                                   aria-multiline="false" aria-autocomplete="list">
+                            <button type="submit" class="btn-submit">
+                                <i class="icon-search icon-search-black icon-center"></i>
+                            </button>
+                            <a href="#" class="icon-close-circle js-icon-close"></a>
+                        </div>
+                        <div id="js-quick-search-suggestions-mobile"></div>
+                    </div>
+                </div>
+
+                <div class="quick-search hidden-xs hidden-sm">
+                    <input type="search" placeholder="Enter keyword, product code or brand">
+                    <div data-bind="visible: suggestions().length > 1" style="display: none"
+                         id="js-quick-search-suggestions">
+                        <ul class="suggestions" data-bind="foreach: suggestions">
+                            <li>
+                                <a href="#">
+                                    <span class="option" data-bind="html: option"></span>
+                                    <span class="count" data-bind="text: count"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="submit" class="btn-submit"><i class="icon-search icon-search-black icon-center"></i>
+                    </button>
+                </div>
+
+                <div id="js-my-account-sm"></div>
+
+                <div class="sign-in-cart-wrapper">
+                    <nav class="js-open-my-account has-icon">
+                        <a href="#" class="visible-sm visible-xs icon-account-default icon-account-hover-black">My account</a>
+                        <div class="menu">
+                            <div class="level level-1">
+                                <span class="menu-name has-icon visible-md visible-lg"><i class="icon-account icon-account-white"></i>Sign in or Register</span>
+                                <div id="js-my-account-md">
+                                    <div class="level level-2 js-my-account">
+                                        <div class="content">
+                                            <h3 class="sub-level-heading">My Account</h3>
+                                            <a href="#" class="icon-close js-close"></a>
+                                            <div class="clearfix"></div>
+                                            <ul class="menu-list menu-list-bold">
+                                                <li>
+                                                    <a href="#">Manage Account</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Order History</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">About recognition Points</a>
+                                                </li>
+                                            </ul>
+                                            <div class="btn-group-vertical full-width">
+                                                <a href="#" class="btn btn-default btn-lg marg-bottom">Sign In</a>
+                                                <a href="#" class="btn btn-blank">Create New Account?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <nav class="js-open-off-canvas-minicart">
+                        <a href="#" class="visible-sm visible-xs icon-bag icon-bag-default icon-center">Mini cart</a>
+                        <div class="menu visible-md visible-lg has-icon">
+                            <div class="level level-1">
+                                <a class="menu-name" href="#" rel="nofollow">
+                                    <span class="icon-bag icon-bag-pink"></span>
+                                    <span class="mini-cart-price">&pound;210.00</span>
+                                </a>
+                                <span class="mini-cart-quantity">1</span>
+                                <div class="level level-2">
+                                    <div id="js-mini-cart">
+                                        @@include("_mini-cart-1-product.html")
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="bar" id="progress-bar"></div>
+    </header>
+
+    <div class="delivery-bar">
+        <div class="container">
+            <div class="col-sm-12 visible-xs visible-sm">
+                <a href="#">
+                    <h3>Order by 7pm for free buy &amp; collect</h3>
+                    <p>Find out more</p>
+                </a>
+            </div>
+            <div class="col-md-4 visible-md visible-lg">
+                <a href="#">
+                    <h3>Order until 7pm</h3>
+                    <p>For free buy &amp; Collect next day</p>
+                </a>
+            </div>
+            <div class="col-md-4 visible-md visible-lg">
+                <a href="#">
+                    <h3>Brand event - up to 30% off</h3>
+                    <p>in store &amp; online - shop now</p>
+                </a>
+            </div>
+            <div class="col-md-4 visible-md visible-lg">
+                <a href="#">
+                    <h3>Now delivering</h3>
+                    <p>To over 130 countries</p>
+                </a>
+            </div>
+        </div>
+    </div>
